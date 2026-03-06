@@ -1241,7 +1241,9 @@ What you c...</p>
         iapItems: iapItems,
         isMac: !!card.querySelector('.screenshots-mac'),
         screenshots: (function() {
-          var imgs = card.querySelectorAll('.screenshot');
+          var container = card.querySelector('.screenshots');
+          if (!container || container.classList.contains('screenshots-icon-fallback')) return [];
+          var imgs = container.querySelectorAll('.screenshot');
           var urls = [];
           imgs.forEach(function(img) { var s = img.getAttribute('src'); if (s) urls.push(s); });
           return urls.slice(0, 2);
