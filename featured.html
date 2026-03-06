@@ -172,21 +172,17 @@
       display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
     }
 
-    /* ── 截图（纵向长方形） ── */
-    .screenshots { display: flex; gap: 8px; height: 160px; }
+    /* ── 截图 ── */
+    .screenshots { display: flex; gap: 8px; }
     .screenshot {
       flex: 1; min-width: 0;
-      height: 160px; object-fit: cover; border-radius: 10px;
+      aspect-ratio: 3/5; max-height: 260px;
+      object-fit: cover; border-radius: 10px;
       border: 1px solid var(--border);
     }
-    .shot-placeholder {
-      flex: 1; height: 160px; border-radius: 10px;
-      background: linear-gradient(135deg, #f0f4ff, #e8edf8);
-      border: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: center; overflow: hidden;
-    }
-    .shot-placeholder.muted { background: linear-gradient(135deg, #f5f5f7, #ececf0); opacity: .65; }
-    .shot-placeholder img { width: 72px; height: 72px; border-radius: 14px; object-fit: cover; }
+
+    /* Mac screenshot landscape ratio */
+    .screenshots-mac .screenshot { aspect-ratio: 16/10; max-height: none; }
     .placeholder-letter { font-size: 32px; font-weight: 700; color: #c7c7cc; }
 
     /* ── 二维码缩略图（footer 内） ── */
@@ -271,10 +267,6 @@
     .back-top.visible { display: flex; }
     .back-top:hover { transform: translateY(-2px); }
 
-    /* Mac screenshot landscape ratio */
-    .screenshots-mac { height: auto; }
-    .screenshots-mac .screenshot { height: auto; aspect-ratio: 16/10; }
-
     /* empty */
     .empty { text-align: center; padding: 80px 20px; grid-column: 1/-1; }
     .empty-icon { font-size: 56px; margin-bottom: 12px; }
@@ -313,10 +305,9 @@
       .stat { padding: 6px 10px; }
       .stat-num { font-size: 20px; }
       .content { padding: 0 8px 36px; }
-      .screenshot { height: 120px; }
-      .screenshots { height: 120px; }
+      .screenshot { max-height: 200px; }
       .screenshots .screenshot:nth-child(2) { display: none; }
-      .shot-placeholder { height: 120px; }
+      .screenshots .screenshot:only-child { max-width: 60%; }
     }
     .header { background: linear-gradient(135deg, #f59e0b 0%, #d97706 55%, #b45309 100%); }
   </style>
@@ -1243,7 +1234,14 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
         badgeText: badgeText, badgeCls: badgeCls,
         genre: genre, devices: devices, artist: artist, desc: desc,
         priceFrom: priceFrom, priceTo: priceTo, isFree: isFree,
-        iapItems: iapItems
+        iapItems: iapItems,
+        isMac: !!card.querySelector('.screenshots-mac'),
+        screenshots: (function() {
+          var imgs = card.querySelectorAll('.screenshot');
+          var urls = [];
+          imgs.forEach(function(img) { var s = img.getAttribute('src'); if (s) urls.push(s); });
+          return urls.slice(0, 2);
+        })()
       });
     });
 
@@ -1405,13 +1403,18 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
       h += '<span style="font-size:11px;padding:2px 8px;border-radius:8px;background:#f2f2f7;color:#6c6c70;border:1px solid #e5e5ea;">' + app.genre + '</span>';
     }
     h += '</div>';
-    // Devices
+    // Devices - as pills
     if (app.devices) {
-      h += '<div style="font-size:12px;color:#8e8e93;line-height:1.4;margin-bottom:2px;">' + app.devices + '</div>';
+      var deviceList = app.devices.split(' · ');
+      h += '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:4px;">';
+      deviceList.forEach(function(d) {
+        h += '<span style="font-size:11px;padding:2px 8px;border-radius:8px;background:#f0f4ff;color:#4b5563;border:1px solid #e0e7ff;">' + d.trim() + '</span>';
+      });
+      h += '</div>';
     }
     // Artist
     if (app.artist) {
-      h += '<div style="font-size:12px;color:#8e8e93;line-height:1.4;">' + app.artist + '</div>';
+      h += '<div style="font-size:12px;color:#8e8e93;line-height:1.4;margin-top:4px;">' + app.artist + '</div>';
     }
     h += '</div>';
     h += '</div>';
@@ -1450,15 +1453,30 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
       h += '<p style="font-size:13px;color:#6c6c70;line-height:1.65;margin:12px 0 0 0;">' + app.desc + '</p>';
     }
 
-    // App icon + QR code side by side
+    // Screenshots
+    if (app.screenshots && app.screenshots.length > 0) {
+      if (app.isMac) {
+        // Mac: 1 landscape screenshot
+        h += '<div style="margin-top:14px;border-radius:12px;overflow:hidden;border:1px solid #e5e7eb;">';
+        h += '<img src="' + app.screenshots[0] + '" style="width:100%;display:block;aspect-ratio:16/10;object-fit:cover;" />';
+        h += '</div>';
+      } else {
+        // Mobile: up to 2 portrait screenshots side by side
+        h += '<div style="display:flex;gap:8px;margin-top:14px;">';
+        app.screenshots.forEach(function(src) {
+          h += '<div style="flex:1;min-width:0;border-radius:12px;overflow:hidden;border:1px solid #e5e7eb;background:#f9fafb;">';
+          h += '<img src="' + src + '" style="width:100%;display:block;aspect-ratio:3/5;object-fit:cover;" />';
+          h += '</div>';
+        });
+        h += '</div>';
+      }
+    }
+
+    // QR code below
     var qrUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(app.url);
-    h += '<div style="display:flex;align-items:center;gap:14px;margin-top:14px;padding:12px;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;">';
-    h += '<img src="' + app.iconHD + '" style="width:80px;height:80px;border-radius:18px;box-shadow:0 2px 8px rgba(0,0,0,0.10);flex-shrink:0;" />';
-    h += '<div style="flex:1;min-width:0;">';
-    h += '<div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:4px;">' + app.name + '</div>';
-    h += '<div style="font-size:11px;color:#9ca3af;">长按识别二维码下载</div>';
-    h += '</div>';
-    h += '<img src="' + qrUrl + '" style="width:80px;height:80px;border-radius:8px;border:1px solid #e5e7eb;flex-shrink:0;" />';
+    h += '<div style="text-align:center;margin-top:12px;">';
+    h += '<img src="' + qrUrl + '" style="width:90px;height:90px;border-radius:8px;border:1px solid #e5e7eb;" />';
+    h += '<div style="font-size:10px;color:#9ca3af;margin-top:4px;">长按识别下载</div>';
     h += '</div>';
 
     h += '</div>';
