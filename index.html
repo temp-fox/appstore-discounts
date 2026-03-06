@@ -85,7 +85,7 @@
     }
     .fb-copy:hover { background: linear-gradient(135deg,#8b5cf6,#7c3aed); color: #fff; border-color: #7c3aed; }
 
-    /* ── Grid（卡片纵向长方形，宽度收窄） ── */
+    /* ── Grid ── */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 340px));
@@ -93,13 +93,13 @@
       justify-content: center;
     }
 
-    /* ── Card（纵向长方形布局） ── */
+    /* ── Card ── */
     .card {
       background: var(--card); border-radius: var(--r);
       box-shadow: var(--shadow); padding: 16px;
       transition: transform .22s cubic-bezier(.34,1.56,.64,1), box-shadow .22s;
       cursor: pointer; display: flex; flex-direction: column; gap: 12px;
-      position: relative;
+      position: relative; overflow: hidden; min-width: 0;
     }
     .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-h); }
 
@@ -312,21 +312,27 @@
     @media (max-width: 768px) {
       .grid { grid-template-columns: 1fr; gap: 12px; }
       .header { padding: 32px 16px 48px; }
+      .h-stats { flex-wrap: wrap; justify-content: center; }
       .stat { padding: 8px 12px; }
       .stat-num { font-size: 22px; }
       .stat-label { font-size: 10px; }
       .filter-bar { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; }
       .filter-bar::-webkit-scrollbar { display: none; }
       .card { padding: 12px; }
+      .screenshots { overflow: hidden; }
+      .screenshot { min-width: 0; }
       .qr-below { display: block; }
       .qr-thumb { display: none; }
     }
     @media (max-width: 500px) {
       .header { padding: 28px 12px 40px; }
+      .h-title { font-size: 20px; }
+      .h-sub { font-size: 12px; }
       .stat { padding: 6px 10px; }
       .stat-num { font-size: 20px; }
-      .content { padding: 0 8px 36px; }
+      .content { padding: 0 8px 36px; margin-top: -12px; }
       .screenshot { max-height: 200px; }
+      .app-icon { width: 48px; height: 48px; }
     }
     .header { background: linear-gradient(135deg, #007aff 0%, #5856d6 55%, #af52de 100%); }
   </style>
@@ -370,7 +376,7 @@
           <span class="badge badge-discount">限时降价</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Reference</span>
+          <span class="genre-tag">参考资料</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">付费榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch · ⌚Apple Watch</div>
@@ -426,7 +432,7 @@ Key Features:
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Graphics & Design</span>
+          <span class="genre-tag">图形和设计</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -486,7 +492,7 @@ Mandelbrot Metal brings the infinite beauty of the Mandelbrot set to life on iPh
           <span class="badge badge-iap">内购优惠</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Utilities</span>
+          <span class="genre-tag">工具</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">💻Mac</div>
@@ -555,7 +561,7 @@ What you c...</p>
           <span class="badge badge-discount">限时降价</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Photo & Video</span>
+          <span class="genre-tag">摄影与录像</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -645,7 +651,7 @@ What you c...</p>
           <span class="badge badge-discount">限时降价</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Photo & Video</span>
+          <span class="genre-tag">摄影与录像</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -705,7 +711,7 @@ What you c...</p>
           <span class="badge badge-iap">内购优惠</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Productivity</span>
+          <span class="genre-tag">效率</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -797,7 +803,7 @@ My Measures在全球拥有300多万用户，已成为房地产经纪人的行业
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Utilities</span>
+          <span class="genre-tag">工具</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -859,7 +865,7 @@ My Measures在全球拥有300多万用户，已成为房地产经纪人的行业
           <span class="badge badge-iap">内购优惠</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Entertainment</span>
+          <span class="genre-tag">娱乐</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -918,7 +924,7 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
           <span class="badge badge-discount">限时降价</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Finance</span>
+          <span class="genre-tag">财务</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -1026,7 +1032,7 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Health & Fitness</span>
+          <span class="genre-tag">健康健美</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch · ⌚Apple Watch</div>
@@ -1078,7 +1084,7 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Weather</span>
+          <span class="genre-tag">天气</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch · ⌚Apple Watch</div>
@@ -1156,7 +1162,7 @@ Weather Now 是一款适用于 iPhone、iPad 和 Apple Watch 的完整天气应�
           <span class="badge badge-iap">内购优惠</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Games</span>
+          <span class="genre-tag">游戏</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -1297,7 +1303,7 @@ Weather Now 是一款适用于 iPhone、iPad 和 Apple Watch 的完整天气应�
           <span class="badge badge-iap">内购优惠</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Education</span>
+          <span class="genre-tag">教育</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -1378,7 +1384,7 @@ Weather Now 是一款适用于 iPhone、iPad 和 Apple Watch 的完整天气应�
           <span class="badge badge-iap">内购优惠</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Health & Fitness</span>
+          <span class="genre-tag">健康健美</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -1476,7 +1482,7 @@ Weather Now 是一款适用于 iPhone、iPad 和 Apple Watch 的完整天气应�
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Health & Fitness</span>
+          <span class="genre-tag">健康健美</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -1543,7 +1549,7 @@ The recordings were created together with O...</p>
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Navigation</span>
+          <span class="genre-tag">导航</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch · ⌚Apple Watch</div>
@@ -1607,7 +1613,7 @@ Whether you're in a crowded city, a huge parking lot, or an unfamili...</p>
           <span class="badge badge-discount">限时降价</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Finance</span>
+          <span class="genre-tag">财务</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch · ⌚Apple Watch</div>
@@ -1667,7 +1673,7 @@ All your data is encrypted and stored securely on your device. Sync across devic
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Social Networking</span>
+          <span class="genre-tag">社交</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -1723,7 +1729,7 @@ All your data is encrypted and stored securely on your device. Sync across devic
           <span class="badge badge-discount">限时降价</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Music</span>
+          <span class="genre-tag">音乐</span>
           <span class="source-tag" style="background:#6366f118;color:#6366f1;border:1px solid #6366f135">排行榜</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -1775,7 +1781,7 @@ Oscidia includes SINE, SAW, SQUARE, TRIANGLE, SUPERSAW, SUPERSQUARE, WAVET">Osci
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Utilities</span>
+          <span class="genre-tag">工具</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">OODATA</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -1867,7 +1873,7 @@ Oscidia includes SINE, SAW, SQUARE, TRIANGLE, SUPERSAW, SUPERSQUARE, WAVET">Osci
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Photo & Video</span>
+          <span class="genre-tag">摄影与录像</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">OODATA</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -1928,7 +1934,7 @@ Privacy Blur is the ultimate app for automatically blurring faces, documents, ca
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Finance</span>
+          <span class="genre-tag">财务</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">OODATA</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -1987,7 +1993,7 @@ Start making smarter financial decisions tod...</p>
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Graphics & Design</span>
+          <span class="genre-tag">图形和设计</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">OODATA</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -2043,7 +2049,7 @@ Whether you're looking to hide personal details, create a dreamy effect or just 
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Photo & Video</span>
+          <span class="genre-tag">摄影与录像</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">OODATA</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -2101,7 +2107,7 @@ Once casting starts, the receiving device plays ...</p>
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Photo & Video</span>
+          <span class="genre-tag">摄影与录像</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">OODATA</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -2201,7 +2207,7 @@ Once casting starts, the receiving device plays ...</p>
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Utilities</span>
+          <span class="genre-tag">工具</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">OODATA</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -2276,7 +2282,7 @@ Turn your entire screen into a ...</p>
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Utilities</span>
+          <span class="genre-tag">工具</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">OODATA</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -2354,7 +2360,7 @@ Turn your entire screen into a ...</p>
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Utilities</span>
+          <span class="genre-tag">工具</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">OODATA</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -2428,7 +2434,7 @@ Turn your entire screen into a ...</p>
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Photo & Video</span>
+          <span class="genre-tag">摄影与录像</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">OODATA</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -2496,7 +2502,7 @@ Ca...</p>
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Navigation</span>
+          <span class="genre-tag">导航</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">OODATA</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
@@ -2578,7 +2584,7 @@ Ca...</p>
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Graphics & Design</span>
+          <span class="genre-tag">图形和设计</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">GoFans</span>
         </div>
         <div class="devices">💻Mac</div>
@@ -2640,7 +2646,7 @@ In the early 1980s, Bill Atkinson—creator of HyperCard, QuickDraw, an...</p>
           <span class="badge badge-free">完全免费</span>
         </div>
         <div class="app-meta">
-          <span class="genre-tag">Utilities</span>
+          <span class="genre-tag">工具</span>
           <span class="source-tag" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b35">OODATA</span>
         </div>
         <div class="devices">📱iPhone · 📟iPad · 🎵iPod touch</div>
