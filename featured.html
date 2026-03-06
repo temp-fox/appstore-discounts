@@ -42,7 +42,7 @@
       display: inline-block; background: rgba(255,255,255,.18); border-radius: 20px;
       padding: 3px 14px; font-size: 13px; margin-bottom: 12px; border: 1px solid rgba(255,255,255,.25);
     }
-    .h-title { font-size: clamp(22px, 5vw, 38px); font-weight: 700; letter-spacing: -.5px; margin-bottom: 6px; }
+    .h-title { font-size: clamp(22px, 5vw, 38px); font-weight: 700; letter-spacing: -.5px; margin-bottom: 6px; word-break: break-word; overflow-wrap: break-word; }
     .h-sub { font-size: 14px; opacity: .82; margin-bottom: 22px; }
     .h-stats {
       display: inline-flex; gap: 0; background: rgba(255,255,255,.14);
@@ -172,16 +172,15 @@
       display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
     }
 
-    /* ── 截图（纵向长方形，更大） ── */
-    .screenshots { display: flex; gap: 8px; height: 210px; }
+    /* ── 截图（纵向长方形） ── */
+    .screenshots { display: flex; gap: 8px; height: 160px; }
     .screenshot {
       flex: 1; min-width: 0;
-      height: 210px; object-fit: cover; border-radius: 10px;
+      height: 160px; object-fit: cover; border-radius: 10px;
       border: 1px solid var(--border);
     }
-    .screenshot.shot-fallback { object-fit: contain; background: #f8f8f8; padding: 4px; }
     .shot-placeholder {
-      flex: 1; height: 210px; border-radius: 10px;
+      flex: 1; height: 160px; border-radius: 10px;
       background: linear-gradient(135deg, #f0f4ff, #e8edf8);
       border: 1px solid var(--border);
       display: flex; align-items: center; justify-content: center; overflow: hidden;
@@ -190,39 +189,57 @@
     .shot-placeholder img { width: 72px; height: 72px; border-radius: 14px; object-fit: cover; }
     .placeholder-letter { font-size: 32px; font-weight: 700; color: #c7c7cc; }
 
-    /* ── 二维码区域 ── */
-    .qr-section { display: flex; flex-direction: column; align-items: center; gap: 8px; }
-    .qr-tip {
-      font-size: 12px; color: var(--sub); text-align: center;
-      background: #f8f8fa; border-radius: 8px; padding: 5px 12px;
-      border: 1px dashed var(--border);
-    }
-    .qr-wrap {
-      position: relative;
-      width: 148px; height: 148px; flex-shrink: 0;
-    }
-    .qr-canvas {
-      width: 148px; height: 148px;
-      border-radius: 14px; overflow: hidden;
+    /* ── 二维码缩略图（footer 内） ── */
+    .qr-thumb {
+      width: 40px; height: 40px; border-radius: 8px; overflow: hidden;
+      cursor: pointer; flex-shrink: 0; position: relative;
       border: 1px solid var(--border); background: #fff;
     }
-    .qr-canvas canvas, .qr-canvas img {
-      display: block !important; width: 148px !important; height: 148px !important;
+    .qr-thumb:hover { border-color: var(--primary); box-shadow: 0 0 0 2px rgba(0,122,255,.15); }
+    .qr-thumb .qr-canvas {
+      width: 160px; height: 160px;
+      transform: scale(0.25); transform-origin: top left;
     }
-    .qr-icon {
+    .qr-thumb .qr-canvas canvas, .qr-thumb .qr-canvas img {
+      display: block !important; width: 160px !important; height: 160px !important;
+    }
+
+    /* ── 二维码弹出蒙层 ── */
+    .qr-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,.5);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 1000; animation: fadeIn .15s;
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .qr-overlay-content {
+      background: #fff; border-radius: 16px; padding: 20px;
+      text-align: center; position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,.3);
+    }
+    .qr-overlay-content .qr-canvas {
+      width: 160px; height: 160px; border-radius: 12px; overflow: hidden;
+      border: 1px solid var(--border); margin: 0 auto;
+    }
+    .qr-overlay-content .qr-canvas canvas,
+    .qr-overlay-content .qr-canvas img {
+      display: block !important; width: 160px !important; height: 160px !important;
+    }
+    .qr-overlay-icon {
       position: absolute; top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); margin-top: -10px;
       width: 36px; height: 36px; border-radius: 9px;
       border: 3px solid #fff; background: #fff;
       box-shadow: 0 1px 5px rgba(0,0,0,.22);
       object-fit: cover; pointer-events: none;
     }
+    .qr-overlay-tip { font-size: 12px; color: var(--sub); margin-top: 10px; }
 
     /* footer */
     .card-footer {
       display: flex; justify-content: space-between; align-items: center;
       padding-top: 10px; border-top: 1px solid var(--border);
     }
+    .footer-actions { display: flex; align-items: center; gap: 10px; }
     .update-time { font-size: 12px; color: var(--sub); }
     .store-link { font-size: 13px; color: var(--primary); text-decoration: none; font-weight: 500; }
     .store-link:hover { text-decoration: underline; }
@@ -282,18 +299,24 @@
 
     /* responsive */
     @media (max-width: 768px) {
-      .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .stat { padding: 10px 14px; }
+      .grid { grid-template-columns: 1fr; gap: 12px; }
+      .header { padding: 32px 16px 48px; }
+      .stat { padding: 8px 12px; }
+      .stat-num { font-size: 22px; }
+      .stat-label { font-size: 10px; }
+      .filter-bar { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .filter-bar::-webkit-scrollbar { display: none; }
+      .card { padding: 12px; }
     }
     @media (max-width: 500px) {
-      .header { padding: 36px 14px 52px; }
-      .stat { padding: 10px 12px; }
-      .stat-num { font-size: 22px; }
-      .grid { grid-template-columns: 1fr; gap: 12px; }
-      .content { padding: 0 10px 36px; }
-      .screenshot { height: 180px; }
-      .screenshots { height: 180px; }
-      .shot-placeholder { height: 180px; }
+      .header { padding: 28px 12px 40px; }
+      .stat { padding: 6px 10px; }
+      .stat-num { font-size: 20px; }
+      .content { padding: 0 8px 36px; }
+      .screenshot { height: 120px; }
+      .screenshots { height: 120px; }
+      .screenshots .screenshot:nth-child(2) { display: none; }
+      .shot-placeholder { height: 120px; }
     }
     .header { background: linear-gradient(135deg, #f59e0b 0%, #d97706 55%, #b45309 100%); }
   </style>
@@ -362,23 +385,18 @@
 
 【闪电发送】确保每一条信息极速发出，对方可以给你回信息，回复内容将在本软件中给你展示。</p>
 
-    <div class="screenshots"><div class="shot-placeholder"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/c5/af/3bc5af4c-45dd-0ca8-4f7f-7a3317d1d909/AppIcon-d283aca0-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" alt="传信精灵" loading="lazy"></div>
-      <div class="shot-placeholder muted"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/c5/af/3bc5af4c-45dd-0ca8-4f7f-7a3317d1d909/AppIcon-d283aca0-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" alt="传信精灵" loading="lazy"></div></div>
-
-    <div class="qr-section">
-      <p class="qr-tip">长按二维码识别下载</p>
-      <div class="qr-wrap" data-url="https://apps.apple.com/cn/app/%E4%BC%A0%E4%BF%A1%E7%B2%BE%E7%81%B5/id6749170366">
-        <div class="qr-canvas"></div>
-        <img class="qr-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/c5/af/3bc5af4c-45dd-0ca8-4f7f-7a3317d1d909/AppIcon-d283aca0-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/100x100bb.jpg" alt="" loading="lazy"
-          onerror="this.style.display='none'">
-      </div>
-    </div>
+    
 
     <div class="card-footer">
       <span class="update-time">🕐 03/07 00:31</span>
-      <a href="https://apps.apple.com/cn/app/%E4%BC%A0%E4%BF%A1%E7%B2%BE%E7%81%B5/id6749170366" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
-        在 App Store 查看 →
-      </a>
+      <div class="footer-actions">
+        <a href="https://apps.apple.com/cn/app/%E4%BC%A0%E4%BF%A1%E7%B2%BE%E7%81%B5/id6749170366" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
+          在 App Store 查看 →
+        </a>
+        <div class="qr-thumb" data-url="https://apps.apple.com/cn/app/%E4%BC%A0%E4%BF%A1%E7%B2%BE%E7%81%B5/id6749170366" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/c5/af/3bc5af4c-45dd-0ca8-4f7f-7a3317d1d909/AppIcon-d283aca0-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/100x100bb.jpg" onclick="event.stopPropagation();showQR(this)">
+          <div class="qr-canvas"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -414,23 +432,18 @@
 每日自动记录和分析您的HRV状态、运动记录和睡眠状态，并通过图表和分析更直观地将数据呈现给您">Cafe Yourself - 照顾好自己
 每日自动记录和分析您的HRV状态、运动记录和睡眠状态，并通过图表和分析更直观地将数据呈现给您</p>
 
-    <div class="screenshots"><div class="shot-placeholder"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7c/04/e6/7c04e6b8-2467-ae85-f1a4-6b2a13c5e1b8/AppIcon-1x_U007ephone-0-1-85-220-0.png/512x512bb.jpg" alt="Care Yourself" loading="lazy"></div>
-      <div class="shot-placeholder muted"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7c/04/e6/7c04e6b8-2467-ae85-f1a4-6b2a13c5e1b8/AppIcon-1x_U007ephone-0-1-85-220-0.png/512x512bb.jpg" alt="Care Yourself" loading="lazy"></div></div>
-
-    <div class="qr-section">
-      <p class="qr-tip">长按二维码识别下载</p>
-      <div class="qr-wrap" data-url="https://apps.apple.com/cn/app/care-yourself/id6756531304">
-        <div class="qr-canvas"></div>
-        <img class="qr-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7c/04/e6/7c04e6b8-2467-ae85-f1a4-6b2a13c5e1b8/AppIcon-1x_U007ephone-0-1-85-220-0.png/100x100bb.jpg" alt="" loading="lazy"
-          onerror="this.style.display='none'">
-      </div>
-    </div>
+    
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
-      <a href="https://apps.apple.com/cn/app/care-yourself/id6756531304" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
-        在 App Store 查看 →
-      </a>
+      <div class="footer-actions">
+        <a href="https://apps.apple.com/cn/app/care-yourself/id6756531304" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
+          在 App Store 查看 →
+        </a>
+        <div class="qr-thumb" data-url="https://apps.apple.com/cn/app/care-yourself/id6756531304" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7c/04/e6/7c04e6b8-2467-ae85-f1a4-6b2a13c5e1b8/AppIcon-1x_U007ephone-0-1-85-220-0.png/100x100bb.jpg" onclick="event.stopPropagation();showQR(this)">
+          <div class="qr-canvas"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -491,23 +504,19 @@ Weather Now 是一款适用于 iPhone、iPad 和 Apple Watch 的完整天气应�
 	- 您当前所在...</p>
 
     <div class="screenshots"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/11/99/341199e5-4237-a370-d470-be7e016019e0/b7ca8dd0-34b1-425d-88a3-1fa76dc05a84_iPad_-_01.png/552x414bb.png" alt="截图" loading="lazy"
-            onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bf/8e/65/bf8e6508-cbb5-5c05-92df-8349094c8023/AppIcon-0-0-1x_U007epad-0-1-0-P3-85-220.png/512x512bb.jpg';this.classList.add('shot-fallback')"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ae/c5/6a/aec56a7e-078d-26f7-4d0d-85d80940bd01/5bf4cf15-d057-4b24-9fe0-cbec9f27b7aa_iPad_-_02.png/552x414bb.png" alt="截图" loading="lazy"
-            onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bf/8e/65/bf8e6508-cbb5-5c05-92df-8349094c8023/AppIcon-0-0-1x_U007epad-0-1-0-P3-85-220.png/512x512bb.jpg';this.classList.add('shot-fallback')"></div>
-
-    <div class="qr-section">
-      <p class="qr-tip">长按二维码识别下载</p>
-      <div class="qr-wrap" data-url="https://apps.apple.com/cn/app/weather-now-pro-%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5/id1422605014">
-        <div class="qr-canvas"></div>
-        <img class="qr-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bf/8e/65/bf8e6508-cbb5-5c05-92df-8349094c8023/AppIcon-0-0-1x_U007epad-0-1-0-P3-85-220.png/100x100bb.jpg" alt="" loading="lazy"
-          onerror="this.style.display='none'">
-      </div>
-    </div>
+            onerror="this.style.display='none';checkScreenshots(this.parentElement)"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ae/c5/6a/aec56a7e-078d-26f7-4d0d-85d80940bd01/5bf4cf15-d057-4b24-9fe0-cbec9f27b7aa_iPad_-_02.png/552x414bb.png" alt="截图" loading="lazy"
+            onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
-      <a href="https://apps.apple.com/cn/app/weather-now-pro-%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5/id1422605014" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
-        在 App Store 查看 →
-      </a>
+      <div class="footer-actions">
+        <a href="https://apps.apple.com/cn/app/weather-now-pro-%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5/id1422605014" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
+          在 App Store 查看 →
+        </a>
+        <div class="qr-thumb" data-url="https://apps.apple.com/cn/app/weather-now-pro-%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5/id1422605014" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bf/8e/65/bf8e6508-cbb5-5c05-92df-8349094c8023/AppIcon-0-0-1x_U007epad-0-1-0-P3-85-220.png/100x100bb.jpg" onclick="event.stopPropagation();showQR(this)">
+          <div class="qr-canvas"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -558,23 +567,18 @@ Peter Hess recommends the app in his book Sound Transformation – a special app
 
 The recordings were created together with O...</p>
 
-    <div class="screenshots"><div class="shot-placeholder"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/50/5f/29505f70-ec32-dc3a-250a-8dbb8d9f079c/icon-composer-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/512x512bb.jpg" alt="i-Qi clock & meditation timer" loading="lazy"></div>
-      <div class="shot-placeholder muted"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/50/5f/29505f70-ec32-dc3a-250a-8dbb8d9f079c/icon-composer-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/512x512bb.jpg" alt="i-Qi clock & meditation timer" loading="lazy"></div></div>
-
-    <div class="qr-section">
-      <p class="qr-tip">长按二维码识别下载</p>
-      <div class="qr-wrap" data-url="https://apps.apple.com/cn/app/i-qi-clock-meditation-timer/id413369004">
-        <div class="qr-canvas"></div>
-        <img class="qr-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/50/5f/29505f70-ec32-dc3a-250a-8dbb8d9f079c/icon-composer-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/100x100bb.jpg" alt="" loading="lazy"
-          onerror="this.style.display='none'">
-      </div>
-    </div>
+    
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
-      <a href="https://apps.apple.com/cn/app/i-qi-clock-meditation-timer/id413369004" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
-        在 App Store 查看 →
-      </a>
+      <div class="footer-actions">
+        <a href="https://apps.apple.com/cn/app/i-qi-clock-meditation-timer/id413369004" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
+          在 App Store 查看 →
+        </a>
+        <div class="qr-thumb" data-url="https://apps.apple.com/cn/app/i-qi-clock-meditation-timer/id413369004" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/50/5f/29505f70-ec32-dc3a-250a-8dbb8d9f079c/icon-composer-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/100x100bb.jpg" onclick="event.stopPropagation();showQR(this)">
+          <div class="qr-canvas"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -622,23 +626,18 @@ Tired of forgetting where you left your car? Or getting parking fines because yo
 
 Whether you're in a crowded city, a huge parking lot, or an unfamili...</p>
 
-    <div class="screenshots"><div class="shot-placeholder"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/29/f1/8c/29f18cb6-d43b-e07a-7d03-6efe020a875e/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.jpg" alt="Find My Car - Car Parking" loading="lazy"></div>
-      <div class="shot-placeholder muted"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/29/f1/8c/29f18cb6-d43b-e07a-7d03-6efe020a875e/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.jpg" alt="Find My Car - Car Parking" loading="lazy"></div></div>
-
-    <div class="qr-section">
-      <p class="qr-tip">长按二维码识别下载</p>
-      <div class="qr-wrap" data-url="https://apps.apple.com/cn/app/find-my-car-car-parking/id815542507">
-        <div class="qr-canvas"></div>
-        <img class="qr-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/29/f1/8c/29f18cb6-d43b-e07a-7d03-6efe020a875e/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/100x100bb.jpg" alt="" loading="lazy"
-          onerror="this.style.display='none'">
-      </div>
-    </div>
+    
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
-      <a href="https://apps.apple.com/cn/app/find-my-car-car-parking/id815542507" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
-        在 App Store 查看 →
-      </a>
+      <div class="footer-actions">
+        <a href="https://apps.apple.com/cn/app/find-my-car-car-parking/id815542507" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
+          在 App Store 查看 →
+        </a>
+        <div class="qr-thumb" data-url="https://apps.apple.com/cn/app/find-my-car-car-parking/id815542507" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/29/f1/8c/29f18cb6-d43b-e07a-7d03-6efe020a875e/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/100x100bb.jpg" onclick="event.stopPropagation();showQR(this)">
+          <div class="qr-canvas"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -678,23 +677,18 @@ Whether you're in a crowded city, a huge parking lot, or an unfamili...</p>
 
 联系我们：kfzcount@gmail.com</p>
 
-    <div class="screenshots"><div class="shot-placeholder"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/f1/a4/47f1a44e-0a26-a125-9d0f-80188a658101/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg" alt="顶流" loading="lazy"></div>
-      <div class="shot-placeholder muted"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/f1/a4/47f1a44e-0a26-a125-9d0f-80188a658101/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg" alt="顶流" loading="lazy"></div></div>
-
-    <div class="qr-section">
-      <p class="qr-tip">长按二维码识别下载</p>
-      <div class="qr-wrap" data-url="https://apps.apple.com/cn/app/%E9%A1%B6%E6%B5%81/id6472033369">
-        <div class="qr-canvas"></div>
-        <img class="qr-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/f1/a4/47f1a44e-0a26-a125-9d0f-80188a658101/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.jpg" alt="" loading="lazy"
-          onerror="this.style.display='none'">
-      </div>
-    </div>
+    
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
-      <a href="https://apps.apple.com/cn/app/%E9%A1%B6%E6%B5%81/id6472033369" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
-        在 App Store 查看 →
-      </a>
+      <div class="footer-actions">
+        <a href="https://apps.apple.com/cn/app/%E9%A1%B6%E6%B5%81/id6472033369" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
+          在 App Store 查看 →
+        </a>
+        <div class="qr-thumb" data-url="https://apps.apple.com/cn/app/%E9%A1%B6%E6%B5%81/id6472033369" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/f1/a4/47f1a44e-0a26-a125-9d0f-80188a658101/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.jpg" onclick="event.stopPropagation();showQR(this)">
+          <div class="qr-canvas"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -759,23 +753,18 @@ Whether you're in a crowded city, a huge parking lot, or an unfamili...</p>
 
 - 多端同步： iCloud无缝同步，随时随地学习。</p>
 
-    <div class="screenshots"><div class="shot-placeholder"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/e6/50/1de65026-5ce4-321d-c4fb-92cae806e91d/AppIcon-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg" alt="语宙单词 - 四六级考研英语词汇学习" loading="lazy"></div>
-      <div class="shot-placeholder muted"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/e6/50/1de65026-5ce4-321d-c4fb-92cae806e91d/AppIcon-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg" alt="语宙单词 - 四六级考研英语词汇学习" loading="lazy"></div></div>
-
-    <div class="qr-section">
-      <p class="qr-tip">长按二维码识别下载</p>
-      <div class="qr-wrap" data-url="https://apps.apple.com/cn/app/%E8%AF%AD%E5%AE%99%E5%8D%95%E8%AF%8D-%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87%E5%AD%A6%E4%B9%A0/id6747289018">
-        <div class="qr-canvas"></div>
-        <img class="qr-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/e6/50/1de65026-5ce4-321d-c4fb-92cae806e91d/AppIcon-1x_U007epad-0-1-85-220-0.png/100x100bb.jpg" alt="" loading="lazy"
-          onerror="this.style.display='none'">
-      </div>
-    </div>
+    
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
-      <a href="https://apps.apple.com/cn/app/%E8%AF%AD%E5%AE%99%E5%8D%95%E8%AF%8D-%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87%E5%AD%A6%E4%B9%A0/id6747289018" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
-        在 App Store 查看 →
-      </a>
+      <div class="footer-actions">
+        <a href="https://apps.apple.com/cn/app/%E8%AF%AD%E5%AE%99%E5%8D%95%E8%AF%8D-%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87%E5%AD%A6%E4%B9%A0/id6747289018" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
+          在 App Store 查看 →
+        </a>
+        <div class="qr-thumb" data-url="https://apps.apple.com/cn/app/%E8%AF%AD%E5%AE%99%E5%8D%95%E8%AF%8D-%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87%E5%AD%A6%E4%B9%A0/id6747289018" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/e6/50/1de65026-5ce4-321d-c4fb-92cae806e91d/AppIcon-1x_U007epad-0-1-85-220-0.png/100x100bb.jpg" onclick="event.stopPropagation();showQR(this)">
+          <div class="qr-canvas"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -850,23 +839,19 @@ My Measures在全球拥有300多万用户，已成为房地产经纪人的行业
 - 使用PDF，图片或项目格式进行...</p>
 
     <div class="screenshots"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource113/v4/3c/87/47/3c874734-d9b7-9a45-7bd3-7b281a4978be/9d297a5d-4ecd-430e-8614-bede8ac9ec66_MM.iPhone.1.png/392x696bb.png" alt="截图" loading="lazy"
-            onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/56/a8/57/56a85786-3879-03ca-b322-c1e21919ffa1/appIcon-blue-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg';this.classList.add('shot-fallback')"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource113/v4/08/a5/6a/08a56ae1-453b-8d23-0d97-31cc69e2d596/cb6c5fde-63db-41bc-ac84-53541773a067_MM.iPhone.2.png/392x696bb.png" alt="截图" loading="lazy"
-            onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/56/a8/57/56a85786-3879-03ca-b322-c1e21919ffa1/appIcon-blue-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg';this.classList.add('shot-fallback')"></div>
-
-    <div class="qr-section">
-      <p class="qr-tip">长按二维码识别下载</p>
-      <div class="qr-wrap" data-url="https://apps.apple.com/cn/app/%E6%B5%8B%E9%87%8F%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BC%8F-my-measures-pro/id325962257">
-        <div class="qr-canvas"></div>
-        <img class="qr-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/56/a8/57/56a85786-3879-03ca-b322-c1e21919ffa1/appIcon-blue-0-0-1x_U007epad-0-1-sRGB-85-220.png/100x100bb.jpg" alt="" loading="lazy"
-          onerror="this.style.display='none'">
-      </div>
-    </div>
+            onerror="this.style.display='none';checkScreenshots(this.parentElement)"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource113/v4/08/a5/6a/08a56ae1-453b-8d23-0d97-31cc69e2d596/cb6c5fde-63db-41bc-ac84-53541773a067_MM.iPhone.2.png/392x696bb.png" alt="截图" loading="lazy"
+            onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/07 00:31</span>
-      <a href="https://apps.apple.com/cn/app/%E6%B5%8B%E9%87%8F%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BC%8F-my-measures-pro/id325962257" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
-        在 App Store 查看 →
-      </a>
+      <div class="footer-actions">
+        <a href="https://apps.apple.com/cn/app/%E6%B5%8B%E9%87%8F%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BC%8F-my-measures-pro/id325962257" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
+          在 App Store 查看 →
+        </a>
+        <div class="qr-thumb" data-url="https://apps.apple.com/cn/app/%E6%B5%8B%E9%87%8F%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BC%8F-my-measures-pro/id325962257" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/56/a8/57/56a85786-3879-03ca-b322-c1e21919ffa1/appIcon-blue-0-0-1x_U007epad-0-1-sRGB-85-220.png/100x100bb.jpg" onclick="event.stopPropagation();showQR(this)">
+          <div class="qr-canvas"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -990,23 +975,19 @@ My Measures在全球拥有300多万用户，已成为房地产经纪人的行业
 “可以收集200多个5个阵营的英雄，各阵营所属的英雄们都拥有个性丰富...</p>
 
     <div class="screenshots"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f7/aa/14/f7aa140f-990d-db96-eff4-42a65de320dc/5ca07cd9-74fb-47ee-bbdc-6938092ca8e4__U4e94_U56fe_2208x1242_2.jpg/406x228bb.jpg" alt="截图" loading="lazy"
-            onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d3/c7/2b/d3c72b41-18e7-9bea-f9a8-ed0ced57b2f1/AppIcon-1x_U007emarketing-0-10-0-85-220-0.png/512x512bb.jpg';this.classList.add('shot-fallback')"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/88/75/318875f6-0eb8-e093-2066-dc952d3a7716/d115617a-c33f-4fdf-ae91-226a221910b8__U4e94_U56fe_2208x1242_3.jpg/406x228bb.jpg" alt="截图" loading="lazy"
-            onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d3/c7/2b/d3c72b41-18e7-9bea-f9a8-ed0ced57b2f1/AppIcon-1x_U007emarketing-0-10-0-85-220-0.png/512x512bb.jpg';this.classList.add('shot-fallback')"></div>
-
-    <div class="qr-section">
-      <p class="qr-tip">长按二维码识别下载</p>
-      <div class="qr-wrap" data-url="https://apps.apple.com/cn/app/%E5%8D%A1%E6%8B%89%E5%B8%8C%E5%B0%94%E6%88%98%E8%AE%B0/id1375240620">
-        <div class="qr-canvas"></div>
-        <img class="qr-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d3/c7/2b/d3c72b41-18e7-9bea-f9a8-ed0ced57b2f1/AppIcon-1x_U007emarketing-0-10-0-85-220-0.png/100x100bb.jpg" alt="" loading="lazy"
-          onerror="this.style.display='none'">
-      </div>
-    </div>
+            onerror="this.style.display='none';checkScreenshots(this.parentElement)"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/88/75/318875f6-0eb8-e093-2066-dc952d3a7716/d115617a-c33f-4fdf-ae91-226a221910b8__U4e94_U56fe_2208x1242_3.jpg/406x228bb.jpg" alt="截图" loading="lazy"
+            onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
-      <a href="https://apps.apple.com/cn/app/%E5%8D%A1%E6%8B%89%E5%B8%8C%E5%B0%94%E6%88%98%E8%AE%B0/id1375240620" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
-        在 App Store 查看 →
-      </a>
+      <div class="footer-actions">
+        <a href="https://apps.apple.com/cn/app/%E5%8D%A1%E6%8B%89%E5%B8%8C%E5%B0%94%E6%88%98%E8%AE%B0/id1375240620" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
+          在 App Store 查看 →
+        </a>
+        <div class="qr-thumb" data-url="https://apps.apple.com/cn/app/%E5%8D%A1%E6%8B%89%E5%B8%8C%E5%B0%94%E6%88%98%E8%AE%B0/id1375240620" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d3/c7/2b/d3c72b41-18e7-9bea-f9a8-ed0ced57b2f1/AppIcon-1x_U007emarketing-0-10-0-85-220-0.png/100x100bb.jpg" onclick="event.stopPropagation();showQR(this)">
+          <div class="qr-canvas"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1049,31 +1030,24 @@ Multiple variations: create several versions quickly and pick the best
 
 Bu">Pocket Posters is an AI video maker and AI video editor built for creators who want fast, cinematic results. Type a prompt and generate short-form videos, looping clips, and poster-style visuals for TikTok, Instagram Reels, and YouTube Shorts—then export in creator-ready formats and preview your cre...</p>
 
-    <div class="screenshots"><div class="shot-placeholder"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/41/ac/1a41ac96-a01f-9b71-35f5-e0b30e6ad935/AppIcon-0-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg" alt="Pocket Posters: AI Video AR" loading="lazy"></div>
-      <div class="shot-placeholder muted"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/41/ac/1a41ac96-a01f-9b71-35f5-e0b30e6ad935/AppIcon-0-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg" alt="Pocket Posters: AI Video AR" loading="lazy"></div></div>
-
-    <div class="qr-section">
-      <p class="qr-tip">长按二维码识别下载</p>
-      <div class="qr-wrap" data-url="https://apps.apple.com/cn/app/pocket-posters-ai-video-ar/id6748644117">
-        <div class="qr-canvas"></div>
-        <img class="qr-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/41/ac/1a41ac96-a01f-9b71-35f5-e0b30e6ad935/AppIcon-0-1x_U007epad-0-1-85-220-0.png/100x100bb.jpg" alt="" loading="lazy"
-          onerror="this.style.display='none'">
-      </div>
-    </div>
+    
 
     <div class="card-footer">
       <span class="update-time">🕐 03/07 00:31</span>
-      <a href="https://apps.apple.com/cn/app/pocket-posters-ai-video-ar/id6748644117" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
-        在 App Store 查看 →
-      </a>
+      <div class="footer-actions">
+        <a href="https://apps.apple.com/cn/app/pocket-posters-ai-video-ar/id6748644117" target="_blank" rel="noopener" class="store-link" onclick="event.stopPropagation()">
+          在 App Store 查看 →
+        </a>
+        <div class="qr-thumb" data-url="https://apps.apple.com/cn/app/pocket-posters-ai-video-ar/id6748644117" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/41/ac/1a41ac96-a01f-9b71-35f5-e0b30e6ad935/AppIcon-0-1x_U007epad-0-1-85-220-0.png/100x100bb.jpg" onclick="event.stopPropagation();showQR(this)">
+          <div class="qr-canvas"></div>
+        </div>
+      </div>
     </div>
   </div>
   </div>
 </div>
 <footer class="page-footer">
-  数据来源：App Store 官方 &nbsp;·&nbsp;
-  由 <a href="https://github.com/appstore-discounts/appstore-discounts" target="_blank">appstore-discounts</a> 提供 &nbsp;·&nbsp;
-  每 2 小时自动更新
+  数据来源：App Store 官方 · 每 2 小时自动更新
 </footer>
 <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="返回顶部">↑</button>
 <script>
@@ -1089,14 +1063,14 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
 
   // 初始化二维码（批量渲染，每个间隔50ms，避免主线程卡顿）
   document.addEventListener('DOMContentLoaded', function() {
-    var wraps = Array.from(document.querySelectorAll('.qr-wrap[data-url]'));
+    var wraps = Array.from(document.querySelectorAll('.qr-thumb[data-url]'));
     wraps.forEach(function(wrap, idx) {
       setTimeout(function() {
         var url = wrap.getAttribute('data-url');
         var canvas = wrap.querySelector('.qr-canvas');
         if (!url || !canvas) return;
         new QRCode(canvas, {
-          text: url, width: 148, height: 148,
+          text: url, width: 160, height: 160,
           colorDark: '#1c1c1e', colorLight: '#ffffff',
           correctLevel: QRCode.CorrectLevel.M
         });
@@ -1159,6 +1133,49 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
         }
       }));
     }
+  }
+
+  // ── 截图加载失败处理 ──
+  function checkScreenshots(container) {
+    if (!container) return;
+    var imgs = container.querySelectorAll('.screenshot');
+    var allHidden = true;
+    imgs.forEach(function(img) {
+      if (img.style.display !== 'none') allHidden = false;
+    });
+    if (allHidden) container.style.display = 'none';
+  }
+
+  // ── 二维码弹出蒙层 ──
+  function showQR(el) {
+    var existing = document.querySelector('.qr-overlay');
+    if (existing) existing.parentNode.removeChild(existing);
+    var overlay = document.createElement('div');
+    overlay.className = 'qr-overlay';
+    overlay.onclick = function() { overlay.parentNode.removeChild(overlay); };
+    var content = document.createElement('div');
+    content.className = 'qr-overlay-content';
+    content.onclick = function(e) { e.stopPropagation(); };
+    var qrCanvas = el.querySelector('.qr-canvas');
+    if (qrCanvas) {
+      var clone = qrCanvas.cloneNode(true);
+      clone.style.transform = 'none';
+      content.appendChild(clone);
+    }
+    var iconUrl = el.getAttribute('data-icon');
+    if (iconUrl) {
+      var icon = document.createElement('img');
+      icon.src = iconUrl;
+      icon.className = 'qr-overlay-icon';
+      icon.onerror = function() { this.style.display = 'none'; };
+      content.appendChild(icon);
+    }
+    var tip = document.createElement('p');
+    tip.className = 'qr-overlay-tip';
+    tip.textContent = '长按二维码识别下载';
+    content.appendChild(tip);
+    overlay.appendChild(content);
+    document.body.appendChild(overlay);
   }
 
   // ── 复制公众号文案 ──
@@ -1339,6 +1356,12 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
     h += '<p style="font-size:13px;opacity:0.85;margin:0;">应用随时可能恢复原价，建议尽快下载</p>';
     h += '</div>';
 
+    // Follow CTA
+    h += '<div style="background:linear-gradient(135deg,#eff6ff,#dbeafe);border:1px solid #93c5fd;border-radius:12px;padding:14px 16px;margin:16px 16px 0;text-align:center;line-height:1.7;">';
+    h += '<div style="font-size:15px;font-weight:700;color:#1d4ed8;margin-bottom:4px;">⭐ 点击关注，加星标</div>';
+    h += '<div style="font-size:13px;color:#3b82f6;">第一时间收到推送，不会错过每天的限免应用</div>';
+    h += '</div>';
+
     // Intro
     h += '<div style="' + introStyle + '">';
     h += '📌 以下应用正在<b>限时免费</b>或<b>限时降价</b>，App Store 随时可能恢复原价。看到心仪的应用，建议立即下载，免费入库后即使恢复付费也可永久使用。';
@@ -1351,7 +1374,7 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
 
     // Footer
     h += '<div style="text-align:center;padding:20px 16px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb;margin-top:8px;">';
-    h += '数据来源：App Store 官方 · 由 appstore-discounts 提供';
+    h += '数据来源：App Store 官方';
     h += '</div>';
 
     h += '</div>';
@@ -1359,34 +1382,36 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
   }
 
   function buildCardHTML(app, rank) {
-    var cardStyle = 'background:#ffffff;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.08);padding:18px;margin:16px;';
+    var cardStyle = 'background:#ffffff;border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,0.10),0 1px 4px rgba(0,0,0,0.06);padding:18px;margin:16px;';
 
     var h = '<div style="' + cardStyle + '">';
 
     // Header: icon + info
-    h += '<div style="display:flex;gap:12px;align-items:flex-start;">';
+    h += '<div style="display:flex;gap:14px;align-items:flex-start;">';
     // Icon
     h += '<img src="' + app.iconHD + '" style="width:60px;height:60px;border-radius:14px;box-shadow:0 2px 8px rgba(0,0,0,0.12);flex-shrink:0;" />';
 
     // Info
     h += '<div style="flex:1;min-width:0;">';
-    // Name + badge
-    h += '<div style="display:flex;align-items:flex-start;gap:6px;margin-bottom:4px;">';
-    h += '<span style="font-size:16px;font-weight:700;line-height:1.3;">' + app.name + '</span>';
-
+    // Name
+    h += '<div style="font-size:16px;font-weight:700;line-height:1.4;margin-bottom:6px;">' + app.name + '</div>';
+    // Badge + genre
     var badgeBg = '#dcfce7'; var badgeColor = '#15803d';
     if (app.type === 'iap') { badgeBg = '#fef9c3'; badgeColor = '#92400e'; }
     else if (app.type === 'discount') { badgeBg = '#fee2e2'; badgeColor = '#b91c1c'; }
-    h += '<span style="flex-shrink:0;font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;white-space:nowrap;background:' + badgeBg + ';color:' + badgeColor + ';">' + app.badgeText + '</span>';
+    h += '<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:4px;">';
+    h += '<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;white-space:nowrap;background:' + badgeBg + ';color:' + badgeColor + ';">' + app.badgeText + '</span>';
+    if (app.genre) {
+      h += '<span style="font-size:11px;padding:2px 8px;border-radius:8px;background:#f2f2f7;color:#6c6c70;border:1px solid #e5e5ea;">' + app.genre + '</span>';
+    }
     h += '</div>';
-
-    // Meta: genre + devices + artist
-    var metaParts = [];
-    if (app.genre) metaParts.push(app.genre);
-    if (app.devices) metaParts.push(app.devices);
-    if (app.artist) metaParts.push(app.artist);
-    if (metaParts.length) {
-      h += '<div style="font-size:12px;color:#6c6c70;line-height:1.5;">' + metaParts.join(' · ') + '</div>';
+    // Devices
+    if (app.devices) {
+      h += '<div style="font-size:12px;color:#8e8e93;line-height:1.4;margin-bottom:2px;">' + app.devices + '</div>';
+    }
+    // Artist
+    if (app.artist) {
+      h += '<div style="font-size:12px;color:#8e8e93;line-height:1.4;">' + app.artist + '</div>';
     }
     h += '</div>';
     h += '</div>';
@@ -1425,11 +1450,15 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
       h += '<p style="font-size:13px;color:#6c6c70;line-height:1.65;margin:12px 0 0 0;">' + app.desc + '</p>';
     }
 
-    // QR code + tip
+    // App icon + QR code side by side
     var qrUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(app.url);
-    h += '<div style="text-align:center;margin-top:14px;">';
-    h += '<p style="font-size:12px;color:#9ca3af;margin:0 0 8px 0;">👆 长按识别二维码下载</p>';
-    h += '<img src="' + qrUrl + '" style="width:120px;height:120px;border-radius:8px;border:1px solid #e5e7eb;" />';
+    h += '<div style="display:flex;align-items:center;gap:14px;margin-top:14px;padding:12px;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;">';
+    h += '<img src="' + app.iconHD + '" style="width:80px;height:80px;border-radius:18px;box-shadow:0 2px 8px rgba(0,0,0,0.10);flex-shrink:0;" />';
+    h += '<div style="flex:1;min-width:0;">';
+    h += '<div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:4px;">' + app.name + '</div>';
+    h += '<div style="font-size:11px;color:#9ca3af;">长按识别二维码下载</div>';
+    h += '</div>';
+    h += '<img src="' + qrUrl + '" style="width:80px;height:80px;border-radius:8px;border:1px solid #e5e7eb;flex-shrink:0;" />';
     h += '</div>';
 
     h += '</div>';
