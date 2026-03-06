@@ -183,7 +183,26 @@
 
     /* Mac screenshot landscape ratio */
     .screenshots-mac .screenshot { aspect-ratio: 16/10; max-height: none; }
-    .placeholder-letter { font-size: 32px; font-weight: 700; color: #c7c7cc; }
+
+    /* No-screenshot fallback: centered large icon */
+    .screenshots-icon-fallback { justify-content: center; }
+    .shot-icon {
+      flex: none !important; width: 100px !important; height: 100px !important;
+      aspect-ratio: 1 !important; max-height: none !important;
+      border-radius: 22px !important; object-fit: cover;
+    }
+
+    /* ── 移动端二维码（截图下方） ── */
+    .qr-below { display: none; text-align: center; }
+    .qr-below .qr-canvas {
+      width: 120px; height: 120px; margin: 0 auto;
+      border-radius: 12px; overflow: hidden;
+      border: 1px solid var(--border); background: #fff;
+    }
+    .qr-below .qr-canvas canvas, .qr-below .qr-canvas img {
+      display: block !important; width: 120px !important; height: 120px !important;
+    }
+    .qr-below-tip { font-size: 11px; color: var(--sub); margin-top: 6px; }
 
     /* ── 二维码缩略图（footer 内） ── */
     .qr-thumb {
@@ -299,6 +318,8 @@
       .filter-bar { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; }
       .filter-bar::-webkit-scrollbar { display: none; }
       .card { padding: 12px; }
+      .qr-below { display: block; }
+      .qr-thumb { display: none; }
     }
     @media (max-width: 500px) {
       .header { padding: 28px 12px 40px; }
@@ -306,8 +327,6 @@
       .stat-num { font-size: 20px; }
       .content { padding: 0 8px 36px; }
       .screenshot { max-height: 200px; }
-      .screenshots .screenshot:nth-child(2) { display: none; }
-      .screenshots .screenshot:only-child { max-width: 60%; }
     }
     .header { background: linear-gradient(135deg, #007aff 0%, #5856d6 55%, #af52de 100%); }
   </style>
@@ -374,7 +393,12 @@ Key Features:
 
 •">Track and predict flyovers of the International Space Station, Tiangong (Chinese Space Station), and Hubble Space Telescope in stunning, real-time 3D. Immerse yourself in a photorealistic globe of Earth, showcasing orbital paths and live positions for the three largest objects in low Earth orbit—opt...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/e6/96/e9e69670-dc9f-149f-62b7-3a4791437721/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg" alt="ISS Real-Time Tracker 3D" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/iss-real-time-tracker-3d/id1079990061" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/e6/96/e9e69670-dc9f-149f-62b7-3a4791437721/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/07 02:34</span>
@@ -429,7 +453,12 @@ Mandelbrot Metal brings the infinite beauty of the Mandelbrot set to life on iPh
 
 Mandelbrot Metal brings the infinite beauty of the Mandelbrot set to life on iPhone & iPad, with ultra-deep zooming, vibrant color palettes, and the smooth performance of Apple’s Metal® engine. Explore, create, and capture breathtaking mathem...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/57/f1/bc/57f1bc13-03e1-c04b-fe1d-e812af0f0835/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Mandelbrot Metal" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/mandelbrot-metal/id6749807290" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/57/f1/bc/57f1bc13-03e1-c04b-fe1d-e812af0f0835/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/07 02:34</span>
@@ -494,6 +523,11 @@ What you c...</p>
     <div class="screenshots screenshots-mac"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4c/7a/7d/4c7a7d3c-04ec-3b59-e044-3080f04c637c/Screenshot_2025-12-26_at_13.51.40.png/800x500bb.jpg" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/04/f1/9f/04f19fef-98a1-1298-1e59-5a72476b472f/Screenshot_2026-03-01_at_20.04.05.png/800x500bb.jpg" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/scroll-the-volume/id6743161021?mt=12" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/23/66/2e/23662ed9-ab0d-544b-5c84-04cd9abe3c55/Icon-0-0-85-220-0-6-0-2x.png/100x100bb.png">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/07 02:34</span>
@@ -578,7 +612,12 @@ What you c...</p>
 
 分层效果和色...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/18/8b/c9188b88-840b-548e-165c-a93cacdcc951/LumaFusionComposerIcon-0-1x_U007epad-0-1-0-0-85-220-0.png/512x512bb.jpg" alt="LumaFusion" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/lumafusion/id1062022008" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/18/8b/c9188b88-840b-548e-165c-a93cacdcc951/LumaFusionComposerIcon-0-1x_U007epad-0-1-0-0-85-220-0.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/07 02:34</span>
@@ -633,7 +672,12 @@ What you c...</p>
 3、左右划动快门键：切换镜头
 4、双击屏幕：查看照片</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ca/50/55/ca50555a-04a8-9781-d0d6-716e7e569fcf/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.jpeg/512x512bb.jpg" alt="Lut相机" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/lut%E7%9B%B8%E6%9C%BA/id6751861389" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ca/50/55/ca50555a-04a8-9781-d0d6-716e7e569fcf/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.jpeg/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/07 02:34</span>
@@ -722,6 +766,11 @@ My Measures在全球拥有300多万用户，已成为房地产经纪人的行业
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource113/v4/08/a5/6a/08a56ae1-453b-8d23-0d97-31cc69e2d596/cb6c5fde-63db-41bc-ac84-53541773a067_MM.iPhone.2.png/392x696bb.png" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
 
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/%E6%B5%8B%E9%87%8F%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BC%8F-my-measures-pro/id325962257" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/56/a8/57/56a85786-3879-03ca-b322-c1e21919ffa1/appIcon-blue-0-0-1x_U007epad-0-1-sRGB-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
+
     <div class="card-footer">
       <span class="update-time">🕐 03/07 00:31</span>
       <div class="footer-actions">
@@ -777,7 +826,12 @@ My Measures在全球拥有300多万用户，已成为房地产经纪人的行业
 
 【闪电发送】确保每一条信息极速发出，对方可以给你回信息，回复内容将在本软件中给你展示。</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/c5/af/3bc5af4c-45dd-0ca8-4f7f-7a3317d1d909/AppIcon-d283aca0-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" alt="传信精灵" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/%E4%BC%A0%E4%BF%A1%E7%B2%BE%E7%81%B5/id6749170366" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/c5/af/3bc5af4c-45dd-0ca8-4f7f-7a3317d1d909/AppIcon-d283aca0-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/07 00:31</span>
@@ -831,7 +885,12 @@ Multiple variations: create several versions quickly and pick the best
 
 Bu">Pocket Posters is an AI video maker and AI video editor built for creators who want fast, cinematic results. Type a prompt and generate short-form videos, looping clips, and poster-style visuals for TikTok, Instagram Reels, and YouTube Shorts—then export in creator-ready formats and preview your cre...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/41/ac/1a41ac96-a01f-9b71-35f5-e0b30e6ad935/AppIcon-0-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg" alt="Pocket Posters: AI Video AR" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/pocket-posters-ai-video-ar/id6748644117" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/41/ac/1a41ac96-a01f-9b71-35f5-e0b30e6ad935/AppIcon-0-1x_U007epad-0-1-85-220-0.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/07 00:31</span>
@@ -934,7 +993,12 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
 
 • 喜欢...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0a/2d/69/0a2d6934-3f21-08d1-e72b-403194c174af/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="涨了么-向上复盘" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/%E6%B6%A8%E4%BA%86%E4%B9%88-%E5%90%91%E4%B8%8A%E5%A4%8D%E7%9B%98/id6757797244" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0a/2d/69/0a2d6934-3f21-08d1-e72b-403194c174af/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -981,7 +1045,12 @@ Bu">Pocket Posters is an AI video maker and AI video editor built for creators w
 每日自动记录和分析您的HRV状态、运动记录和睡眠状态，并通过图表和分析更直观地将数据呈现给您">Cafe Yourself - 照顾好自己
 每日自动记录和分析您的HRV状态、运动记录和睡眠状态，并通过图表和分析更直观地将数据呈现给您</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7c/04/e6/7c04e6b8-2467-ae85-f1a4-6b2a13c5e1b8/AppIcon-1x_U007ephone-0-1-85-220-0.png/512x512bb.jpg" alt="Care Yourself" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/care-yourself/id6756531304" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7c/04/e6/7c04e6b8-2467-ae85-f1a4-6b2a13c5e1b8/AppIcon-1x_U007ephone-0-1-85-220-0.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -1055,6 +1124,11 @@ Weather Now 是一款适用于 iPhone、iPad 和 Apple Watch 的完整天气应�
     <div class="screenshots"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/11/99/341199e5-4237-a370-d470-be7e016019e0/b7ca8dd0-34b1-425d-88a3-1fa76dc05a84_iPad_-_01.png/552x414bb.png" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ae/c5/6a/aec56a7e-078d-26f7-4d0d-85d80940bd01/5bf4cf15-d057-4b24-9fe0-cbec9f27b7aa_iPad_-_02.png/552x414bb.png" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/weather-now-pro-%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5/id1422605014" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bf/8e/65/bf8e6508-cbb5-5c05-92df-8349094c8023/AppIcon-0-0-1x_U007epad-0-1-0-P3-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -1192,6 +1266,11 @@ Weather Now 是一款适用于 iPhone、iPad 和 Apple Watch 的完整天气应�
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/88/75/318875f6-0eb8-e093-2066-dc952d3a7716/d115617a-c33f-4fdf-ae91-226a221910b8__U4e94_U56fe_2208x1242_3.jpg/406x228bb.jpg" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
 
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/%E5%8D%A1%E6%8B%89%E5%B8%8C%E5%B0%94%E6%88%98%E8%AE%B0/id1375240620" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d3/c7/2b/d3c72b41-18e7-9bea-f9a8-ed0ced57b2f1/AppIcon-1x_U007emarketing-0-10-0-85-220-0.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
+
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
       <div class="footer-actions">
@@ -1266,7 +1345,12 @@ Weather Now 是一款适用于 iPhone、iPad 和 Apple Watch 的完整天气应�
 
 - 多端同步： iCloud无缝同步，随时随地学习。</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/e6/50/1de65026-5ce4-321d-c4fb-92cae806e91d/AppIcon-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg" alt="语宙单词 - 四六级考研英语词汇学习" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/%E8%AF%AD%E5%AE%99%E5%8D%95%E8%AF%8D-%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87%E5%AD%A6%E4%B9%A0/id6747289018" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/e6/50/1de65026-5ce4-321d-c4fb-92cae806e91d/AppIcon-1x_U007epad-0-1-85-220-0.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -1359,7 +1443,12 @@ Weather Now 是一款适用于 iPhone、iPad 和 Apple Watch 的完整天气应�
 数据都在，但各讲各的。Pulseon 把它们串起来，告诉你两件事：
 今天为什么这样，接下来怎么安排...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1f/eb/f8/1febf8a1-87d3-bb43-3577-74ba0a6c5b7a/Pulseon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg" alt="Pulseon健康：压力检测、睡眠监测与运动健康手表软件心率" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/pulseon%E5%81%A5%E5%BA%B7-%E5%8E%8B%E5%8A%9B%E6%A3%80%E6%B5%8B-%E7%9D%A1%E7%9C%A0%E7%9B%91%E6%B5%8B%E4%B8%8E%E8%BF%90%E5%8A%A8%E5%81%A5%E5%BA%B7%E6%89%8B%E8%A1%A8%E8%BD%AF%E4%BB%B6%E5%BF%83%E7%8E%87/id6757773772" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1f/eb/f8/1febf8a1-87d3-bb43-3577-74ba0a6c5b7a/Pulseon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -1421,7 +1510,12 @@ Peter Hess recommends the app in his book Sound Transformation – a special app
 
 The recordings were created together with O...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/50/5f/29505f70-ec32-dc3a-250a-8dbb8d9f079c/icon-composer-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/512x512bb.jpg" alt="i-Qi clock & meditation timer" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/i-qi-clock-meditation-timer/id413369004" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/50/5f/29505f70-ec32-dc3a-250a-8dbb8d9f079c/icon-composer-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -1480,7 +1574,12 @@ Tired of forgetting where you left your car? Or getting parking fines because yo
 
 Whether you're in a crowded city, a huge parking lot, or an unfamili...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/29/f1/8c/29f18cb6-d43b-e07a-7d03-6efe020a875e/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.jpg" alt="Find My Car - Car Parking" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/find-my-car-car-parking/id815542507" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/29/f1/8c/29f18cb6-d43b-e07a-7d03-6efe020a875e/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -1535,7 +1634,12 @@ Scan physical cards with your camera to add them instantly. Payment system and b
 
 All your data is encrypted and stored securely on your device. Sync across devices with iCloud — your card data stays encrypted end-to-end and never leaves the Apple ecosystem....</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/80/9e/7a/809e7a37-0c0d-d4e2-dbc6-cfcc18cbc062/Icon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg" alt="WalletApp" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/walletapp/id1038175626" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/80/9e/7a/809e7a37-0c0d-d4e2-dbc6-cfcc18cbc062/Icon-0-0-1x_U007epad-0-1-sRGB-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -1586,7 +1690,12 @@ All your data is encrypted and stored securely on your device. Sync across devic
 
 联系我们：kfzcount@gmail.com</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/f1/a4/47f1a44e-0a26-a125-9d0f-80188a658101/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg" alt="顶流" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/%E9%A1%B6%E6%B5%81/id6472033369" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/f1/a4/47f1a44e-0a26-a125-9d0f-80188a658101/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -1633,7 +1742,12 @@ All your data is encrypted and stored securely on your device. Sync across devic
 
 Oscidia includes SINE, SAW, SQUARE, TRIANGLE, SUPERSAW, SUPERSQUARE, WAVET">Oscidia is an AUv3 plugin for iOS which can be loaded into your favorite DAW allowing you to use it as a sound source for any MIDI source. Its wide range of features and oscillator types allow it to produce a vast variety of sounds. In particular, the inclusion of WaveTable greatly expands the tradi...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/55/29/8855295e-87eb-ccea-3861-b69f7406b292/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Oscidia" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/oscidia/id6748944379" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/55/29/8855295e-87eb-ccea-3861-b69f7406b292/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -1720,7 +1834,12 @@ Oscidia includes SINE, SAW, SQUARE, TRIANGLE, SUPERSAW, SUPERSQUARE, WAVET">Osci
 应用内购买：
 • 终身 P...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/05/bc/57/05bc5721-81c3-a6e7-047b-078ee60ec30a/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="Scrollie: 滚动截屏拼接长截图" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/scrollie-%E6%BB%9A%E5%8A%A8%E6%88%AA%E5%B1%8F%E6%8B%BC%E6%8E%A5%E9%95%BF%E6%88%AA%E5%9B%BE/id6757146579" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/05/bc/57/05bc5721-81c3-a6e7-047b-078ee60ec30a/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -1776,7 +1895,12 @@ High-qu">Protect Your Privacy with Privacy Blur – Auto Face & Info Blur Tool 
 
 Privacy Blur is the ultimate app for automatically blurring faces, documents, car plates, and any sensitive areas in your photos. Whether you're sharing on social media or sending personal images, Privacy Blur helps you stay safe ...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/7d/5e/de7d5ea1-9294-eafc-4c4b-adfb19ae6717/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg" alt="PrivacyBlur : Face Blur" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/privacyblur-face-blur/id6737153685" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/7d/5e/de7d5ea1-9294-eafc-4c4b-adfb19ae6717/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -1830,7 +1954,12 @@ Record every expense or income in seconds—no complex forms or unnecessary step
 
 Start making smarter financial decisions tod...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d7/63/2e/d7632e39-cfc7-c5f4-86d7-e5f4da51f545/default-0-0-1x_U007ephone-0-1-0-P3-85-220.png/512x512bb.jpg" alt="Fineyo Money & Budget Manager" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/fineyo-money-budget-manager/id1663166940" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d7/63/2e/d7632e39-cfc7-c5f4-86d7-e5f4da51f545/default-0-0-1x_U007ephone-0-1-0-P3-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -1883,6 +2012,11 @@ Whether you're looking to hide personal details, create a dreamy effect or just 
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d9/74/28/d974285a-d0a6-305e-6d37-499be4b5647e/ea2f3565-cbe8-4884-a7df-e37371f264a7_iPhone_5.5_02.jpg/392x696bb.jpg" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
 
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/blur-video/id1596000727" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/79/df/4a/79df4ae9-6daf-1ed4-239d-0b24b20cfb24/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
+
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
       <div class="footer-actions">
@@ -1934,7 +2068,12 @@ Main Casting Experience
 
 Once casting starts, the receiving device plays ...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/04/ea/d304eabc-730c-da92-d4b5-edbe2de6d602/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.jpeg/512x512bb.jpg" alt="Cast to TV for Chromecast" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/cast-to-tv-for-chromecast/id6757864948" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/04/ea/d304eabc-730c-da92-d4b5-edbe2de6d602/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.jpeg/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -2031,6 +2170,11 @@ Once casting starts, the receiving device plays ...</p>
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/26/a9/f0/26a9f07e-973f-c995-2fdf-9b082a52db82/369af2cd-da2f-4164-9c26-458496fb91c2_iPhone_8_Plus_-_2.png/392x696bb.png" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
 
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/autofilter/id6526479418" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fd/78/e0/fd78e086-81d5-579a-11ac-0539d4566e98/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
+
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
       <div class="footer-actions">
@@ -2099,7 +2243,12 @@ Instant bright light with smooth brightness control. One tap to light up your wo
 Screen Light
 Turn your entire screen into a ...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cf/36/1c/cf361cd3-5177-837c-5cdc-a9c497e5a905/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Super Flashlight!" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/super-flashlight/id6757157004" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cf/36/1c/cf361cd3-5177-837c-5cdc-a9c497e5a905/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -2172,7 +2321,12 @@ Turn your entire screen into a ...</p>
 
 母语智慧： 智慧不应被翻译阻隔。我们根据系统语言提供精准、本土化的灵感指引。</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/92/b2/41/92b24142-8624-4677-b4c5-71df19cf96e1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Muse Calendar" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/muse-calendar/id6757337206" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/92/b2/41/92b24142-8624-4677-b4c5-71df19cf96e1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -2243,6 +2397,11 @@ Turn your entire screen into a ...</p>
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/44/e3/53/44e35363-5a3c-7968-3c03-9f25f35a5025/a2b27306-a29b-4191-acbb-e8f8757e5a18_Simulator_Screen_Shot_-_iPhone_8_Plus_-_2021-03-16_at_21.41.54.png/392x696bb.png" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
 
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/%E5%88%86%E8%B4%9D%E8%AE%A1-%E5%A3%B0%E7%BA%A7%E8%AE%A1/id1558634102" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bc/e7/4e/bce74e3f-33da-4e91-fd46-e8fc6cada60c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
+
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
       <div class="footer-actions">
@@ -2305,6 +2464,11 @@ Ca...</p>
     <div class="screenshots"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/f0/89/30f0898c-2504-81b5-b2b3-e8eec54434e7/55f6b0a2-dab0-4d53-8caa-4943ca47171d_realtime_filter_iphone_5.5_screenshot_1.png/392x696bb.png" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/93/c6/6c/93c66c98-bf71-915a-b961-d34f508055c9/12e36cd9-10cc-4045-99ba-31c21058a5f1_realtime_filter_iphone_5.5_screenshot_3.png/392x696bb.png" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/realtime-filter/id1521562701" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/0f/20/c60f205f-435c-ee92-f963-b47ee8135fe1/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -2381,7 +2545,12 @@ Ca...</p>
 
 五. 更好的功能离不...</p>
 
-    
+    <div class="screenshots screenshots-icon-fallback"><img class="screenshot shot-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a5/f7/32/a5f732da-7d0f-16fe-7125-ccdb8f7053d8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="上海地铁助手" loading="lazy"></div>
+
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/%E4%B8%8A%E6%B5%B7%E5%9C%B0%E9%93%81%E5%8A%A9%E6%89%8B/id6736857821" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a5/f7/32/a5f732da-7d0f-16fe-7125-ccdb8f7053d8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
 
     <div class="card-footer">
       <span class="update-time">🕐 03/06 22:32</span>
@@ -2440,6 +2609,11 @@ In the early 1980s, Bill Atkinson—creator of HyperCard, QuickDraw, an...</p>
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9c/af/f3/9caff31c-f9f7-63b8-2ba7-fa3c77810d9e/English__U0028United_States_U0029__U005ben-US_U005d_-_Mac_-_Any_Mac_-_2.jpeg/800x500bb.jpg" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
 
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/hyperdither/id1110997147?mt=12" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fa/91/9b/fa919bd2-f7e3-4305-d712-1500fff89aa0/HyperDitherAppIcon-0-0-85-220-0-0-6-0-2x-sRGB.png/100x100bb.png">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
+
     <div class="card-footer">
       <span class="update-time">🕐 03/06 12:03</span>
       <div class="footer-actions">
@@ -2486,6 +2660,11 @@ In the early 1980s, Bill Atkinson—creator of HyperCard, QuickDraw, an...</p>
     <div class="screenshots"><img class="screenshot" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/06/fe/e5/06fee52b-ec87-7634-5540-936f1b6e2631/pr_source.jpg/392x696bb.jpg" alt="截图" loading="lazy"
             onerror="this.style.display='none';checkScreenshots(this.parentElement)"></div>
 
+    <div class="qr-below" data-url="https://apps.apple.com/cn/app/websight/id1508181543" data-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f4/5f/0e/f45f0e6a-ae3d-59c5-4d9b-ba0a32ee32af/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg">
+      <div class="qr-canvas"></div>
+      <p class="qr-below-tip">长按二维码识别下载</p>
+    </div>
+
     <div class="card-footer">
       <span class="update-time">🕐 03/06 09:21</span>
       <div class="footer-actions">
@@ -2517,7 +2696,7 @@ In the early 1980s, Bill Atkinson—creator of HyperCard, QuickDraw, an...</p>
 
   // 初始化二维码（批量渲染，每个间隔50ms，避免主线程卡顿）
   document.addEventListener('DOMContentLoaded', function() {
-    var wraps = Array.from(document.querySelectorAll('.qr-thumb[data-url]'));
+    var wraps = Array.from(document.querySelectorAll('.qr-thumb[data-url], .qr-below[data-url]'));
     wraps.forEach(function(wrap, idx) {
       setTimeout(function() {
         var url = wrap.getAttribute('data-url');
