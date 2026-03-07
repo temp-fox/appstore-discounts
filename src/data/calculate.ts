@@ -8,6 +8,10 @@ const timeStorageAppInfoFields = ['price', 'formattedPrice', 'inAppPurchases']
 export function getPrice(priceStrProp: string, region: Region) {
   let priceStr = priceStrProp
 
+  // "免费"/"free" 是合法的 0 元价格，不应返回 -1
+  const lower = priceStr.toLowerCase().trim()
+  if (lower === '免费' || lower === 'free') return 0
+
   // eg: '1.234,56' = 1234.56
   if (['tr', 'pt'].includes(region)) {
     priceStr = priceStr
