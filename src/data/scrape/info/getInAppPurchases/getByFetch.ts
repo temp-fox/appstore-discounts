@@ -59,6 +59,16 @@ export default async function getInAppPurchases(
       return retry()
     }
   } catch (error) {
+    const errMsg = String((error as Error)?.message || error)
+    // max-redirect 是永久性错误（应用已下架/重定向），不应重试
+    if (errMsg.includes('max-redirect') || errMsg.includes('MAX_REDIRECT')) {
+      console.error(`${log} max-redirect — 跳过重试`)
+      return {
+        inAppPurchases: inAppPurchasesRes,
+        times,
+        failed: true,
+      }
+    }
     console.error(`${log} getInAppPurchases request error【x${times}】:`, error)
     return retry()
   }

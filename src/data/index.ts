@@ -57,6 +57,9 @@ async function controller() {
     newExternalAppIdSet = new Set(newExternalApps.map(a => String(a.appId)))
 
     const externalAppInfos = externalRegionAppInfo[mainRegion] || []
+    if (externalAppInfos.length < newExternalAppIds.length) {
+      console.log(`API 返回 ${externalAppInfos.length}/${newExternalAppIds.length} 个（${newExternalAppIds.length - externalAppInfos.length} 个不存在或不可用）`)
+    }
 
     // 加载历史数据（unknown 类型兜底使用）
     const extStorageAppInfo = getStorageAppInfo(regions)

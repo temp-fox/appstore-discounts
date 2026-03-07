@@ -57,8 +57,12 @@ export default async function getRegionAppInfo(
         return res
       }, [])
 
+      const queriedCount = appIds.length
+      if (appInfos.length === 0) {
+        console.log(`${label} API 返回 0 个结果（查询 ${queriedCount} 个）`)
+      }
+
       if (appInfos.length > 0) {
-        // 第二步：为每个应用查询内购信息（可以使用缓存的数据）
         let cacheHitCount = 0
         let cacheMissCount = 0
 
