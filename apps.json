@@ -2,6 +2,193 @@
   "$schema": "apps.json-schema.json",
   "appConfig": [
     {
+      "id": 317211808,
+      "name": {
+        "cn": "Pitch Pro"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907736961,
+      "_discountType": "app"
+    },
+    {
+      "id": 375314684,
+      "name": {
+        "cn": "Sun Scout"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907734114,
+      "_discountType": "app"
+    },
+    {
+      "id": 525299138,
+      "name": {
+        "cn": "高中知识点总结大全-化学"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907742376,
+      "_discountType": "app"
+    },
+    {
+      "id": 641361892,
+      "name": {
+        "cn": "漫画制作"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907734114,
+      "_discountType": "app"
+    },
+    {
+      "id": 985928081,
+      "name": {
+        "cn": "英语音标 - 学习英语发音标准基础入门"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907742376,
+      "_discountType": "app"
+    },
+    {
+      "id": 1076450419,
+      "name": {
+        "cn": "汉语拼音字母表-学习中文普通话发音声调拼读基础入门教程"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907742376,
+      "_discountType": "app"
+    },
+    {
+      "id": 1114320457,
+      "name": {
+        "cn": "Baby Led Weaning Recipes"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907739846,
+      "_discountType": "app"
+    },
+    {
+      "id": 1247287369,
+      "name": {
+        "cn": "Anamorphic Cinematic Filters"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907734114,
+      "_discountType": "app"
+    },
+    {
+      "id": 1254864327,
+      "name": {
+        "cn": "水晶结构"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907742376,
+      "_discountType": "app"
+    },
+    {
+      "id": 1623283803,
+      "name": {
+        "cn": "Handy Guitar Lab for G2 FOUR"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907736961,
+      "_discountType": "app"
+    },
+    {
+      "id": 6457200486,
+      "name": {
+        "cn": "证件照-高清证件照回执，智能美颜可换底色"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907728757,
+      "_discountType": "app"
+    },
+    {
+      "id": 6471891444,
+      "name": {
+        "cn": "日麻点数计算器"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907728757,
+      "_discountType": "app"
+    },
+    {
+      "id": 6756228553,
+      "name": {
+        "cn": "陶立方MudLog"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907728757,
+      "_discountType": "app"
+    },
+    {
+      "id": 6477292651,
+      "name": {
+        "cn": "Handy Guitar Lab for MS-60B+"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907736961,
+      "_discountType": "app"
+    },
+    {
+      "id": 6759203712,
+      "name": {
+        "cn": "ECG Suite"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907739596,
+      "_discountType": "app"
+    },
+    {
+      "id": 6743225286,
+      "name": {
+        "cn": "合成大西瓜离线小游戏"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907742554,
+      "_discountType": "app"
+    },
+    {
+      "id": 6754315059,
+      "name": {
+        "cn": "Learn PyTorch & Deep Learning"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772907742376,
+      "_discountType": "app"
+    },
+    {
       "id": 324038407,
       "name": {
         "cn": "星空 3D"
@@ -9685,7 +9872,9 @@
       "name": {
         "cn": "Train Kit: Space"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1516440483,
@@ -10608,7 +10797,9 @@
       "name": {
         "cn": "英語從頭學（全系列）"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1163494239,
@@ -11688,7 +11879,9 @@
       "name": {
         "cn": "数学公式定理手册：教学网站共同推荐的App"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 702718077,
@@ -11870,7 +12063,9 @@
       "name": {
         "cn": "PhySim - 物理实验室"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1521982166,
@@ -12876,7 +13071,9 @@
       "name": {
         "cn": "朗文当代高级词典（第6版）"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 316520188,
@@ -18870,7 +19067,9 @@
       "name": {
         "cn": "Easy Music - 让孩子们能听懂音乐"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 992047786,
@@ -24202,7 +24401,9 @@
       "name": {
         "cn": "视频编辑大师- 视频剪辑加字幕"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1541290982,
@@ -24447,7 +24648,9 @@
       "name": {
         "cn": "Wallpaper Expert Pro"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1556671822,
@@ -27425,7 +27628,9 @@
       "name": {
         "cn": "鹦语日记"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6756121556,
@@ -27776,7 +27981,9 @@
       "name": {
         "cn": "超级提醒-年轻独居人士的安全提醒工具"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6758620405,
@@ -29381,7 +29588,9 @@
       "name": {
         "cn": "灵感卡片 - 笔记"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 755018884,
