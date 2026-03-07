@@ -1007,15 +1007,17 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
     });
     totalSaved = Math.round(totalSaved * 100) / 100;
 
-    var titleText = '';
+    var titleLine1 = (monthDay || '今日') + '苹果限免';
+    var titleLine2 = '';
+    var titleLine3 = '手慢无！';
     if (canCalc && totalSaved > 0) {
-      titleText = (monthDay || '今日') + '苹果限免 · 省' + totalSaved + '元 · 手慢无！';
+      titleLine2 = '省' + totalSaved + '元';
     } else {
-      titleText = (monthDay || '今日') + '苹果限免 · ' + appList.length + '款优惠 · 手慢无！';
+      titleLine2 = appList.length + '款优惠';
     }
 
     // 构建内联样式 HTML
-    var html = buildWeChatHTML(titleText, appList);
+    var html = buildWeChatHTML(titleLine1, titleLine2, titleLine3, appList);
 
     // 富文本写入剪贴板
     if (navigator.clipboard && window.ClipboardItem) {
@@ -1079,7 +1081,7 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
     document.body.removeChild(tmp);
   }
 
-  function buildWeChatHTML(title, apps) {
+  function buildWeChatHTML(line1, line2, line3, apps) {
     var containerStyle = 'max-width:600px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,\"Helvetica Neue\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif;color:#1c1c1e;-webkit-font-smoothing:antialiased;';
 
     var headerStyle = 'background:linear-gradient(160deg,#ff9500 0%,#ff6b2b 40%,#e8453c 100%);color:#fff;padding:32px 24px 28px;text-align:center;border-radius:20px 20px 0 0;position:relative;overflow:hidden;';
@@ -1092,7 +1094,9 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
     h += '<div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:rgba(255,255,255,0.08);border-radius:50%;"></div>';
     h += '<div style="position:absolute;bottom:-30px;left:-10px;width:80px;height:80px;background:rgba(255,255,255,0.06);border-radius:50%;"></div>';
     h += '<p style="margin:0 0 10px 0;"><img src="https://s3.bmp.ovh/imgs/2024/07/20/491487aec936222a.png" style="width:48px;height:48px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.20);" /></p>';
-    h += '<h1 style="' + titleStyle + '">' + title + '</h1>';
+    h += '<h1 style="' + titleStyle + '">' + line1 + '</h1>';
+    h += '<p style="font-size:28px;font-weight:800;margin:0 0 6px 0;letter-spacing:1px;text-shadow:0 1px 3px rgba(0,0,0,0.15);">' + line2 + '</p>';
+    h += '<p style="font-size:16px;font-weight:600;margin:0 0 8px 0;opacity:0.95;">' + line3 + '</p>';
     h += '<p style="font-size:14px;margin:10px auto 0;font-weight:600;letter-spacing:0.5px;background:rgba(255,255,255,0.22);display:inline-block;padding:5px 16px;border-radius:20px;">应用随时可能恢复原价，建议尽快下载</p>';
     h += '</div>';
 
