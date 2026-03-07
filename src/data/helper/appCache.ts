@@ -1,0 +1,100 @@
+/**
+ * 应用信息缓存机制
+ * 缓存已查询过的应用信息，避免重复调用 API
+ */
+
+import { getStorageAppInfo } from '../storage'
+
+const CACHE_VALID_HOURS = 24 // 缓存有效期：24小时
+
+export interface CachedAppInfo {
+  timestamp: number
+  price: number
+  formattedPrice: string
+  inAppPurchases: Record<string, string>
+  inAppPurchasesTimes: number
+}
+
+// 进程内存级缓存：每次运行只读一次磁盘，避免为每个 app 重复 IO
+let _storageCache: Record<string, any> | null = null
+let _storageCacheRegion: string | null = null
+
+function getStorageCached(region: string): Record<string, any> {
+  if (_storageCache && _storageCacheRegion === region) {
+    return _storageCache
+  }
+  const result = getStorageAppInfo([region as any])
+  _storageCache = result[region as any] || {}
+  _storageCacheRegion = region
+  return _storageCache
+}
+
+/**
+ * 获取缓存的应用信息
+ * 检查本地存储中是否有该应用的最近记录
+ * @param appId 应用ID
+ * @param region 地区代码
+ * @returns 缓存的应用信息，如果缓存过期或不存在返回 null
+ */
+export function getCachedAppInfo(appId: number, region: string): CachedAppInfo | null {
+  try {
+    const storageAppInfo = getStorageCached(region)
+    const appIdStr = String(appId)
+
+    if (!storageAppInfo[appIdStr]) {
+      return null
+    }
+
+    const appData = storageAppInfo[appIdStr]
+    const history = appData.history || []
+
+    if (history.length === 0) {
+      return null
+    }
+
+    // 获取最新的记录
+    const latestEntry = history[0] || []
+    const latestRecord = latestEntry[0]
+
+    if (!latestRecord) {
+      return null
+    }
+
+    // 检查缓存是否过期（24小时）
+    const cacheAgeMs = Date.now() - latestRecord.timestamp
+    const cacheAgeHours = cacheAgeMs / (1000 * 60 * 60)
+
+    if (cacheAgeHours > CACHE_VALID_HOURS) {
+      return null
+    }
+
+    // 返回缓存的应用信息
+    return {
+      timestamp: latestRecord.timestamp,
+      price: latestRecord.price,
+      formattedPrice: latestRecord.formattedPrice,
+      inAppPurchases: latestRecord.inAppPurchases,
+      inAppPurchasesTimes: latestRecord.inAppPurchasesTimes,
+    }
+  } catch (error) {
+    // 缓存读取失败时，忽略错误继续执行
+    return null
+  }
+}
+
+/**
+ * 检查应用是否应该使用缓存
+ * 对于已存在于 apps.json 中的应用，优先使用缓存以提高性能
+ * @param appId 应用ID
+ * @returns 是否应该查询缓存
+ */
+export function shouldUseCache(appId: number): boolean {
+  try {
+    // 这里可以扩展为检查 apps.json，判断应用是否已被追踪
+    // 当前简化实现：所有应用都检查缓存
+    return true
+  } catch (error) {
+    return false
+  }
+}
+

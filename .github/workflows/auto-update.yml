@@ -1,0 +1,61 @@
+name: auto update
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: install dependence
+        run: npm i -g pnpm && pnpm i --no-frozen-lockfile
+
+      - name: install playwright
+        run: npx playwright install chromium
+
+      - name: generate RSS and push notifications
+        run: npm run rss
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          DING_TALK_BOT_TOKEN: ${{ secrets.DING_TALK_BOT_TOKEN }}
+
+      - name: commit the all info
+        id: commit_msg
+        run: |
+          if git status -s | grep -q .; then
+            echo "Changes detected, committing..."
+            git status -s
+            echo "check_result=success" >> $GITHUB_OUTPUT
+          else
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config --global user.email "eyelly.wu@gmail.com"
+          git config --global user.name "GitHub Workflow"
+          git add .
+          git commit -m 'chore: automatic update of GitHub workflow'
+
+      - name: git pull and push
+        if: steps.commit_msg.outputs.check_result == 'success'
+        run: |
+          git pull --rebase origin main
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+
+      - name: Trigger private repo page generation
+        if: steps.commit_msg.outputs.check_result == 'success'
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token ${{ secrets.PRIVATE_REPO_TOKEN }}" \
+            https://api.github.com/repos/temp-fox/appstore-discounts-pages/dispatches \
+            -d '{"event_type":"rss-updated"}'

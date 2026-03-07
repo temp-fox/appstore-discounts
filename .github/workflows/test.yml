@@ -1,0 +1,35 @@
+name: test run (small batch)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: install dependence
+        run: npm i -g pnpm && pnpm i --no-frozen-lockfile
+
+      - name: install playwright
+        run: npx playwright install chromium
+
+      - name: test RSS generation (small batch)
+        run: npm run rss
+        env:
+          TEST_APP_LIMIT: '10'
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          DING_TALK_BOT_TOKEN: ${{ secrets.DING_TALK_BOT_TOKEN }}
+
+      - name: show result summary
+        run: |
+          echo "=== RSS result ==="
+          ls -lh rss/cn.xml
+          head -30 rss/cn.xml
