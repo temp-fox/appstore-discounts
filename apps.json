@@ -2,6 +2,413 @@
   "$schema": "apps.json-schema.json",
   "appConfig": [
     {
+      "id": 324038407,
+      "name": {
+        "cn": "星空 3D"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899780740,
+      "_discountType": "app"
+    },
+    {
+      "id": 343807473,
+      "name": {
+        "cn": "Real Kana"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899780740,
+      "_discountType": "app"
+    },
+    {
+      "id": 502453586,
+      "name": {
+        "cn": "神舟八号"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899780740,
+      "_discountType": "app"
+    },
+    {
+      "id": 504129864,
+      "name": {
+        "cn": "Now Then Pro"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899772613,
+      "_discountType": "app"
+    },
+    {
+      "id": 509924746,
+      "name": {
+        "cn": "Geo Elevation: Path Analyzer"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899775360,
+      "_discountType": "app"
+    },
+    {
+      "id": 621561671,
+      "name": {
+        "cn": "变老 - Oldify - Old Face App"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899780505,
+      "_discountType": "app"
+    },
+    {
+      "id": 633600716,
+      "name": {
+        "cn": "432 Player"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899775378,
+      "_discountType": "app"
+    },
+    {
+      "id": 670400597,
+      "name": {
+        "cn": "梁的挠度"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899772613,
+      "_discountType": "app"
+    },
+    {
+      "id": 683984776,
+      "name": {
+        "cn": "Heart Rate Variability Logger"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899777886,
+      "_discountType": "app"
+    },
+    {
+      "id": 1031060746,
+      "name": {
+        "cn": "Hohner Piano Mini-Accordion"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899775378,
+      "_discountType": "app"
+    },
+    {
+      "id": 1073576068,
+      "name": {
+        "cn": "电波表对时"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899767425,
+      "_discountType": "app"
+    },
+    {
+      "id": 1328213386,
+      "name": {
+        "cn": "对话翻译Pro"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899772710,
+      "_discountType": "app"
+    },
+    {
+      "id": 1331577768,
+      "name": {
+        "cn": "Tinybop 出品的《珊瑚礁》"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899780740,
+      "_discountType": "app"
+    },
+    {
+      "id": 1363152302,
+      "name": {
+        "cn": "PoPoem - 最纯粹的诗文创作平台"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899770081,
+      "_discountType": "app"
+    },
+    {
+      "id": 1449383466,
+      "name": {
+        "cn": "WristChat for Facebook"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899770081,
+      "_discountType": "app"
+    },
+    {
+      "id": 1471873887,
+      "name": {
+        "cn": "Pealim — Hebrew Verb Forms"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899772710,
+      "_discountType": "app"
+    },
+    {
+      "id": 1472298590,
+      "name": {
+        "cn": "BGH: 可爱习惯打卡 & 日常计划"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899778060,
+      "_discountType": "app"
+    },
+    {
+      "id": 1529829928,
+      "name": {
+        "cn": "Djembe + - Drum Percussion Pad"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899775378,
+      "_discountType": "app"
+    },
+    {
+      "id": 1586833460,
+      "name": {
+        "cn": "Hula Hoop kcal Tracker"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899769921,
+      "_discountType": "app"
+    },
+    {
+      "id": 1614558280,
+      "name": {
+        "cn": "MorseChat - 安全聊天工具"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899767425,
+      "_discountType": "app"
+    },
+    {
+      "id": 6739237571,
+      "name": {
+        "cn": "音频合并"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899767425,
+      "_discountType": "app"
+    },
+    {
+      "id": 6448463664,
+      "name": {
+        "cn": "Prompt助手"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899767425,
+      "_discountType": "app"
+    },
+    {
+      "id": 6745506040,
+      "name": {
+        "cn": "研词派"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899767425,
+      "_discountType": "app"
+    },
+    {
+      "id": 6754234682,
+      "name": {
+        "cn": "汉堡相册"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899772756,
+      "_discountType": "app"
+    },
+    {
+      "id": 6754045416,
+      "name": {
+        "cn": "双镜视界"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899772756,
+      "_discountType": "app"
+    },
+    {
+      "id": 6749207014,
+      "name": {
+        "cn": "太极双摄"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899772756,
+      "_discountType": "app"
+    },
+    {
+      "id": 6751618297,
+      "name": {
+        "cn": "复刻相机-通过叠加参考照片实现回忆重现和精准构图摄影辅助工具"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899772756,
+      "_discountType": "app"
+    },
+    {
+      "id": 6759585707,
+      "name": {
+        "cn": "8bit音乐大师"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899775378,
+      "_discountType": "app"
+    },
+    {
+      "id": 6759214507,
+      "name": {
+        "cn": "Augmatic GRE"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899775378,
+      "_discountType": "app"
+    },
+    {
+      "id": 6740224842,
+      "name": {
+        "cn": "自动滚动 | Web"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899778060,
+      "_discountType": "app"
+    },
+    {
+      "id": 6760000656,
+      "name": {
+        "cn": "ShengLeMe"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899778060,
+      "_discountType": "app"
+    },
+    {
+      "id": 6479942042,
+      "name": {
+        "cn": "FSM-Funscript视频播放器"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899780505,
+      "_discountType": "app"
+    },
+    {
+      "id": 6754852443,
+      "name": {
+        "cn": "US Election Simulator"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899780505,
+      "_discountType": "app"
+    },
+    {
+      "id": 6444889258,
+      "name": {
+        "cn": "找规律 - 填数字,奥数题库闯关小游戏"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899780740,
+      "_discountType": "app"
+    },
+    {
+      "id": 6448310629,
+      "name": {
+        "cn": "Ellou - 公主填色画本 - 宝宝孩子魔法涂色游戏"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899780740,
+      "_discountType": "app"
+    },
+    {
+      "id": 6463853721,
+      "name": {
+        "cn": "托福英语阅读理解"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899780740,
+      "_discountType": "app"
+    },
+    {
+      "id": 6759828166,
+      "name": {
+        "cn": "Australian Citizenship Prep"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772899780740,
+      "_discountType": "app"
+    },
+    {
       "id": 293263027,
       "name": {
         "cn": "Speaker Polarity"
@@ -6309,7 +6716,9 @@
       "name": {
         "cn": "Grammaropolis - 完全版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 600218946,
@@ -9168,7 +9577,9 @@
       "name": {
         "cn": "myLightMeter PRO"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 672649451,
@@ -11434,7 +11845,9 @@
       "name": {
         "cn": "Luxilux 测光表"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1507281523,
@@ -14012,7 +14425,9 @@
       "name": {
         "cn": "Sexy Maria"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 416510594,
@@ -21242,7 +21657,9 @@
       "name": {
         "cn": "ezShare Lite"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1279267796,
@@ -21829,7 +22246,9 @@
       "name": {
         "cn": "RUUD"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1382376135,
@@ -22732,7 +23151,9 @@
       "name": {
         "cn": "PET核心词-闯关速练疯狂刷题"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1476010224,
@@ -25061,7 +25482,9 @@
       "name": {
         "cn": "寻隐-离线AI相册搜索App"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1665809560,
@@ -27851,7 +28274,9 @@
       "name": {
         "cn": "极速营救"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6740471827,
@@ -29692,7 +30117,11 @@
     },
     {
       "id": 1438243180,
-      "name": "Dark Reader for Safari"
+      "name": "Dark Reader for Safari",
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 625206080,
