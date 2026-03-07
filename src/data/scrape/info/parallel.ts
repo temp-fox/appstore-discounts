@@ -10,7 +10,7 @@ import {
   GetInAppPurchasesProps,
   playWrightBrowserManager,
 } from './getInAppPurchases'
-import { getScreenshotsFromWeb } from './getScreenshots'
+import { initAmpApiToken, getScreenshotsByAmpApi } from './getScreenshots'
 
 const scrapeTypeImplMap: Record<
   InAppPurchasesScrapeType,
@@ -113,7 +113,7 @@ export default async function getRegionAppInfo(
           return res
         }, [] as AppInfo[])
 
-        // 第三步：为缺失截图的应用从 App Store 网页补充截图
+        // 第三步：为缺失截图的应用通过 amp-api 批量补充截图
         const appsNeedScreenshots = res[region].filter(
           (app) =>
             (!app.screenshotUrls || app.screenshotUrls.length === 0) &&
@@ -121,30 +121,38 @@ export default async function getRegionAppInfo(
         )
 
         if (appsNeedScreenshots.length > 0) {
-          let screenshotSuccessCount = 0
-          let screenshotFailCount = 0
-          await Promise.all(
-            appsNeedScreenshots.map((app, j) =>
-              limit(async () => {
-                const result = await getScreenshotsFromWeb(
-                  app.trackViewUrl,
-                  `${label}【${app.trackName}】截图补充`,
-                )
-                if (result.screenshotUrls.length > 0) {
-                  app.screenshotUrls = result.screenshotUrls
+          const tokenOk = await initAmpApiToken(region)
+          if (tokenOk) {
+            let screenshotSuccessCount = 0
+            let screenshotFailCount = 0
+
+            // 分批请求，每批最多 50 个
+            const batchSize = 50
+            for (let b = 0; b < appsNeedScreenshots.length; b += batchSize) {
+              const batch = appsNeedScreenshots.slice(b, b + batchSize)
+              const batchIds = batch.map((app) => app.trackId)
+              const screenshotsMap = await getScreenshotsByAmpApi(batchIds, region)
+
+              for (const app of batch) {
+                const result = screenshotsMap.get(app.trackId)
+                if (result) {
+                  if (result.screenshotUrls.length > 0) {
+                    app.screenshotUrls = result.screenshotUrls
+                  }
+                  if (result.ipadScreenshotUrls.length > 0) {
+                    app.ipadScreenshotUrls = result.ipadScreenshotUrls
+                  }
                   screenshotSuccessCount++
-                }
-                if (result.ipadScreenshotUrls.length > 0) {
-                  app.ipadScreenshotUrls = result.ipadScreenshotUrls
-                  if (result.screenshotUrls.length === 0) screenshotSuccessCount++
-                }
-                if (result.screenshotUrls.length === 0 && result.ipadScreenshotUrls.length === 0) {
+                } else {
                   screenshotFailCount++
                 }
-              }),
-            ),
-          )
-          console.log(`${label} 截图补充: ${appsNeedScreenshots.length} 个缺失 | 成功: ${screenshotSuccessCount} | 失败: ${screenshotFailCount}`)
+              }
+            }
+
+            console.log(`${label} 截图补充: ${appsNeedScreenshots.length} 个缺失 | 成功: ${screenshotSuccessCount} | 失败: ${screenshotFailCount}`)
+          } else {
+            console.warn(`${label} 截图补充: 跳过（amp-api token 获取失败）`)
+          }
         }
       }
     }
