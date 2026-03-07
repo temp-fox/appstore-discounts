@@ -49,14 +49,12 @@ export async function getScreenshotsFromWeb(
       /<script[^>]+id="serialized-server-data"[^>]*>\s*(\[[\s\S]*?\])\s*<\/script>/,
     )
     if (!match) {
-      console.warn(chalk.yellow(`${log} serialized-server-data not found`))
       return EMPTY_RESULT
     }
 
     const serverData = JSON.parse(match[1])
     const shelfMapping = serverData?.[0]?.data?.shelfMapping
     if (!shelfMapping) {
-      console.warn(chalk.yellow(`${log} shelfMapping not found`))
       return EMPTY_RESULT
     }
 
@@ -68,7 +66,6 @@ export async function getScreenshotsFromWeb(
 
     return { screenshotUrls, ipadScreenshotUrls }
   } catch (error) {
-    console.warn(chalk.yellow(`${log} 截图抓取失败:`), error)
     return EMPTY_RESULT
   }
 }

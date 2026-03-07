@@ -16,7 +16,6 @@ export default async function getInAppPurchases(
 
   function retry(): GetInAppPurchasesResult | Promise<GetInAppPurchasesResult> {
     if (times >= IN_APP_PURCHASE_MAX_TIMES) {
-      console.log(chalk.red(log + ' failed'))
       return {
         inAppPurchases: inAppPurchasesRes,
         times,
@@ -59,16 +58,17 @@ export default async function getInAppPurchases(
       }
     }
   } catch (error) {
-    console.error(`${log} getInAppPurchases request error【x${times}】:`, error)
-    // ERR_TOO_MANY_REDIRECTS 是永久性错误（应用已下架/重定向），不应重试
     const errMsg = String((error as Error)?.message || error)
-    if (errMsg.includes('ERR_TOO_MANY_REDIRECTS') || errMsg.includes('net::ERR_TOO_MANY_REDIRECTS')) {
-      console.log(chalk.red(log + ' ERR_TOO_MANY_REDIRECTS — 跳过重试，直接标记失败'))
+    // 永久性或网络错误，不应重试
+    if (errMsg.includes('ERR_TOO_MANY_REDIRECTS') || errMsg.includes('max-redirect') || errMsg.includes('ETIMEDOUT')) {
       return {
         inAppPurchases: inAppPurchasesRes,
         times,
         failed: true,
       }
+    }
+    if (times >= IN_APP_PURCHASE_MAX_TIMES) {
+      console.error(`${log} 内购获取失败: ${errMsg}`)
     }
     return retry()
   }

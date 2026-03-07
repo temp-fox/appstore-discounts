@@ -16,7 +16,6 @@ export default async function getInAppPurchases(
 
   function retry(): GetInAppPurchasesResult | Promise<GetInAppPurchasesResult> {
     if (times >= IN_APP_PURCHASE_MAX_TIMES) {
-      console.log(chalk.red(log + ' failed'))
       return {
         inAppPurchases: inAppPurchasesRes,
         times,
@@ -60,16 +59,17 @@ export default async function getInAppPurchases(
     }
   } catch (error) {
     const errMsg = String((error as Error)?.message || error)
-    // max-redirect 是永久性错误（应用已下架/重定向），不应重试
-    if (errMsg.includes('max-redirect') || errMsg.includes('MAX_REDIRECT')) {
-      console.error(`${log} max-redirect — 跳过重试`)
+    // max-redirect / ETIMEDOUT 是永久性或网络错误，不应重试
+    if (errMsg.includes('max-redirect') || errMsg.includes('MAX_REDIRECT') || errMsg.includes('ETIMEDOUT')) {
       return {
         inAppPurchases: inAppPurchasesRes,
         times,
         failed: true,
       }
     }
-    console.error(`${log} getInAppPurchases request error【x${times}】:`, error)
+    if (times >= IN_APP_PURCHASE_MAX_TIMES) {
+      console.error(`${log} 内购获取失败: ${errMsg}`)
+    }
     return retry()
   }
 
