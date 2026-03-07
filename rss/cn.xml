@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/appstore-discounts/appstore-discounts/rss/cn.xml</id>
     <title>App Store Discounts（CN）</title>
-    <updated>2026-03-08T00:35:15.565+08:00</updated>
+    <updated>2026-03-08T04:42:31.911+08:00</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Eyelly wu</name>
@@ -21,7 +21,7 @@ feedId:157007849019630592+userId:73658201673997312
         <title type="html"><![CDATA[🎉 欢迎订阅 App Store Discounts]]></title>
         <id>welcomecn</id>
         <link href="https://github.com/appstore-discounts/appstore-discounts"/>
-        <updated>2026-03-08T00:35:15.567+08:00</updated>
+        <updated>2026-03-08T04:42:31.913+08:00</updated>
         <summary type="html"><![CDATA[感谢您订阅我们的 RSS 源，我们是一个致力于为全球用户带来 App Store 最新折扣信息的社区驱动项目。我们的目标是让每一位用户都能第一时间掌握心爱应用的优惠动态，无论是应用本身的价格下调，还是内购项目的限时促销，我们都将为您一网打尽！]]></summary>
         <content type="html"><![CDATA[<p>感谢您订阅我们的 RSS 源，我们是一个致力于为全球用户带来 App Store 最新折扣信息的社区驱动项目。我们的目标是让每一位用户都能第一时间掌握心爱应用的优惠动态，无论是应用本身的价格下调，还是内购项目的限时促销，我们都将为您一网打尽！</p><h1>关于我们的 RSS 源</h1><ul>
   <li>专注于推送 App Store 应用的优惠信息</li><li>只要应用价格降低或内购项降价，我们就会及时推送</li><li>每个应用的优惠信息以单独的 feed 形式呈现</li><li>RSS 源完全开源，您可以随时查看、贡献和添加您关注的应用</li>
@@ -29,9 +29,9 @@ feedId:157007849019630592+userId:73658201673997312
     </entry>
     <entry>
         <title type="html"><![CDATA[统计数据报告]]></title>
-        <id>rankingcnSat, 07 Mar 2026 16:35:15 GMT</id>
+        <id>rankingcnSat, 07 Mar 2026 20:42:31 GMT</id>
         <link href="https://github.com/appstore-discounts/appstore-discounts"/>
-        <updated>2026-03-08T00:35:15.567+08:00</updated>
+        <updated>2026-03-08T04:42:31.913+08:00</updated>
         <summary type="html"><![CDATA[最新统计数据报告]]></summary>
         <content type="html"><![CDATA[<h2>追踪的国家或地区</h2><ol>
   <li>
@@ -52,13 +52,13 @@ feedId:157007849019630592+userId:73658201673997312
     <tr>
       <td>所有</td>
       <td>
-        <b>3466</b>
+        <b>3505</b>
       </td>
       <td>
         <b>75</b>
       </td>
       <td>
-        <b>3313</b>
+        <b>3352</b>
       </td>
       <td>
         <b>78</b>
@@ -72,13 +72,13 @@ feedId:157007849019630592+userId:73658201673997312
         <b>CN</b>
       </td>
       <td>
-        <b>3425</b>
+        <b>3464</b>
       </td>
       <td>
         <b>39</b>
       </td>
       <td>
-        <b>3308</b>
+        <b>3347</b>
       </td>
       <td>
         <b>78</b>
@@ -133,6 +133,33 @@ feedId:157007849019630592+userId:73658201673997312
         <b>2</b>
       </td>
       <td>
+        <a href="https://apps.apple.com/cn/app/id1062022008">LumaFusion</a>
+      </td>
+      <td>
+        <ul>
+          <li>
+            <span>总次数</span>：<b>3</b>
+          </li><li>
+            <span>价格</span>：<b>1</b>
+          </li><li>
+            <span>App内购买</span><ol>
+              <li>
+                <i>Multicam Studio</i>：<b>1</b>
+              </li><li>
+                <i>速度提升和关键帧</i>：<b>1</b>
+              </li><li>
+                <i>FCPXML Export</i>：<b>1</b>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>3</b>
+      </td>
+      <td>
         <a href="https://apps.apple.com/cn/app/id1422605014">Weather Now PRO – 天气预报</a>
       </td>
       <td>
@@ -155,7 +182,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>3</b>
+        <b>4</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id6749500536">病历助手-拍照识别&用药闹铃提醒&健康档案&慢性病智能跟踪</a>
@@ -170,31 +197,6 @@ feedId:157007849019630592+userId:73658201673997312
             <span>App内购买</span><ol>
               <li>
                 <i>无限制数量使用图片AI识别和终生免费使用所有功能及后续新增功能</i>：<b>1</b>
-              </li>
-            </ol>
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b>4</b>
-      </td>
-      <td>
-        <a href="https://apps.apple.com/cn/app/id1062022008">LumaFusion</a>
-      </td>
-      <td>
-        <ul>
-          <li>
-            <span>总次数</span>：<b>2</b>
-          </li><li>
-            <span>价格</span>：<b>1</b>
-          </li><li>
-            <span>App内购买</span><ol>
-              <li>
-                <i>Multicam Studio</i>：<b>1</b>
-              </li><li>
-                <i>速度提升和关键帧</i>：<b>1</b>
               </li>
             </ol>
           </li>
@@ -3454,6 +3456,100 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
   </tbody>
 </table>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LumaFusion]]></title>
+        <id>LumaFusion-cn-1772914619647</id>
+        <link href="https://apps.apple.com/cn/app/lumafusion/id1062022008?uo=4"/>
+        <updated>2026-03-08T04:16:59.647+08:00</updated>
+        <summary type="html"><![CDATA[FCPXML Export: ¥148.00 → ¥88.00]]></summary>
+        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/lumafusion/id1062022008?uo=4">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/18/8b/c9188b88-840b-548e-165c-a93cacdcc951/LumaFusionComposerIcon-0-1x_U007epad-0-1-0-0-85-220-0.png/60x60bb.jpg" />
+</a><p>
+  <small>来源：排行榜</small>
+</p><h2>优惠信息</h2><h3>App内购买</h3><ul>
+  <li>
+    <strong>FCPXML Export：</strong><span>¥148.00</span> → <b>
+  <strong>¥88.00</strong>
+</b><span>[¥88.00 ~ ¥148.00]</span>
+  </li>
+</ul><h2>全部价格信息</h2><p>
+  价格：<b>¥98.00</b>
+</p><h3>App内购买</h3><ul>
+  <li>
+    创作者通行证每月：<b>¥68.00</b>
+  </li><li>
+    FCPXML Export：<b>¥88.00</b>
+  </li><li>
+    速度提升和关键帧：<b>¥88.00</b>
+  </li><li>
+    创作者年票：<b>¥498.00</b>
+  </li><li>
+    Multicam Studio：<b>¥88.00</b>
+  </li><li>
+    CoreMelt PaintX Plug-In：<b>¥148.00</b>
+  </li>
+</ul><h2>应用描述</h2><p>
+  LumaFusion: 视频编辑的终极叙事体验
+
+欢迎使用App Store 2021年“年度应用程序”和“编辑选择奖”获得者！为全世界的故事讲述者设立黄金标准，提供流畅、直观、专为触摸屏设计的编辑体验。
+
+专业视频编辑轻松完成
+• 6个视频/音频或图形轨道：创建多个图层的合成，流畅处理4K ProRes和HDR媒体。
+• 6个额外的音频轨道：构建您的音效。
+• 终极时间轴：使用世界上最灵活的轨道式和磁性时间线进行流畅编辑。
+• 多种过渡效果：保持您的故事推进。
+• 外部显示器预览：在大屏幕上查看您的作品。
+• 标记、标签和备注：保持有序。
+• 配音：在播放电影的同时进行录制。
+
+分层效果和色彩校正
+• 绿屏、Luma和色度键：用于创意合成。
+• 锁定与加载视频稳定器：保持镜头稳定
+• 强大的色彩校正：打造您自己的外观。
+• 视频波形、矢量和柱状图显示器。
+• LUTs：导入并应用多个 .cube 或 .3dl LUT。
+• 无限关键帧：精确制作动画效果。
+• 可定制的文本和效果预设：保存并分享您最喜欢的动画和样式。
+• 网格和导线：使用标题安全网格、动作安全网格和水平线，精确对齐元素。
+
+高级音频控制
+• 图形均衡器、参数均衡器和声音隔离：微调音频。
+• 关键帧音频水平、平移和均衡器：制作无缝混音。
+• 支持立体声和双单声道音频：非常适合在一个剪辑中使用多个麦克风进行采访。
+• 音频降噪：平衡音乐和对话。
+• 第三方音频插件：增强声音。
+
+创意标题和多层文本
+• 多层标题：将形状、图像和文本组合到图形中。
+• 可自定义的字体、颜色、边框和阴影：设计引人注目的标题
+• 导入自定义字体：增强您的品牌。
+• 保存或分享标题预设：完美适用于协作。
+
+项目灵活性和媒体库
+• 适用于所有用途的宽高比：从宽银幕电影到社交媒体。
+• 帧率从18fps到240fps：灵活适用于任何工作流程。
+• 从照片、Frame.io或直接从USB-C驱动器进行编辑：在任何地方访问您的内容。
+• 从云存储导入媒体：无论存储在哪里。
+
+分享您的杰作
+• 控制分辨率、质量和格式：
+• 将电影分享到社交媒体、本地存储或云端存储。
+• 在多台设备上编辑：无缝传输项目。
+
+增强功能（单独购买，或作为创作者通行证订阅的一部分全部获取 - 见下文）
+• 速度调节和增强关键帧 - 使用这一独特且易于使用的功能创建速度渐变、贝塞尔曲线和缓动效果。
+XML导出：将您的项目发送到Mac版Final Cut Pro
+• 多机位工作室：同步6台摄像机或音频，并点击切换角度
+
+创作者通行证订阅
+• 获取LumaFusion的Storyblocks的全面访问权限：数百万高质量的免版税音乐、SFX和视频，并获取上述所有增强功能。
+
+卓越的免费支持服务
+• 在线教程：www.youtube.com/@LumaTouch
+• 参考指南：luma-touch.com/lumafusion-reference-guide
+• 支持：luma-touch.com/support
+</p><h2>应用截屏</h2><h3>iPad</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/08/8f/f6/088ff6c4-e003-a423-1895-f32741dc5e70/zh-hans-1-Awards_ipadPro129.png/2732x2048bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3a/aa/b0/3aaab068-ddf2-0190-2c59-d8af3b681b26/zh-hans-2-Timeline_ipadPro129.png/2732x2048bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2e/7c/96/2e7c962c-b0e7-2724-b74a-0d2fc4cd3a03/zh-hans-3-Color_ipadPro129.png/2732x2048bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/06/8e/9a/068e9afe-2a75-7791-fca8-9722619cf3e7/zh-hans-4-Effects_ipadPro129.png/2732x2048bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/aa/64/79aa6466-8e7c-e318-b088-c416a3497b1c/zh-hans-5-Bezier_Curves_ipadPro129.png/2732x2048bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/80/f1/8f80f1d7-d11e-e106-19d1-1de88dc4cb1f/zh-hans-6-Keyframing_ipadPro129.png/2732x2048bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/39/8f/2e/398f2e58-e175-a44e-b2ab-f4d2dccf05ad/zh-hans-7-Speed_ipadPro129.png/2732x2048bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/b3/db/02b3db38-1f94-22e7-0077-9eeddaeeed35/zh-hans-8-Multicam_ipadPro129.png/2732x2048bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d7/ce/30/d7ce304f-b2c7-eca1-ca5c-8a2c9bc58e4b/zh-hans-9-Audio_ipadPro129.png/2732x2048bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1b/ad/d9/1badd91e-8936-91aa-6ac0-3bbb9de1647b/zh-hans-10-Titles_ipadPro129.png/2732x2048bb.png" />]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[GitJournal]]></title>
@@ -7390,74 +7486,6 @@ XML导出：将您的项目发送到Mac版Final Cut Pro
 </p>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[测量应用程式 My Measures PRO]]></title>
-        <id>测量应用程式 My Measures PRO-cn-1772814691610</id>
-        <link href="https://apps.apple.com/cn/app/%E6%B5%8B%E9%87%8F%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BC%8F-my-measures-pro/id325962257?uo=4"/>
-        <updated>2026-03-07T00:31:31.610+08:00</updated>
-        <summary type="html"><![CDATA[Top App Cloud: ¥128.00 → ¥18.00]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/%E6%B5%8B%E9%87%8F%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BC%8F-my-measures-pro/id325962257?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/56/a8/57/56a85786-3879-03ca-b322-c1e21919ffa1/appIcon-blue-0-0-1x_U007epad-0-1-sRGB-85-220.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：排行榜</small>
-</p><h2>优惠信息</h2><h3>App内购买</h3><ul>
-  <li>
-    <strong>Top App Cloud：</strong><span>¥128.00</span> → <b>
-  <strong>¥18.00</strong>
-</b><span>[¥18.00 ~ ¥128.00]</span>
-  </li>
-</ul><h2>全部价格信息</h2><p>
-  价格：<b>¥88.00</b>
-</p><h3>App内购买</h3><ul>
-  <li>
-    Top App Cloud：<b>¥18.00</b>
-  </li>
-</ul><h2>应用描述</h2><p>
-  My Measures是一个功能强大的应用程序，用于在iPhone和iPad上存储和共享目标物件尺寸！ 
-My Measures在全球拥有300多万用户，已成为房地产经纪人的行业标准. 
-工程师，木匠，建筑师，拍卖销售商，建筑工人，景观设计人，DIY... 
-
-超级简单易用.只需拍摄照片并添加箭头，角度，文本或注释. 
-由于所有尺寸已经存储，无论您身在何处，都能将其随身携带. 
-钱包里面再也不需要存放纸质草图。要成为专业人士，请使用My Measures. 
-
-产品特点： 
-- 极其简单的用户界面 
-- 添加箭头，角度，文本等对象 
-- 整理文件夹中的项目 
-- 使用PDF，图片或项目格式进行分享 
-- 用您的设备发送电子邮件发送或打印 
-- 英制，公制，中国和日本计量单位. 
--支持使用分数 
-- 在 .打开 -> Dropbox, Evernote, Box... 
-
-PRO版本产品特点： 
-- 图片缩放 
-- 箭头钮 
-- 放大和交叉模式 
-- PREXISO iC4 & Leica DISTO D510 支持 
-
-感谢您的支持和来信.我们欢迎所有的批评和建议，请通过电子邮件联系我们.
-
-你可以使用My Measures Cloud与你的设备同步处理文件，以计算机的浏览器访问文件，使用共享文件夹他人合作，通过接收或下载链接，接收和分享文件。
-
-顶级云端应用程序特点：
-- 云协作（集体项目）
-- 云共享（只共享文件和文件夹的链接）
-- 云备份
-- 通过浏览器（不需要应用程序）云访问项目
-- 在多个设备上同步项目
-
-
-订阅顶级云端应用程序：
-价格是$ 2.99 /月或$ 19.99/年
-- 通过iTunes账户确认付款
--自动更新订阅，除非你在订阅期结束前24小时关闭自动更新订阅功能。
-- 在当前订阅期结束前24小时会在帐户中收取订阅费用并确定更新订阅的费用。
-- 用户可以自由管理订阅和在帐户设置中关闭自动更新购买功能。
-- 隐私政策：http://cloud.topapp.si/legal/tos
-</p><h2>应用截屏</h2><h3>iPhone</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource113/v4/3c/87/47/3c874734-d9b7-9a45-7bd3-7b281a4978be/9d297a5d-4ecd-430e-8614-bede8ac9ec66_MM.iPhone.1.png/392x696bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource113/v4/08/a5/6a/08a56ae1-453b-8d23-0d97-31cc69e2d596/cb6c5fde-63db-41bc-ac84-53541773a067_MM.iPhone.2.png/392x696bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource113/v4/5b/9a/3b/5b9a3b5d-7c27-e435-d5ca-cb76ab85d130/76feedae-40d2-48c3-a648-e0c146190cde_MM.iPhone.3.png/392x696bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource113/v4/c3/b3/90/c3b390c8-5deb-c4aa-2eb9-a0029f33ac2f/6f81ddb7-0121-4fdc-9d6f-957f6d2fdc78_MM.iPhone.4.png/392x696bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource123/v4/9d/7d/c2/9d7dc2b7-2a6a-976d-4372-3d7541292a96/6f965594-d69d-4b3e-81f5-3392bc726502_MM.iPhone.5.png/392x696bb.png" /><h3>iPad</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource123/v4/b2/5f/2d/b25f2d10-5036-c2e6-a35c-8c9eb91955c2/bda733c3-9297-43c4-a500-59d0e8e97c50_MM.iPad.1.png/576x768bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource113/v4/56/8c/0d/568c0d44-3ec0-85bd-8be2-f904898c3abd/8c2afce9-f77e-4e4f-974f-7df2b66acef9_MM.iPad.2.png/576x768bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource123/v4/c3/62/10/c362109f-27bb-796d-7e29-6cd4544c5855/d8866303-09e6-4a32-83e2-05e6b3296d41_MM.iPad.3.png/576x768bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource123/v4/c1/24/f1/c124f1ce-c4b4-344b-7abc-27339f648ec6/a31794ce-6f86-451e-81e5-91f965f2d569_MM.iPad.4.png/576x768bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource123/v4/7f/29/bc/7f29bc2c-6f0a-a270-d9ac-eccbe1838236/7c55dedd-4760-4b76-9a8b-deb08c9c83af_MM.iPad.5.png/576x768bb.png" />]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[LumaFusion]]></title>
         <id>LumaFusion-cn-1772814691610</id>
         <link href="https://apps.apple.com/cn/app/lumafusion/id1062022008?uo=4"/>
@@ -7553,62 +7581,6 @@ XML导出：将您的项目发送到Mac版Final Cut Pro
 • 在线教程：www.youtube.com/@LumaTouch
 • 参考指南：luma-touch.com/lumafusion-reference-guide
 • 支持：luma-touch.com/support
-</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Pocket Posters: AI Video AR]]></title>
-        <id>Pocket Posters: AI Video AR-cn-1772814691610</id>
-        <link href="https://apps.apple.com/cn/app/pocket-posters-ai-video-ar/id6748644117?uo=4"/>
-        <updated>2026-03-07T00:31:31.610+08:00</updated>
-        <summary type="html"><![CDATA[Pocket Posters Pro: ¥198.00 → ¥98.00]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/pocket-posters-ai-video-ar/id6748644117?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/41/ac/1a41ac96-a01f-9b71-35f5-e0b30e6ad935/AppIcon-0-1x_U007epad-0-1-85-220-0.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：排行榜</small>
-</p><h2>优惠信息</h2><h3>App内购买</h3><ul>
-  <li>
-    <strong>Pocket Posters Pro：</strong><span>¥198.00</span> → <b>
-  <strong>¥98.00</strong>
-</b><span>[¥98.00 ~ ¥198.00]</span>
-  </li>
-</ul><h2>全部价格信息</h2><p>
-  价格：<b>¥8.00</b>
-</p><h3>App内购买</h3><ul>
-  <li>
-    Pocket Posters Pro：<b>¥98.00</b>
-  </li><li>
-    口袋海报专业版：<b>¥198.00</b>
-  </li><li>
-    3D 模式：<b>¥68.00</b>
-  </li><li>
-    袖珍海报专业版：<b>¥198.00</b>
-  </li>
-</ul><h2>应用描述</h2><p>
-  Pocket Posters is an AI video maker and AI video editor built for creators who want fast, cinematic results. Type a prompt and generate short-form videos, looping clips, and poster-style visuals for TikTok, Instagram Reels, and YouTube Shorts—then export in creator-ready formats and preview your creations in AR.
-
-AI Video Maker that’s fast and simple
-
-Text-to-Video MAGIC: turn a prompt into cinematic video clips in seconds
-
-AI video styles & templates: neon, glitch, parallax, handheld, time-lapse, slow motion, and more
-
-Multiple variations: create several versions quickly and pick the best
-
-Built-in tools to polish your content
-
-Captions & subtitles: make your videos easier to watch and more engaging
-
-Effects & filters: instantly style your clip with creator-friendly looks
-
-Quick export & share: post faster to TikTok, Reels, and Shorts
-
-AR Preview (3D)
-
-Preview your AI video creations in the real world with AR, capture unique shots, and make your posts stand out.
-
-Pocket Posters is designed for creators who want speed, style, and repeatable output—without complicated editing.
-
-Download Pocket Posters and start creating with an AI video maker built for short-form.
 </p>]]></content>
     </entry>
     <entry>

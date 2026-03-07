@@ -167,11 +167,12 @@
       "inAppPurchase": {}
     },
     "1062022008": {
-      "all": 2,
+      "all": 3,
       "price": 1,
       "inAppPurchase": {
         "Multicam Studio": 1,
-        "速度提升和关键帧": 1
+        "速度提升和关键帧": 1,
+        "FCPXML Export": 1
       }
     },
     "1065802380": {

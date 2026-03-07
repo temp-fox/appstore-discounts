@@ -2,6 +2,248 @@
   "$schema": "apps.json-schema.json",
   "appConfig": [
     {
+      "id": 389784247,
+      "name": {
+        "cn": "Vernier Video Physics"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914609207,
+      "_discountType": "app"
+    },
+    {
+      "id": 718952607,
+      "name": {
+        "cn": "SP Voice"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914601009,
+      "_discountType": "app"
+    },
+    {
+      "id": 982313078,
+      "name": {
+        "cn": "EP Calipers"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914611934,
+      "_discountType": "app"
+    },
+    {
+      "id": 1279246292,
+      "name": {
+        "cn": "米亚识字"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914609207,
+      "_discountType": "app"
+    },
+    {
+      "id": 1390436568,
+      "name": {
+        "cn": "九宫格切图 - 无损九格切图拼图"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914601009,
+      "_discountType": "app"
+    },
+    {
+      "id": 1438386246,
+      "name": {
+        "cn": "职业乒乓记分板"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914598309,
+      "_discountType": "app"
+    },
+    {
+      "id": 1445346223,
+      "name": {
+        "cn": "宝宝辅食与过敏记录"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914614507,
+      "_discountType": "app"
+    },
+    {
+      "id": 1492041431,
+      "name": {
+        "cn": "Pencil Planner & Draw Calendar"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914601009,
+      "_discountType": "app"
+    },
+    {
+      "id": 1519735052,
+      "name": {
+        "cn": "夜雨时"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914606574,
+      "_discountType": "app"
+    },
+    {
+      "id": 1550780323,
+      "name": {
+        "cn": "电力烟花"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914609140,
+      "_discountType": "app"
+    },
+    {
+      "id": 1594971770,
+      "name": {
+        "cn": "参数生命：实验室"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914609207,
+      "_discountType": "app"
+    },
+    {
+      "id": 6742566060,
+      "name": {
+        "cn": "DocCompare: PDF & Word Diff"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914595696,
+      "_discountType": "app"
+    },
+    {
+      "id": 6736519015,
+      "name": {
+        "cn": "股民助手-AI智能工具"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914595596,
+      "_discountType": "app"
+    },
+    {
+      "id": 6751487729,
+      "name": {
+        "cn": "WiFi守护者 蹭网识别 - 谁在偷我的WiFi"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914595596,
+      "_discountType": "app"
+    },
+    {
+      "id": 6754198942,
+      "name": {
+        "cn": "HAM个人工具"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914595596,
+      "_discountType": "app"
+    },
+    {
+      "id": 6473154522,
+      "name": {
+        "cn": "六年级英语下册 - 外研三起点小学英语"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914595596,
+      "_discountType": "app"
+    },
+    {
+      "id": 6751767040,
+      "name": {
+        "cn": "Video Compressor - ShrinkIt"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914601117,
+      "_discountType": "app"
+    },
+    {
+      "id": 6747028179,
+      "name": {
+        "cn": "SWAM VariFlute"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914603673,
+      "_discountType": "app"
+    },
+    {
+      "id": 6741391020,
+      "name": {
+        "cn": "每日决策"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914606574,
+      "_discountType": "app"
+    },
+    {
+      "id": 6748243845,
+      "name": {
+        "cn": "Cozmo Robot"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914609140,
+      "_discountType": "app"
+    },
+    {
+      "id": 6739362938,
+      "name": {
+        "cn": "Watch Shot Pro - 空气枪"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914609140,
+      "_discountType": "app"
+    },
+    {
+      "id": 6754930845,
+      "name": {
+        "cn": "蓝狐漫画 - 二次元必备追漫神器"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772914611874,
+      "_discountType": "app"
+    },
+    {
       "id": 317211808,
       "name": {
         "cn": "Pitch Pro"
@@ -8596,7 +8838,9 @@
       "name": {
         "cn": "开灯相机 - 闪光灯常亮相机"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 543859300,
@@ -9115,7 +9359,9 @@
       "name": {
         "cn": "2000核心英语单词"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6472644663,
@@ -10595,7 +10841,9 @@
       "name": {
         "cn": "记课 - 课程管理・记课时・打卡签到・记账"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6747368863,
@@ -22402,7 +22650,9 @@
       "name": {
         "cn": "FISHI - 鱼眼相机"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1373544809,
@@ -22497,7 +22747,9 @@
       "name": {
         "cn": "Pango 狩猎公园建造者"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1384762505,
@@ -26831,7 +27083,9 @@
       "name": {
         "cn": "极简遗愿清单"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6757845502,
