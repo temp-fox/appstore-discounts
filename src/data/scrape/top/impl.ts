@@ -3,13 +3,13 @@ import nodeFetch from 'node-fetch'
 // 自定义配置：每个分类前200名（API 最大限制）
 const limit = 200
 
-type ChartType = 'toppaidapplications' | 'topgrossingapplications'
+type ChartType = 'toppaidapplications'
 
 interface ChartConfig {
   chart: ChartType
   addSourceGenre: string   // 分类榜 addSource
   addSourceAll: string     // 总榜 addSource
-  shouldBePaid?: boolean   // 付费榜 true，畅销榜不设
+  shouldBePaid?: boolean   // 付费榜 true
   discountType: 'app' | 'unknown'
   label: string            // 日志中文名
 }
@@ -22,14 +22,6 @@ const chartConfigs: ChartConfig[] = [
     shouldBePaid: true,
     discountType: 'app',
     label: '付费排行榜',
-  },
-  {
-    chart: 'topgrossingapplications',
-    addSourceGenre: 'grossing-top',
-    addSourceAll: 'grossing-top-all',
-    shouldBePaid: true,
-    discountType: 'unknown',
-    label: '畅销排行榜',
   },
 ]
 

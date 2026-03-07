@@ -217,7 +217,7 @@ declare global {
   type AppTopInfo = {
     id: string
     name: string
-    addSource?: string                            // 来源标识，如 'paid-top'/'grossing'/'new-release'/'GoFans'/'OODATA'
+    addSource?: string                            // 来源标识，如 'paid-top'/'new-release'/'GoFans'/'OODATA'
     _externalSource?: string
     _externalSourceFirstSeen?: number
     _discountType?: 'app' | 'iap' | 'unknown'
