@@ -626,6 +626,13 @@
       "all": 1,
       "price": 1,
       "inAppPurchase": {}
+    },
+    "6740015002": {
+      "all": 1,
+      "price": 0,
+      "inAppPurchase": {
+        "All Access - Lifetime": 1
+      }
     }
   },
   "hk": {},

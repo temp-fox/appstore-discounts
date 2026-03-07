@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/appstore-discounts/appstore-discounts/rss/cn.xml</id>
     <title>App Store Discounts（CN）</title>
-    <updated>2026-03-07T11:00:14.940+08:00</updated>
+    <updated>2026-03-07T12:08:33.941+08:00</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Eyelly wu</name>
@@ -21,7 +21,7 @@ feedId:157007849019630592+userId:73658201673997312
         <title type="html"><![CDATA[🎉 欢迎订阅 App Store Discounts]]></title>
         <id>welcomecn</id>
         <link href="https://github.com/appstore-discounts/appstore-discounts"/>
-        <updated>2026-03-07T11:00:14.942+08:00</updated>
+        <updated>2026-03-07T12:08:33.942+08:00</updated>
         <summary type="html"><![CDATA[感谢您订阅我们的 RSS 源，我们是一个致力于为全球用户带来 App Store 最新折扣信息的社区驱动项目。我们的目标是让每一位用户都能第一时间掌握心爱应用的优惠动态，无论是应用本身的价格下调，还是内购项目的限时促销，我们都将为您一网打尽！]]></summary>
         <content type="html"><![CDATA[<p>感谢您订阅我们的 RSS 源，我们是一个致力于为全球用户带来 App Store 最新折扣信息的社区驱动项目。我们的目标是让每一位用户都能第一时间掌握心爱应用的优惠动态，无论是应用本身的价格下调，还是内购项目的限时促销，我们都将为您一网打尽！</p><h1>关于我们的 RSS 源</h1><ul>
   <li>专注于推送 App Store 应用的优惠信息</li><li>只要应用价格降低或内购项降价，我们就会及时推送</li><li>每个应用的优惠信息以单独的 feed 形式呈现</li><li>RSS 源完全开源，您可以随时查看、贡献和添加您关注的应用</li>
@@ -29,9 +29,9 @@ feedId:157007849019630592+userId:73658201673997312
     </entry>
     <entry>
         <title type="html"><![CDATA[统计数据报告]]></title>
-        <id>rankingcnSat, 07 Mar 2026 03:00:14 GMT</id>
+        <id>rankingcnSat, 07 Mar 2026 04:08:33 GMT</id>
         <link href="https://github.com/appstore-discounts/appstore-discounts"/>
-        <updated>2026-03-07T11:00:14.942+08:00</updated>
+        <updated>2026-03-07T12:08:33.942+08:00</updated>
         <summary type="html"><![CDATA[最新统计数据报告]]></summary>
         <content type="html"><![CDATA[<h2>追踪的国家或地区</h2><ol>
   <li>
@@ -2200,6 +2200,29 @@ feedId:157007849019630592+userId:73658201673997312
         </ul>
       </td>
     </tr>
+    <tr>
+      <td>
+        <b>118</b>
+      </td>
+      <td>
+        <a href="https://apps.apple.com/cn/app/id6740015002">Guitar Wiz: 吉他调音器与和弦</a>
+      </td>
+      <td>
+        <ul>
+          <li>
+            <span>总次数</span>：<b>1</b>
+          </li><li>
+            <span>价格</span>：<b>0</b>
+          </li><li>
+            <span>App内购买</span><ol>
+              <li>
+                <i>All Access - Lifetime</i>：<b>1</b>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </td>
+    </tr>
   </tbody>
 </table><h2>禁用推送应用列表</h2><table>
   <thead>
@@ -2347,6 +2370,135 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
   </tbody>
 </table>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Guitar Wiz: 吉他调音器与和弦]]></title>
+        <id>Guitar Wiz: 吉他调音器与和弦-cn-1772855598200</id>
+        <link href="https://apps.apple.com/cn/app/guitar-wiz-%E5%90%89%E4%BB%96%E8%B0%83%E9%9F%B3%E5%99%A8%E4%B8%8E%E5%92%8C%E5%BC%A6/id6740015002?uo=4"/>
+        <updated>2026-03-07T11:53:18.200+08:00</updated>
+        <summary type="html"><![CDATA[All Access - Lifetime: ¥398.00 → ¥38.00]]></summary>
+        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/guitar-wiz-%E5%90%89%E4%BB%96%E8%B0%83%E9%9F%B3%E5%99%A8%E4%B8%8E%E5%92%8C%E5%BC%A6/id6740015002?uo=4">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/f3/be/a9f3be7d-b706-2fc9-5245-951761eb805c/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/60x60bb.jpg" />
+</a><p>
+  <small>来源：排行榜</small>
+</p><h2>优惠信息</h2><h3>App内购买</h3><ul>
+  <li>
+    <strong>All Access - Lifetime：</strong><span>¥398.00</span> → <b>
+  <strong>¥38.00</strong>
+</b><span>[¥38.00 ~ ¥398.00]</span>
+  </li>
+</ul><h2>全部价格信息</h2><p>
+  价格：<b>免费</b>
+</p><h3>App内购买</h3><ul>
+  <li>
+    All Access - Lifetime：<b>¥38.00</b>
+  </li><li>
+    All Access - Monthly：<b>¥38.00</b>
+  </li><li>
+    All Access - Yearly：<b>¥198.00</b>
+  </li><li>
+    All Access - Lifetime (Family)：<b>¥498.00</b>
+  </li><li>
+    All Access - Yearly (Family)：<b>¥298.00</b>
+  </li><li>
+    All Access - Monthly (Family)：<b>¥48.00</b>
+  </li>
+</ul><h2>应用描述</h2><p>
+  Guitar Wiz 是为各个水平的吉他手打造的一体化吉他助手。无论你是在学习第一个和弦、探索高级和弦走向、为吉他调音，还是编排完整歌曲，Guitar Wiz 都能提供练习、创作和演奏所需的工具，帮助你自信弹奏。
+
+海量吉他和弦库
+
+探索强大的互动和弦资料库，在指板上查看各种把位组合。
+• 精准的按弦指法建议  
+• 高音质和弦示范音频  
+• 详细和弦理论（音名、音程、转位）  
+• 了解和弦在实际音乐中的常见用法  
+• 通过和弦名称、选定音符，或直接点击虚拟指板，瞬间找到所需和弦  
+
+无障碍与包容性设计
+
+Guitar Wiz 专为所有吉他手提供友好体验。调音器对 VoiceOver 进行了强化支持，视障用户也能通过清晰语音反馈和实时指引，自信完成调音。Guitar Wiz 同时支持 iOS 的无障碍设置，如“仅用颜色区分时进行强化”“提高对比度”等，提升和弦图的清晰度，让每位用户都能轻松看懂。
+
+CHORD ASSIST 实时和弦教练
+
+在实时反馈中练习任意和弦指型。  
+Guitar Wiz 会在虚拟指板上显示和弦位置，你在真吉他上弹奏，App 会监听并标记你弹出的音符——让每个音都变成绿色，校准每一个细节，把和弦形状牢牢记在手上和脑中。
+
+在音乐语境中学习
+
+每个和弦都能开启更多可能。即时发现相关和弦和常见和弦走向，理解和弦在真实音乐中的搭配与流动。
+
+互动和弦走向
+
+使用内置的吉他、贝斯和鼓模式，跟随常用和弦走向一起 Jam。  
+在真实音乐语境中练习和弦切换，更有趣、更有动力，也更有效。
+
+Song Maker 歌曲创作器
+
+用和弦与真实感节奏型，快速搭建完整歌曲结构。  
+• 即兴创作并立刻跟弹  
+• 非常适合练习和弦衔接与歌曲创作  
+• 导出 WAV 音轨，便于高音质分享与后期制作  
+
+SongSheet Scanner 歌单扫描
+
+用相机对准纸质歌单或谱子，Guitar Wiz 会通过智能视觉识别和弦，并保存到你的收藏中。是学习翻弹、整理练习素材的理想工具。
+
+每日一和弦
+
+每天发现一个新和弦，保持稳定进步。你可以选择练习方向：  
+初学者 • 进阶 • 爵士  
+
+高精度吉他调音器
+
+以专业级精度调音（最高 ±0.01 音分）。  
+• 实时音高曲线，方便微调  
+• 20+ 种替代调弦，并附音频参考  
+
+专业节拍器
+
+用功能灵活的节拍器稳固你的节奏感。  
+• 支持多种拍号与细分  
+• 后台播放支持  
+• 保存和加载预设，快速调用常用节奏  
+• 通过锁屏和实时活动进行控制  
+
+Guitar Wiz for Apple Watch
+
+必备吉他工具，抬腕即用。  
+不分心，不依赖手机，只专注于音乐本身。
+
+腕上和弦
+
+• 为 Apple Watch 优化的快速和弦查询库  
+• 在小屏幕上也清晰易读的和弦图  
+• 适合随时查看和弦指法  
+
+Apple Watch 调音器
+
+• 快速、准确的音高识别  
+• 清晰易懂的调音反馈  
+• 支持 VoiceOver 与语音调音指引  
+• 音频输入绝不会被录制、存储或分享  
+
+Apple Watch 节拍器
+
+• 稳定可靠的节奏  
+• 通过 Tap Tempo 一点即可检测当前速度  
+• 支持蓝牙配件，方便低调练习  
+
+表盘小组件与桌面组件
+
+• 一键进入调音器、节拍器和每日一和弦  
+• 设计简洁、易读且省电  
+
+无论你是在学习和弦、练习和弦走向、调音、用节拍器打拍、扫描歌曲，还是在 Song Maker 中搭建音轨，Guitar Wiz 都旨在激发灵感，帮助你成长为理想中的吉他手。
+
+立即下载 Guitar Wiz，解锁你的吉他潜能。
+
+本应用受 Apple 标准最终用户许可协议（EULA）约束：  
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[病历助手-拍照识别&用药闹铃提醒&健康档案&慢性病智能跟踪]]></title>
@@ -7128,820 +7280,6 @@ ADHD友好专属设计（核心亮点）
 ——————————————————————
 隐私条款：https://a1cballncrz.feishu.cn/wiki/VP7ywa3WFiBj4Okd97vcdMpmnqf?from=from_copylink
 用户协议：https://a1cballncrz.feishu.cn/wiki/NAT7wOjfDiLFbRkrXVic9WXanjh?from=from_copylink
-</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Boss Radar]]></title>
-        <id>Boss Radar-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/boss-radar/id518220610?mt=12&amp;uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/boss-radar/id518220610?mt=12&uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/c1/7b/ae/c17bae9f-983f-f22c-83d8-a81214c5db71/BossRadar301.png/60x60bb.png" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h2>应用描述</h2><p>
-  A brand new version with Bluetooth Low Energy devices(they are almost in this mode nowadays) support. All Sandbox-restricted actions (e.g. start/terminate other apps) were removed...
-
-Almost everyone has been caught off task by the boss before. The encounter may be awkward, humiliating, or most likely downright disastrous. But, the truth is, nobody can work forever. If you are like most people, whatever focus you had at the beginning of the day must surely be all but gone after several long, arduous hours of work.
-It's not criminal to play a few games, look at some LOLcats, or shop on Amazon for a while to relax every once in a while. You can even argue that by relaxing, your productivity increases. But, of course, your excuses will never work on your boss, who will either give you a humiliating and boring speech or worse yet, demote or even fire you. 
-Unfortunately, this app can't make your boss more understanding, but it's the next best thing.
-
-Bosses often seem to pop out of nowhere, and usually at a moment's notice, but that cannot be literally true since it would defy the laws of physics. No, your boss had to come from somewhere, and if you had known exactly when he would come by your desk and check on you, all those embarrassing, promotion-killing encounters with him might have been avoided.
-Knowing the location of your boss and the timing of his arrival may seem like a luxury, but not with Boss Radar. Here's how it works:
-Most people nowadays, especially people such as your boss, carry some sort of Bluetooth device (earpieces, smartphones, etc...) on their person at all times. And whether the device is in use or not, the Bluetooth signal is constantly being emitted. It's like this huge loudspeaker announcing the device owner's presence everywhere he walks (because people always name their devices with some easily identifiable name like "Dave's Phone"). Boss Radar constantly scans for this signal. Because it is not very strong, if it does find the target device, that means the device (carried by the boss, in this case) is getting too close, and it would then warn you with a signal. In addition to the alarm, the app can also quickly and automatically change your wallpaper, stop your music, switch your browser to something work-related, open up documents, and even kill undesired apps (Warning: loss of game progress may occur!) to convince your boss of your innocence, god-like focus, utter devotion, and, most of all, the worthiness of promotion (I mean, isn't that the whole point of pleasing the boss, to begin with?). Considering the higher salary associated with this prospect, Boss Radar is certainly worth the price.
-
-The best part is, Boss Radar can be useful even outside of work. Use it on your wife, or maybe your kids, or maybe on that girl you met a couple of weeks ago but cannot seem to run into anymore... the list is endless.
-
-features of original v2.02
-See App's ReadMe for details
-
-v2.02 -> v3.01
-- Any Mac (Apple Silicon, Intel) version for macOS Big Sur
-- the whole app is fully rewritten
-- Bluetooth device detection to include BLE low-energy support
-- a simple click and diagnostic mode
-- all Sandbox restricted actions removed
-- new startup tip added
-- 'auto-open at login' tip added
-- app version display added
-- support menu updated
-- all deprecated functions rewritten
-
-v3.01 -> v3.05
-- all deprecated code rewritten
-- bug fixed: Alarm test button should be on/off toggle mode
-- test button for screensaver added
-- test button for web browser added
-- More by dragonBTV menu updated
-
-More questions? Read the FAQ!
-</p><h2>应用截屏</h2><h3>iPhone</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource124/v4/b3/72/d9/b372d94e-c1a2-5254-4f03-31d93ec1bd84/f89d3ee5-e285-4d0f-bd3d-141dcd44be2f_BossRadar301-0.png/800x500bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/f9/c3/6f/f9c36fa8-e487-3953-a5d1-358944c2c997/mza_1502962068319935299.jpg/800x500bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/21/a3/2f/21a32f4c-3dfd-8814-41fe-bfcdb889f3e2/mza_1129920086763237020.jpg/800x500bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/b6/e0/2f/b6e02f96-db0b-6a36-337d-bea19dc4c856/mza_184668446693830295.jpg/800x500bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/34/49/b9/3449b93b-1fc5-de3f-f435-38a3484654cd/mza_235841204479069837.jpg/800x500bb.jpg" />]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Food Saver]]></title>
-        <id>Food Saver-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/food-saver/id894059283?uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/food-saver/id894059283?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f8/d2/c6/f8d2c60d-883b-ae88-a799-893cac1f715b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h2>应用描述</h2><p>
-  Food Saver helps you organize food (and more), keep track of expiration dates, and receive location‑based reminders at the right moment. It’s designed to be fast, clear, and practical—so you waste less and never forget what’s about to expire.
-
-How it works
-• Add an item, set a date, and optionally a location.
-• Food Saver creates a Reminder and alerts you at the right time and place.
-• iCloud keeps everything in sync across devices.
-
-Key features
-• Location‑based (geofence) reminders via Apple Reminders
-• Sync across devices with iCloud
-• Barcode and expiration‑date scanning
-• Batch scan for fast pantry/product capture
-• Export & import to share or back up your pantry and products
-• Import legacy Food Saver CSV backups (Settings > Import legacy CSV)
-• Customizable “expiring soon” window
-• Color‑coded status (fresh / soon / expired)
-• Smart search and filters (name + notes)
-• Works great for food, medicines, and cosmetics
-• App badge counts expiring items
-</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Colorzzle (彩色拼图)]]></title>
-        <id>Colorzzle (彩色拼图)-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/colorzzle-%E5%BD%A9%E8%89%B2%E6%8B%BC%E5%9B%BE/id1320446970?uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/colorzzle-%E5%BD%A9%E8%89%B2%E6%8B%BC%E5%9B%BE/id1320446970?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9c/0e/55/9c0e5588-247f-8921-ed3d-d0a4fd412e8d/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h2>应用描述</h2><p>
-  容易和缓慢的颜色益智享受
-
-2017年城南印地游戏大赛大奖得主
-
-颜色是一种颜色匹配的游戏。
-当你匹配相同的颜色，树木生长，鲜花盛开。
-如果你种植所有的树木和花朵，舞台是清晰的！
-
-有100个美丽的谜题。
-
-上手容易，更多的应用程序可用。
-尝试混合鲜花和鲜花。
-
-
-这个游戏是基于“大荣工作室”与一对夫妇和一个婴儿
-这是第一件作品。
-
-谢谢。
-</p><h2>应用截屏</h2><h3>iPhone</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9c/9e/d1/9c9ed1e8-5438-0ef6-762c-29fce9eef305/pr_source.png/406x228bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/ac/2a/d3ac2ae1-eba7-c850-996b-589cdf98ca90/pr_source.png/406x228bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/8c/7d/998c7d04-3c3e-813c-1c08-e2094086867a/pr_source.png/406x228bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f1/63/89/f1638960-f6c8-4395-fd19-65682c5dbc4f/pr_source.png/406x228bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/73/b4/97/73b497e8-d3b6-a17c-8c32-7745d2f1f8de/pr_source.png/406x228bb.png" /><h3>iPad</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/52/d5/3e/52d53e12-0f0a-ed15-4817-36ab2279e692/pr_source.png/552x414bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8c/38/58/8c3858c7-9dd8-3f69-492a-0d901d8b867d/pr_source.png/552x414bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ba/31/b1/ba31b17d-87df-4ba5-51ed-51826db7cf24/pr_source.png/552x414bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/15/42/1f/15421fd7-a600-01b7-3f91-dd421d5a97cc/pr_source.png/552x414bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0a/81/50/0a815016-3f6c-dda1-16cc-7eca3ae6b7d5/pr_source.png/552x414bb.png" />]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[next.calc: a modern calculator]]></title>
-        <id>next.calc: a modern calculator-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/next-calc-a-modern-calculator/id1470313161?uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/next-calc-a-modern-calculator/id1470313161?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c7/11/da/c711da58-e28d-5825-7542-a55352cf5591/AppIcon-n-0-0-1x_U007emarketing-0-0-0-7-0-0-85-220.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h3>App内购买</h3><ul>
-  <li>
-    Buy me a coffee：<b>¥38.00</b>
-  </li><li>
-    Buy me a burrito：<b>¥68.00</b>
-  </li><li>
-    Buy me a slice of pizza：<b>¥22.00</b>
-  </li>
-</ul><h2>应用描述</h2><p>
-  next.calc is a beautiful and intuitive calculator, reimagined for the modern era, with many useful features:
-
-Completely Free
-- No cost, no ads, no tracking!
-
-Themes
-- Personalize to match your style
-
-Lock Screen Widgets
-- Quickly access from the lock screen
-
-One-Handed Keyboard
-- Effortlessly use on larger phones and tablets
-
-A Cursor
--  Allows for easy typing and editing, just like typing in Messages or Notes
-
-Infix Calculations
-- See the full expression, in context, as you type
-
-Multi-Lined Expressions
-- Making long expressions a pleasure to edit
-
-Syntax Highlighting
-- Makes expressions easier to digest
-
-Real-Time Answers
-- See the answer as you type
-
-Infinite History
-- Easily jump back to a previous expression or answer
-
-Favorite Expressions with Notes
-- Great for storing budgets, calculating tips, formulas, etc.
-
-Intuitive Cursor Gestures
-- Swipe left and right on the keyboard to quickly move the cursor
-
-Intuitive Keyboard Gestures
-- Swipe down (or long press) on keys with secondary values
-
-Keyboard and Trackpad Support
-- Works great with the Magic Keyboard
-
-iPad Support & Multitasking
-- Supports Split View and Slide Over
-
-Copy, Cut, and Paste 
-- Double tap on numbers to quickly select and edit them
-
-Beautiful Handmade Animations and Icons
-- Makes the app a delight and a pleasure to use
-
-And more!
-</p><h2>应用截屏</h2><h3>iPhone</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/9d/ce/12/9dce12a7-64d8-ab7b-90cc-702d2740ea27/e8487545-377a-4b4b-9524-973ba49c68b5_8P_Screen_1@3x.jpg/392x696bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/c9/70/cd/c970cdb7-847d-23da-4552-a77b2e694829/95353f31-e2c0-434a-8e6c-05ea8333133b_8P_Screen_2@3x.jpg/392x696bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/fe/39/18/fe3918f2-77ab-66af-94f5-401ed82ed6f9/b2bcee99-b709-4d83-91c9-45ace0a27032_8P_Screen_3@3x.jpg/392x696bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/bd/ac/33/bdac33c3-6e37-f5eb-6e49-b74b18eaca03/4aac0252-0e21-4e4d-8e2d-6d938f2f62e8_8P_Screen_4@3x.jpg/392x696bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/c1/af/1a/c1af1ab7-e4c5-7822-6b19-31ffe4c1c048/6e9f97ff-0d84-447b-a92e-1923911f22c9_8P_Screen_5@3x.jpg/392x696bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/78/f8/53/78f85357-6704-9d3a-d12f-1657c0422f88/8ab761d6-ec47-4a8b-996d-57b73ad3be5e_8P_Screen_6@3x.jpg/392x696bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/9d/7e/2c/9d7e2cb6-e6c7-4ab5-939b-1845d3191535/fc5de36e-79bb-43f6-aa2b-3d3abd360d18_8P_Screen_7@3x.jpg/392x696bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/35/c0/83/35c083f0-2e18-f2a0-b073-5fe28b44f3fc/93e1584d-fed4-49cb-934a-9c5145634932_8P_Screen_8@3x.jpg/392x696bb.jpg" /><h3>iPad</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/1a/75/6e/1a756eaf-fd5e-5923-b3af-91f57c08713e/a52203c4-3a60-4e21-b0db-c0e2c4064d7b_iPP2_Screen_1@2x.jpg/552x414bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/90/a0/ed/90a0ed4c-8e8e-9573-04c6-2a53a2038d0e/6126ae0a-10f1-484d-9a83-7e07e08fa9f0_iPP2_Screen_2@2x.jpg/552x414bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/bb/ca/71/bbca7164-7863-e57f-99e1-649325b606d3/89046d7b-4761-4dea-970d-0b36c7584967_iPP2_Screen_3@2x.jpg/552x414bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/58/9d/ff/589dff6d-3153-ce5b-b385-13d498cab677/1ab811aa-068f-4367-a07b-863eb7549a9c_iPP2_Screen_4@2x.jpg/552x414bb.jpg" />]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Speaking Loud Alert]]></title>
-        <id>Speaking Loud Alert-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/speaking-loud-alert/id1546459735?uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/speaking-loud-alert/id1546459735?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/b2/2d/d6/b22dd67f-6b89-920a-9511-c5584592f7c2/AppIcon-1x_U007emarketing-0-10-0-85-220.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h2>应用描述</h2><p>
-  Enjoy your meeting using your device as a loud voice controller.
-
-Non intrusive and nice to watch decibel meter to keep participants safer.
-
-Colours will advise you when people voice volume is too high. The app will show decibel meter of your group voices and will graphically increase in size and color of the bars to show when to reduce voice volume.
-</p><h2>应用截屏</h2><h3>iPhone</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/f7/c7/45/f7c745ba-ffd0-c182-876f-ccab487246c7/4bf8c1a7-2a2e-4f68-9e5a-7c1ae54bdce9_mockup001_55.png/392x696bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/44/57/21/44572108-55e5-08a1-c598-fc4f93d76302/1658a643-0d52-486e-a21b-2507a342a1b4_mockup002_55.png/392x696bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource124/v4/5d/24/97/5d24970b-95a2-f798-fea5-901f580ec9d6/bece084b-bf0b-4d19-9a15-8f66b29138f3_mockup003_55.png/392x696bb.png" /><h3>iPad</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource124/v4/3f/cf/a1/3fcfa169-3a94-69bb-e75a-922888abec8c/2e26307c-cacd-44b4-93b7-9ce0d389ef26_mockup01_122.png/576x768bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/2c/7d/0e/2c7d0eca-c93f-0421-a7cc-bcce6af2d0d9/c9bcb28f-2615-40b0-a0dc-01d5705a7c95_mockup02_122.png/576x768bb.png" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource124/v4/72/ea/7e/72ea7ee2-2925-11cc-fc39-bc09875700e1/045b85a3-b7e5-4733-b6a3-b5dafb659e98_mockup03_122.png/576x768bb.png" />]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Pill Counter]]></title>
-        <id>Pill Counter-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/pill-counter/id6476245875?uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/pill-counter/id6476245875?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6e/79/42/6e794266-4c7b-2e75-c7bd-2b2e5fd427d4/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h2>应用描述</h2><p>
-  Pill Counter is an ultimate app that designed to simplifying your medication routine
-
-Key Features:
-- Effortless pill counting using camera or photo
-- Multilingual audio support for clear communication
-- Comprehensive history storage for easy tracking
-- Saving time on inventory checks.
-- User-friendly interface for a seamless experience
-
-Effortlessly turn your tracking pills, tablets, or capsules into a breeze. Take a quick photo or using your own image, our advanced technology will accurately count your pills, ensuring precision and reliability every time.
-
-Pill Counter isn't just about counting, it's about accessibility. With speaker support for every language, you'll receive clear verbalized pill counts, ensuring a universal and user-friendly experience.
-
-Track your medication journey with ease with Pill Counter's history storage feature that keep a record of your medication sessions, providing a comprehensive overview of your health journey.
-
-This app versatile capabilities extend to counting pills and capsules of all shapes and sizes, ensuring accuracy and ease in managing a diverse range of medications.
-
-Pill Counter empowers you to take control of your health without compromising your valuable time, which means you can effectively reduce the amount of time spend on inventory checks.
-</p><h2>应用截屏</h2><h3>iPhone</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/85/4a/ef/854aefb5-ba32-83f0-0936-6d6aa750f673/df1bd5ff-3f7f-41ed-bac5-f7d8966bdbfd_iPhone_5.5_01.jpg/392x696bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/fa/21/56/fa215679-2228-8c95-737b-77c08124a4df/ec0b43d6-5c0d-4321-8679-36f27567d619_iPhone_5.5_02.jpg/392x696bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/89/b4/af/89b4af7b-062e-aa0c-be75-9cf5bcead8cd/3664c8c1-f24a-4375-b844-54c7019b79c5_iPhone_5.5_03.jpg/392x696bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/cd/d4/72/cdd47212-80b5-7895-eb41-6e884719dfa4/9d21b83c-f13f-4188-8bee-a7faf3b25ba6_iPhone_5.5_04.jpg/392x696bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/a8/1c/10/a81c10eb-3c54-5702-571a-9d1f79d0a453/6967f3f9-5f13-4468-8eba-f56a4bc84a7a_iPhone_5.5_05.jpg/392x696bb.jpg" /><h3>iPad</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/48/69/0a/48690a4c-fa34-7b73-dda7-42b30d967fd8/232825e8-59b9-414f-a7f5-8c1af428b97b_iPad_12.9_01.jpg/576x768bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/73/2c/44/732c44d5-c54c-2d6b-b329-166bdea33c72/45e66588-883f-4a6e-bd7b-4650efd626f3_iPad_12.9_02.jpg/576x768bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/39/fe/9b/39fe9b01-3c51-4f06-b28d-3eaaa6aedd9b/3451c524-ba89-4ed1-ae9d-8e1116d8e67b_iPad_12.9_03.jpg/576x768bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/25/04/dd/2504ddd6-a07c-99e8-7cd0-2827282cd553/25436f2f-71fb-45a4-ad9d-551a31eceed4_iPad_12.9_04.jpg/576x768bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/5d/0e/e2/5d0ee2f8-f7c5-a8c9-6be9-262cdae350d9/b882d952-5caf-4b71-aefa-2cb55718caa3_iPad_12.9_05.jpg/576x768bb.jpg" />]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[小记分 - 趣味记分神器]]></title>
-        <id>小记分 - 趣味记分神器-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/%E5%B0%8F%E8%AE%B0%E5%88%86-%E8%B6%A3%E5%91%B3%E8%AE%B0%E5%88%86%E7%A5%9E%E5%99%A8/id6615084303?uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/%E5%B0%8F%E8%AE%B0%E5%88%86-%E8%B6%A3%E5%91%B3%E8%AE%B0%E5%88%86%E7%A5%9E%E5%99%A8/id6615084303?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1f/67/4d/1f674d82-b033-cdc0-a106-c9c127fdfbb2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h3>App内购买</h3><ul>
-  <li>
-    咖啡：<b>¥28.00</b>
-  </li>
-</ul><h2>应用描述</h2><p>
-  小记分是一款独具创意的线下游戏计分工具，让记分变得简单又有趣！
-
-【核心特色】
-
-创新交互：独特的圆盘式计分界面，轻触即可快速记分
-多人同乐：支持2-8位玩家同时记分，完美适配各类棋牌、桌游场景
-实时排行：动态更新积分排名，一目了然谁是赢家
-灵活配置：支持正负计分，适应各类游戏规则
-趣味竞技：内置排行榜系统，让每场游戏都充满竞争乐趣
-
-【适用场景】
-
-朋友聚会玩桌游
-家庭棋牌娱乐
-休闲竞技对战
-各类需要记分的线下游戏
-
-告别传统纸笔记分的烦恼，让小记分陪您享受欢乐的游戏时光！
-简约的设计，人性化的操作，让您专注于游戏本身的乐趣。
-</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[离线中文汉语全能字典词典 - 文典星]]></title>
-        <id>离线中文汉语全能字典词典 - 文典星-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/%E7%A6%BB%E7%BA%BF%E4%B8%AD%E6%96%87%E6%B1%89%E8%AF%AD%E5%85%A8%E8%83%BD%E5%AD%97%E5%85%B8%E8%AF%8D%E5%85%B8-%E6%96%87%E5%85%B8%E6%98%9F/id6748726246?uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/%E7%A6%BB%E7%BA%BF%E4%B8%AD%E6%96%87%E6%B1%89%E8%AF%AD%E5%85%A8%E8%83%BD%E5%AD%97%E5%85%B8%E8%AF%8D%E5%85%B8-%E6%96%87%E5%85%B8%E6%98%9F/id6748726246?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/df/9b/e4/df9be46b-3f4c-8d8c-7394-6b9302626d75/AppIcon-0-1x_U007epad-0-1-85-220-0.jpeg/60x60bb.jpg" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h2>应用描述</h2><p>
-  文典星是一款专注于中华传统文化学习的无内购，无广告，无弹窗的综合性词典应用，为用户提供丰富的语言文化资源和便捷的查询、收藏、浏览体验。应用涵盖汉字、词语、诗词、古文等多种传统文化内容，并拓展对谜语、歇后语、绕口令、脑筋急转弯、格言的学习，是学习和传承中华文化的理想工具，所有功能离线使用。
-核心功能
- 丰富的内容资源
-* 汉字查询：提供详细的汉字释义、读音、笔画等信息,收录超20000汉字数据。
-* 词语(成语)词典：收录大量词汇，包含释义、用法和例句，收录超300000词语内容。
-* 诗词鉴赏：精选古典诗词，配有作者介绍、朝代背景和部分译文赏析，收录超9000首诗词。
-* 古文阅读：经典古文篇章，帮助理解传统文学，收录包括：论语、中庸、千字文、增文贤文、孟子、庄子、老子等15部经典著作。
- 趣味知识板块
-* 谜语：传统谜语集锦，锻炼思维能力
-* 歇后语：生动有趣的民间俗语，了解传统智慧
-* 绕口令：练习发音，提升语言表达能力
-* 脑筋急转弯：开发智力，活跃思维
-* 百科知识：涵盖历史、文化、科学等多领域知识
-* 格言：古今名言，启发人生思考
-文典星学习工具
-* 绕口令练习：互动式绕口令练习，生动有趣
-* 猜谜语练习：趣味猜谜练习，寓教于乐
-* 歇后语练习：歇后语配对学习
-* 诗词背诵：诗词记忆训练
-* 诗词填空：诗词理解与记忆结合
-* 成语接龙：经典成语接龙联想记忆。
-* 成语填空：成语学习与应用
-* 成语识别：成语辨识能力训练
-* 百科知识练习：百科知识学习，丰富你的知识储备
-* 脑筋急转弯练习：训练你的思维能力
-强大的搜索功能
-* 全局搜索：一键搜索所有内容类型
-* 智能匹配：支持模糊搜索和精确查找
-* 分类筛选：按内容类型快速定位所需信息
-* 搜索历史：记录查询记录，方便重复查看
-个性化收藏
-* 收藏管理：收藏感兴趣的内容，建立个人知识库
-* 分类整理：按内容类型自动分类收藏项目
-* 快速访问：一键查看所有收藏内容
- 随机发现
-* 随机浏览：随机浏览各种知识，不知不觉中学习各种知识
- 贴心的用户体验
-* 简洁界面：采用原生iOS设计风格，操作直观
-* 主题定制：支持多种主题色彩，个性化体验
-适用人群
-* 文化爱好者：深入了解传统文化，拓展知识视野
-* 一般用户：日常查询工具，提升文化修养
-技术特色
-* 本地数据库：离线使用，无需网络连接
-* 快速响应：优化的数据结构，查询速度快
-* 反内卷，不内购，不要权限，不通知打扰
-* 兼容性强：支持iOS 17及以上系统
-* 数据安全：数据库为本地数据，保护用户隐私
-</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Webfolio: Menu Bar Bookmarks]]></title>
-        <id>Webfolio: Menu Bar Bookmarks-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/webfolio-menu-bar-bookmarks/id6474243367?mt=12&amp;uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/webfolio-menu-bar-bookmarks/id6474243367?mt=12&uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/fb/6b/e0/fb6be086-6279-af72-4f20-919b2554c54b/AppIcon-0-0-85-220-0-4-0-2x.png/60x60bb.png" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h2>应用描述</h2><p>
-  Webfolio: Simple Menu Bar Bookmark Management
-
-Welcome to Webfolio, the ultimate utility app that transforms how you manage your bookmarks. Designed exclusively for Mac, Webfolio integrates seamlessly into your menu bar, offering a streamlined and intuitive experience.
-
-Key Features:
-
-Effortless Access: With a simple click on the menu bar, access all your bookmarks. No more navigating through multiple menus or browser windows.
-
-Organized Bookmarking: Categorize and arrange your bookmarks just the way you like with folders.
-
-Cross-Browser Extensions: Use multiple browsers? No problem. Webfolio will be rolling out extensions to allow for easy synchronization of bookmarks.
-
-Customizable Interface: Tailor Webfolio's appearance to suit your taste and workflow. Choose from various themes and settings for a personalized touch.
-
-Secure & Reliable: Your bookmarks are stored locally on your device.
-
-Whether you're a professional managing numerous resources or a casual user who loves staying organized, Webfolio is designed to enhance your browsing efficiency and enjoyment in the simplest way possible. Say goodbye to the hassles of traditional bookmark management and welcome a new era of convenience with Webfolio.
-
-HOW TO USE WEBFOLIO
-
-Main Screen
-    - Click on the add button to create a folder.
-    - Set the folder name, and image.
-    - DOUBLE CLICK anywhere to enter/exit edit mode.
-    - Click & drag to re-organize folders.
-
-Bookmarks Screen
-    - Click on add button to add a new bookmark.
-    - Click on a bookmark to open it in your default browser.
-    - Drag bookmarks to re-organize.
-    - Click on pen icon to edit bookmark, X icon to delete bookmark.
-
-Extensions will also be downloadable from the app to allow simple adding of bookmarks straight from your browser.
-</p><h2>应用截屏</h2><h3>iPhone</h3><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/21/bb/26/21bb26cb-0af6-24ae-acd1-e3eb491a3fc6/99d055c2-b1c0-4e6f-8af9-482271bd117b_1.png/800x500bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/d5/1a/d9/d51ad9e0-8b03-11c2-4b60-3a20245c6189/9599876a-1349-47aa-9729-e3c606902cd4_2.png/800x500bb.jpg" /><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/2a/0e/62/2a0e629d-902c-7cfe-98c2-9c214232f20b/a71b8b35-d804-42ec-b040-5d879e61f177_3.png/800x500bb.jpg" />]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Aurader: 沉浸式听书]]></title>
-        <id>Aurader: 沉浸式听书-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/aurader-%E6%B2%89%E6%B5%B8%E5%BC%8F%E5%90%AC%E4%B9%A6/id6758951184?uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/aurader-%E6%B2%89%E6%B5%B8%E5%BC%8F%E5%90%AC%E4%B9%A6/id6758951184?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/23/1b/34231b03-36a1-f7a2-a339-e8dbd05c4a4d/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h3>App内购买</h3><ul>
-  <li>
-    LifeTime Pro：<b>¥0.00</b>
-  </li><li>
-    Annual Pro：<b>¥198.00</b>
-  </li><li>
-    Weekly Pro：<b>¥22.00</b>
-  </li>
-</ul><h2>应用描述</h2><p>
-  重拾阅读乐趣，让故事在耳畔流淌。
-Aurader 不仅仅是一款语音朗读器，它更是您的专属专业播音员。我们专为 EPUB 和 TXT 格式的小说打造，将您的电子书转化为媲美高品质有声书的沉浸式听觉盛宴。
-无论是在通勤途中、睡前放松，还是仅仅想让双眼休息，Aurader 都能用富有表现力的嗓音，让字里行间的每一个故事鲜活跃动。
-【核心功能】
-播音级 AI 旁白 告别机械感。Aurader 为您提供卓越的听觉体验：
-* 专业英语与法语引擎： 采用行业领先的 AI 建模，提供磁性深沉或柔和治愈的纯正外语旁白，如同真人播音员亲临。
-* 高保真多国语言朗读： 为中文等多种语言提供自然、流畅、且富有质感的听书感受。
-卓越的文本适配 针对长篇小说结构深度优化。Aurader 能智能解析 EPUB 与 TXT 格式的章节与段落，确保您在收听过程中感受到如纸质书般清晰的逻辑层次。
-极致的沉浸式体验 我们相信阅读应该是一种氛围：
-* 治愈系背景音乐： 精选舒缓的器乐伴奏，与朗读声完美交织，营造专属阅读空间。
-* 极简沉浸 UI： 精美且纯净的界面设计，拒绝干扰，让文字与声音占据舞台中心。
-【为什么选择 Aurader？】
-* 自由定义听感： 随心调节语速、声音风格与背景音乐，打造最适合您的专属听书环境。
-* 随时随地开启： 支持直接从 iCloud 或本地存储导入文件。
-* 智能文本解析： 毫秒级处理大型文件，确保播放平滑自然，无卡顿。
-* 睡眠定时： 预设自动关闭时间，让喜爱的故事伴您入眠。
-
-高级订阅
-高级订阅将自动续费，除非在当前期间结束前至少24小时关闭自动续费。购买确认时，费用将从您的iTunes账户中扣除。
-您可以在购买后通过账户设置管理订阅并关闭自动续费。
-隐私政策：https://styart24.github.io/StyartHome/aurader-privacy-policy-en.html
-使用条款：https://styart24.github.io/StyartHome/aurader-terms-of-service-en.html
-</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[随口记 - AI语音待办清单与提醒事项]]></title>
-        <id>随口记 - AI语音待办清单与提醒事项-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/%E9%9A%8F%E5%8F%A3%E8%AE%B0-ai%E8%AF%AD%E9%9F%B3%E5%BE%85%E5%8A%9E%E6%B8%85%E5%8D%95%E4%B8%8E%E6%8F%90%E9%86%92%E4%BA%8B%E9%A1%B9/id6757683912?uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/%E9%9A%8F%E5%8F%A3%E8%AE%B0-ai%E8%AF%AD%E9%9F%B3%E5%BE%85%E5%8A%9E%E6%B8%85%E5%8D%95%E4%B8%8E%E6%8F%90%E9%86%92%E4%BA%8B%E9%A1%B9/id6757683912?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f1/fc/83/f1fc8361-feb0-ee8c-eed2-c68849dcfdbd/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h3>App内购买</h3><ul>
-  <li>
-    Tudo · 终身版会员：<b>¥0.00</b>
-  </li><li>
-    Tudo · 年订阅：<b>¥128.00</b>
-  </li><li>
-    随口记 · 月会员：<b>¥28.00</b>
-  </li>
-</ul><h2>应用描述</h2><p>
-  【随口记-你的第二大脑，开口即记】
-
-还在因为打字太麻烦而放弃记录任务吗？
-还在面对复杂的项目管理软件感到焦虑吗？
-
-随口记是一款语音优先(Voice-First)的AI待办清单应用。我们相信，记录灵感和任务应该像呼吸一样自然。你只管碎碎念，AI帮你把混乱的想法变成井井有条的行动计划。
-
-【核心功能】
-
-●极速语音录入
-告别繁琐的键盘输入。只需按住红色按钮，说出你的想法，随口记会在毫秒间将其转化为文字，精准识别待办事项。支持锁屏小组件，点亮屏幕即可一键录入。
-
-●AI智能拆解
-面对大任务无从下手？你说：“这周末我要搞定搬家。”
-AI自动拆解为：“联系搬家公司”、“购买打包纸箱”、“整理旧衣物”...将大目标化繁为简，彻底治愈拖延症。
-
-●自动分类与标签
-无需手动整理。AI会根据语义，自动将任务归类到工作、购物、健康或念头，并匹配精美的图标与颜色，让清单一目了然。
-
-●智能意图识别
-随口说：“明天下午三点提醒我喝水。”
-随口记会自动提取时间，设置好系统提醒(Reminder)，绝不错过任何重要时刻。
-
-●极简原生设计
-深度致敬Apple Reminders设计美学。清爽、干净、无广告。支持深色模式，视觉体验如丝般顺滑。
-
-【随口记适合谁？】
-
--ADHD(注意力缺陷)人群：拯救混乱大脑，降低执行门槛。
--忙碌的专业人士：在开车、走路、会议间隙快速捕捉想法。
--创意工作者：随时随地记录闪现的灵感与笔记。
--极简主义者：讨厌臃肿复杂的GTD软件，只想要一个能听话的清单。
-
-立刻下载随口记，体验言出即行的高效生活。
-让AI帮你记住琐事，把生活还给自己。
-
-
-【VIP订阅说明】
-- 订阅服务：解锁全部高级功能，享受无限制的使用体验。
-- 订阅价格：具体价格以App内部付费页面展示为准。
-- 付款：用户确认购买并付款后，将计入iTunes账户。
-- 自动续费：苹果iTunes账户会在到期前24小时内扣费，扣费成功后订阅周期顺延一个订阅周期。
-- 关闭服务：如需取消续订，请在当前订阅周期结束前至少24小时，手动在iTunes/Apple ID设置管理中关闭自动续费功能。
-- 用户协议：https://blynkai.app/tudo/terms
-- 隐私政策：https://blynkai.app/tudo/privacy
-</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[WaterBaby: Hydration Tracker]]></title>
-        <id>WaterBaby: Hydration Tracker-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/waterbaby-hydration-tracker/id6758539000?uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/waterbaby-hydration-tracker/id6758539000?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/23/01/3923014e-a0dc-30e8-6241-e4fd12dbcc51/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h3>App内购买</h3><ul>
-  <li>
-    PRO Lifetime：<b>¥8.00</b>
-  </li>
-</ul><h2>应用描述</h2><p>
-  Hydrate Beautifully, Live Healthily.
-WaterBaby Tracker reimagines hydration tracking with stunning 3D visuals and effortless simplicity.
-
-IMMERSIVE 3D WATER WAVES
-
-GPU-accelerated realistic water simulation
-Responds to device tilt with gravity sensing
-Watch your hydration level rise with every drink
-Beautiful animations that make tracking enjoyable
-
-ONE-TAP TRACKING
-
-Record in under 1 second
-Home screen widgets (no need to open the app)
-Customizable quick-add volumes (0-400 ml)
-Support for water, tea, coffee, and more
-
-SMART TRACKING AND INSIGHTS
-
-Personalized daily goals (500-5000 ml)
-Calendar view and weekly charts
-Complete history with detailed logs
-Track your progress over days, weeks, and months
-
-INTELLIGENT REMINDERS
-
-Adaptive time windows respect your schedule
-Customizable intervals (30 min to 3 hrs)
-Gentle notifications, never intrusive
-Auto-silence during sleep hours
-
-HIGHLY CUSTOMIZABLE
-
-Switch between ml and fl oz
-Languages: English, Simplified Chinese
-Adjustable daily goals and reminder frequency
-Dark mode support
-
-BUILT FOR APPLE ECOSYSTEM
-
-Native iOS design with SwiftUI
-Home screen widgets (Small, Medium, Large)
-HealthKit integration (coming soon)
-iCloud sync across devices (coming soon)
-
-PRIVACY FIRST
-
-All data stored locally on your device
-No cloud uploads without your consent
-GDPR and CCPA compliant
-Transparent privacy policy
-
-WHY WATERBABY?
-
-Unlike other apps that feel like chores, WaterBaby combines professional tracking with aesthetic pleasure.
-The 3D water animation is not just eye candy. It creates an emotional connection that keeps you coming back.
-
-We believe healthy habits should not be boring.
-Every interaction is designed to be delightful, from haptic feedback to celebratory confetti when you hit your goal.
-
-PROVEN RESULTS
-
-Users report:
-
-85 percent increase in daily water intake
-Better skin hydration and energy levels
-Consistent habit formation within 21 days
-Reduced headaches and improved focus
-
-WHO IS IT FOR?
-
-Busy professionals who forget to hydrate
-Fitness enthusiasts tracking performance
-Beauty-conscious individuals improving skin health
-Anyone building healthier lifestyle habits
-Apple users who appreciate great design
-
-GET STARTED
-
-Set your personalized daily goal
-Enable smart reminders
-Add the widget to your home screen
-Tap to record each time you drink
-Watch your virtual water level rise
-
-Note: WaterBaby is not a medical app.
-Consult your healthcare provider for specific hydration needs.
-
-Stay hydrated, stay healthy, stay beautiful.
-</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[To-Do Speak AI 语音清单]]></title>
-        <id>To-Do Speak AI 语音清单-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/to-do-speak-ai-%E8%AF%AD%E9%9F%B3%E6%B8%85%E5%8D%95/id6755624768?uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[价格: 付费 → 免费]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/to-do-speak-ai-%E8%AF%AD%E9%9F%B3%E6%B8%85%E5%8D%95/id6755624768?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4e/12/29/4e1229fb-4a38-7662-d984-0f980635ed62/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：OODATA</small>
-</p><h2>
-  优惠信息（价格：<span>付费</span> → <b>
-  <strong>免费</strong>
-</b><span></span>）
-</h2><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h3>App内购买</h3><ul>
-  <li>
-    To-Do Speak Premium Lifetime：<b>¥498.00</b>
-  </li><li>
-    To-Do Speak AI Premium Yearly：<b>¥98.00</b>
-  </li><li>
-    To-Do Speak AI Premium Monthly：<b>¥22.00</b>
-  </li>
-</ul><h2>应用描述</h2><p>
-  告别手动输入待办清单，从现在开始直接“说出来”。
-To-Do Speak AI 能在几秒内将你的语音转换为整洁有序的待办事项列表，让你在忙碌的一天中保持高效、轻松不乱。
-无论是在开车、做饭、学习还是工作，只要说出你要做的事情，应用就会自动帮你生成任务，方便你随时查看和勾选完成。
-如何使用：
-轻点麦克风按钮
-自然地说出你的任务和安排
-To-Do Speak AI 自动生成待办清单
-适合人群：
-喜欢用语音快速记录任务的人
-经常在路上或忙碌中规划一天的人
-学生、上班族、宝妈宝爸
-不想打字、习惯说话思考的人
-主要功能：
-语音转待办：将语音内容转换为清晰的任务列表
-免手操作：开车、走路、运动时也能添加任务
-智能整理：支持编辑、排序和完成标记
-每日规划：用语音轻松制定一天的计划和小目标
-多语言支持：可用多种语言创建任务
-轻量快捷：打开即用，说完就能看到列表
-让 To-Do Speak AI 替你记住每一件小事。
-开口说一说，就能拥有清晰的待办清单。
-
-Developed by Fastemy - Fast and Fun Education
-
-Privacy Policy: https://fastemy.com/privacy-policy
-
-Terms of Service: https://fastemy.com/terms-of-use
-</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Pulseon健康：压力检测、睡眠监测与运动健康手表软件心率]]></title>
-        <id>Pulseon健康：压力检测、睡眠监测与运动健康手表软件心率-cn-1772597011301</id>
-        <link href="https://apps.apple.com/cn/app/pulseon%E5%81%A5%E5%BA%B7-%E5%8E%8B%E5%8A%9B%E6%A3%80%E6%B5%8B-%E7%9D%A1%E7%9C%A0%E7%9B%91%E6%B5%8B%E4%B8%8E%E8%BF%90%E5%8A%A8%E5%81%A5%E5%BA%B7%E6%89%8B%E8%A1%A8%E8%BD%AF%E4%BB%B6%E5%BF%83%E7%8E%87/id6757773772?uo=4"/>
-        <updated>2026-03-04T12:03:31.301+08:00</updated>
-        <summary type="html"><![CDATA[Lifetime: ¥148.00 → ¥128.00]]></summary>
-        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/pulseon%E5%81%A5%E5%BA%B7-%E5%8E%8B%E5%8A%9B%E6%A3%80%E6%B5%8B-%E7%9D%A1%E7%9C%A0%E7%9B%91%E6%B5%8B%E4%B8%8E%E8%BF%90%E5%8A%A8%E5%81%A5%E5%BA%B7%E6%89%8B%E8%A1%A8%E8%BD%AF%E4%BB%B6%E5%BF%83%E7%8E%87/id6757773772?uo=4">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1f/eb/f8/1febf8a1-87d3-bb43-3577-74ba0a6c5b7a/Pulseon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/60x60bb.jpg" />
-</a><p>
-  <small>来源：排行榜</small>
-</p><h2>优惠信息</h2><h3>App内购买</h3><ul>
-  <li>
-    <strong>Lifetime：</strong><span>¥148.00</span> → <b>
-  <strong>¥128.00</strong>
-</b><span>[¥0.00 ~ ¥148.00]</span>
-  </li>
-</ul><h2>全部价格信息</h2><p>
-  价格：<b>免费</b>
-</p><h3>App内购买</h3><ul>
-  <li>
-    Lifetime：<b>¥128.00</b>
-  </li><li>
-    Annual：<b>¥68.00</b>
-  </li><li>
-    Annual (Limited-Time Offer)：<b>¥48.00</b>
-  </li><li>
-    Monthly：<b>¥28.00</b>
-  </li><li>
-    Lifetime (Limited-Time Offer)：<b>¥78.00</b>
-  </li>
-</ul><h2>应用描述</h2><p>
-  Pulseon：把健康数据变成你一天看得懂的状态曲线。
-
-你的一天本来就不是一条直线。
-
-刚醒来会迟钝，上午进入状态，午后自然回落，傍晚短暂回升，夜里收束入睡。Pulseon 围绕这条真实的生理节律，把睡眠、心率、HRV、运动负荷整合成一条**每日状态曲线**——不再让你在不同页面来回翻，猜自己今天到底什么状态。
-
-
-# 为什么你需要这条曲线
-
-睡了8小时还是累？可能是深睡不够，或者作息乱了。
-练完觉得被掏空？可能是负荷上去了，恢复没跟上。
-明明没干嘛心率却高？可能是身体还在紧绷，没真正休息。
-
-数据都在，但各讲各的。Pulseon 把它们串起来，告诉你两件事：
-今天为什么这样，接下来怎么安排。
-
-
-# Pulseon 具体做什么
-
-今日状态曲线
-把睡眠、HRV、心率、运动负荷融合成一条可视化曲线，对应你一天的精力起伏——迟钝、进入状态、回落、回升、收束。一眼看清现在处于什么位置。
-
-睡眠解读
-不只给时长，还看结构（深睡/REM够不够）、连续性（醒几次）、作息规律。告诉你今天状态是“睡够了”还是“没歇过来”，原因在哪。
-
-压力与恢复
-用HRV和静息心率判断身体在紧绷、消耗还是恢复。不看单日波动，看连续趋势——是正在恢复，还是持续消耗。
-
-负荷与恢复平衡
-把你的运动负荷和恢复状态放一起看：平衡就推进，负荷高于恢复就维持或放缓，远高于恢复就主动休息。
-
-周/月趋势
-画出你的个人基线，区分正常波动和真正值得关注的变化——连着几周往下走才提醒，不拿单日波动吓唬你。
-
-时段建议
-根据状态曲线给建议：什么时候适合专注推进，什么时候该放缓恢复。不用猜，照着做。
-
-
-# 为什么这套逻辑更靠谱
-
-- 人体清醒度本就随昼夜节律起伏，不是全天直线。
-- 睡眠质量和规律性，常常比“睡够时长”更重要。
-- HRV和心率要看连续趋势，单日数据意义有限。
-- 训练效果来自“负荷+恢复”平衡，不是练得越多越好。
-
-
-# 你的数据
-
-始终保存在设备里，不上传，不共享，不离开你的控制。
-
-＃关于订阅
-- ﻿﻿Pulseon 当前提供按月和按年会员选项供您购买；
-- ﻿费用将在确认购买时向您的iTunes 账号收取；
-- ﻿您的订阅会自动更新，除非您在已付费期间结束前至少 24小时关闭自动更新；
-- ﻿您的账号会在已付费期间结束前24小时内被再次收费；
-- ﻿您可以在购买后前往账号设置管理订阅并关闭自动更新；
-- ﻿如果您的试用还未结束，剩余的天数在您开始订阅后会自动失效；
-
-# 服务条款: https://www.notion.so/Pulseon-2f02c252c47e81fd9921f8612bda071f
-
-# 所有私人数据都会遵守 Pulseon 隐私政策及条款处理。
-请点击链接参见更多详情：https://www.notion.so/Pulseon-2f02c252c47e81e9a624fa43dfe4198c
 </p>]]></content>
     </entry>
 </feed>
