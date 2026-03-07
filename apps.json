@@ -2,6 +2,83 @@
   "$schema": "apps.json-schema.json",
   "appConfig": [
     {
+      "id": 371178753,
+      "name": {
+        "cn": "PlaceTrack"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772851213651,
+      "_discountType": "app"
+    },
+    {
+      "id": 948768793,
+      "name": {
+        "cn": "MarkText - Markdown文本编辑器"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772851210769,
+      "_discountType": "app"
+    },
+    {
+      "id": 1116868277,
+      "name": {
+        "cn": "圣火徽章之火焰纹章"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772851218773,
+      "_discountType": "app"
+    },
+    {
+      "id": 1431561654,
+      "name": {
+        "cn": "时之钟"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772851216279,
+      "_discountType": "app"
+    },
+    {
+      "id": 1439149349,
+      "name": {
+        "cn": "TODOT - 极简的待办任务清单和任务管理时间提醒"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772851210769,
+      "_discountType": "app"
+    },
+    {
+      "id": 1540070207,
+      "name": {
+        "cn": "解忧星球-解忧娃娃治愈你的情绪树洞"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772851216325,
+      "_discountType": "app"
+    },
+    {
+      "id": 6448900179,
+      "name": {
+        "cn": "Image Zipym - 图片下载或抠图"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772851210769,
+      "_discountType": "app"
+    },
+    {
       "id": 404990064,
       "name": {
         "cn": "SkyView®"
@@ -10790,7 +10867,9 @@
       "name": {
         "cn": "无限胶片 为专业街拍而生，还有你自己的胶片工厂"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1230799810,
@@ -11676,7 +11755,9 @@
       "name": {
         "cn": "Loan Calculator Pro"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 304564168,
@@ -14215,7 +14296,9 @@
       "name": {
         "cn": "毛泽东最后七年风雨路（有声书）"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 480592100,
@@ -14883,7 +14966,9 @@
       "name": {
         "cn": "全能记账王专业版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 533299240,
@@ -15041,7 +15126,9 @@
       "name": {
         "cn": "CWMoney經典版-理財筆記、發票掃描、雲端備份、存錢記帳"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 557827515,
@@ -17500,7 +17587,9 @@
       "name": {
         "cn": "UK Stamp Duty Calculator"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 959272198,
@@ -19053,7 +19142,9 @@
       "name": {
         "cn": "The Legend of Sleepy Hollow iC"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1110283686,
@@ -27450,7 +27541,9 @@
       "name": {
         "cn": "天天舒尔特 - 专注力训练数学思维启蒙"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6463851066,

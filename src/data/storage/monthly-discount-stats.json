@@ -306,15 +306,15 @@
       "inAppPurchase": {}
     },
     "6749500536": {
-      "all": 2,
-      "price": 1,
+      "all": 3,
+      "price": 2,
       "inAppPurchase": {
         "无限制数量使用图片AI识别和终生免费使用所有功能及后续新增功能": 1
       }
     },
     "6756534409": {
-      "all": 1,
-      "price": 1,
+      "all": 2,
+      "price": 2,
       "inAppPurchase": {}
     },
     "6758658840": {
@@ -323,8 +323,8 @@
       "inAppPurchase": {}
     },
     "6755944603": {
-      "all": 1,
-      "price": 0,
+      "all": 2,
+      "price": 1,
       "inAppPurchase": {
         "永久会员": 1
       }

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/appstore-discounts/appstore-discounts/rss/cn.xml</id>
     <title>App Store Discounts（CN）</title>
-    <updated>2026-03-07T09:51:38.680+08:00</updated>
+    <updated>2026-03-07T11:00:14.940+08:00</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Eyelly wu</name>
@@ -21,7 +21,7 @@ feedId:157007849019630592+userId:73658201673997312
         <title type="html"><![CDATA[🎉 欢迎订阅 App Store Discounts]]></title>
         <id>welcomecn</id>
         <link href="https://github.com/appstore-discounts/appstore-discounts"/>
-        <updated>2026-03-07T09:51:38.681+08:00</updated>
+        <updated>2026-03-07T11:00:14.942+08:00</updated>
         <summary type="html"><![CDATA[感谢您订阅我们的 RSS 源，我们是一个致力于为全球用户带来 App Store 最新折扣信息的社区驱动项目。我们的目标是让每一位用户都能第一时间掌握心爱应用的优惠动态，无论是应用本身的价格下调，还是内购项目的限时促销，我们都将为您一网打尽！]]></summary>
         <content type="html"><![CDATA[<p>感谢您订阅我们的 RSS 源，我们是一个致力于为全球用户带来 App Store 最新折扣信息的社区驱动项目。我们的目标是让每一位用户都能第一时间掌握心爱应用的优惠动态，无论是应用本身的价格下调，还是内购项目的限时促销，我们都将为您一网打尽！</p><h1>关于我们的 RSS 源</h1><ul>
   <li>专注于推送 App Store 应用的优惠信息</li><li>只要应用价格降低或内购项降价，我们就会及时推送</li><li>每个应用的优惠信息以单独的 feed 形式呈现</li><li>RSS 源完全开源，您可以随时查看、贡献和添加您关注的应用</li>
@@ -29,9 +29,9 @@ feedId:157007849019630592+userId:73658201673997312
     </entry>
     <entry>
         <title type="html"><![CDATA[统计数据报告]]></title>
-        <id>rankingcnSat, 07 Mar 2026 01:51:38 GMT</id>
+        <id>rankingcnSat, 07 Mar 2026 03:00:14 GMT</id>
         <link href="https://github.com/appstore-discounts/appstore-discounts"/>
-        <updated>2026-03-07T09:51:38.682+08:00</updated>
+        <updated>2026-03-07T11:00:14.942+08:00</updated>
         <summary type="html"><![CDATA[最新统计数据报告]]></summary>
         <content type="html"><![CDATA[<h2>追踪的国家或地区</h2><ol>
   <li>
@@ -52,13 +52,13 @@ feedId:157007849019630592+userId:73658201673997312
     <tr>
       <td>所有</td>
       <td>
-        <b>3381</b>
+        <b>3388</b>
       </td>
       <td>
         <b>79</b>
       </td>
       <td>
-        <b>3239</b>
+        <b>3246</b>
       </td>
       <td>
         <b>63</b>
@@ -72,13 +72,13 @@ feedId:157007849019630592+userId:73658201673997312
         <b>CN</b>
       </td>
       <td>
-        <b>3340</b>
+        <b>3347</b>
       </td>
       <td>
         <b>43</b>
       </td>
       <td>
-        <b>3234</b>
+        <b>3241</b>
       </td>
       <td>
         <b>63</b>
@@ -131,6 +131,29 @@ feedId:157007849019630592+userId:73658201673997312
         <b>2</b>
       </td>
       <td>
+        <a href="https://apps.apple.com/cn/app/id6749500536">病历助手-拍照识别&用药闹铃提醒&健康档案&慢性病智能跟踪</a>
+      </td>
+      <td>
+        <ul>
+          <li>
+            <span>总次数</span>：<b>3</b>
+          </li><li>
+            <span>价格</span>：<b>2</b>
+          </li><li>
+            <span>App内购买</span><ol>
+              <li>
+                <i>无限制数量使用图片AI识别和终生免费使用所有功能及后续新增功能</i>：<b>1</b>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>3</b>
+      </td>
+      <td>
         <a href="https://apps.apple.com/cn/app/id1062022008">LumaFusion</a>
       </td>
       <td>
@@ -153,7 +176,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>3</b>
+        <b>4</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1422605014">Weather Now PRO – 天气预报</a>
@@ -176,7 +199,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>4</b>
+        <b>5</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id6751861389">Lut相机</a>
@@ -193,7 +216,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>5</b>
+        <b>6</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id6749807290">Mandelbrot Metal</a>
@@ -210,10 +233,27 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>6</b>
+        <b>7</b>
       </td>
       <td>
-        <a href="https://apps.apple.com/cn/app/id6749500536">病历助手-拍照识别&用药闹铃提醒&健康档案&慢性病智能跟踪</a>
+        <a href="https://apps.apple.com/cn/app/id6756534409">病历夹：AI分析&拍照识别&指标跟踪</a>
+      </td>
+      <td>
+        <ul>
+          <li>
+            <span>总次数</span>：<b>2</b>
+          </li><li>
+            <span>价格</span>：<b>2</b>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>8</b>
+      </td>
+      <td>
+        <a href="https://apps.apple.com/cn/app/id6755944603">吃药管家：闹铃提醒&智能库存&吃药打卡记录</a>
       </td>
       <td>
         <ul>
@@ -224,7 +264,7 @@ feedId:157007849019630592+userId:73658201673997312
           </li><li>
             <span>App内购买</span><ol>
               <li>
-                <i>无限制数量使用图片AI识别和终生免费使用所有功能及后续新增功能</i>：<b>1</b>
+                <i>永久会员</i>：<b>1</b>
               </li>
             </ol>
           </li>
@@ -233,7 +273,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>7</b>
+        <b>9</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id325962257">测量应用程式 My Measures PRO</a>
@@ -256,7 +296,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>8</b>
+        <b>10</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id338088432">Free Tone - Calling & Texting</a>
@@ -279,7 +319,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>9</b>
+        <b>11</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id379868541">Salsa Rhythm</a>
@@ -296,7 +336,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>10</b>
+        <b>12</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id413369004">i-Qi clock & meditation timer</a>
@@ -313,7 +353,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>11</b>
+        <b>13</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id447726582">iAudioConverter</a>
@@ -330,7 +370,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>12</b>
+        <b>14</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id448246366">高清计算器</a>
@@ -347,7 +387,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>13</b>
+        <b>15</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id518220610">Boss Radar</a>
@@ -364,7 +404,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>14</b>
+        <b>16</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id577499909">TapeACall Pro: 记录通话记录</a>
@@ -387,7 +427,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>15</b>
+        <b>17</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id598581396">Kingdom Rush Frontiers 塔防史诗冒险</a>
@@ -410,7 +450,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>16</b>
+        <b>18</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id604756608">Photo Eraser</a>
@@ -427,7 +467,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>17</b>
+        <b>19</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id722262021">Wallax - Wallpaper Editor</a>
@@ -444,7 +484,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>18</b>
+        <b>20</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id755134885">Scrollit: display scrolling</a>
@@ -461,7 +501,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>19</b>
+        <b>21</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id766214869">The Great Photo App</a>
@@ -486,7 +526,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>20</b>
+        <b>22</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id771501095">无损图片压缩优化 Photo Size Optimizer</a>
@@ -503,7 +543,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>21</b>
+        <b>23</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id815542507">Find My Car - Car Parking</a>
@@ -520,7 +560,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>22</b>
+        <b>24</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id829581836">Driving Theory Test 4 in 1 Kit</a>
@@ -547,7 +587,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>23</b>
+        <b>25</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id894059283">Food Saver</a>
@@ -564,7 +604,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>24</b>
+        <b>26</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id931188326">DayCost</a>
@@ -581,7 +621,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>25</b>
+        <b>27</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1038175626">WalletApp</a>
@@ -598,7 +638,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>26</b>
+        <b>28</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1065802380">Stream Music Player</a>
@@ -615,7 +655,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>27</b>
+        <b>29</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1079990061">ISS Real-Time Tracker 3D</a>
@@ -632,7 +672,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>28</b>
+        <b>30</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1080150260">Daily Sparks</a>
@@ -649,7 +689,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>29</b>
+        <b>31</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1110997147">HyperDither</a>
@@ -666,7 +706,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>30</b>
+        <b>32</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1295775756">Fashion Art</a>
@@ -683,7 +723,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>31</b>
+        <b>33</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1313357241">Glass & Island  - Custom Notch</a>
@@ -700,7 +740,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>32</b>
+        <b>34</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1320446970">Colorzzle (彩色拼图)</a>
@@ -717,7 +757,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>33</b>
+        <b>35</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1375240620">卡拉希尔战记</a>
@@ -740,7 +780,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>34</b>
+        <b>36</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1390326774">简忆相册 - 照片整理，相册分类</a>
@@ -757,7 +797,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>35</b>
+        <b>37</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1436429074">FILCA - SLR Film Camera</a>
@@ -774,7 +814,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>36</b>
+        <b>38</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1437256011">实况天气Pro-天气预报苹果版</a>
@@ -797,7 +837,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>37</b>
+        <b>39</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1463267514">Colors For Social</a>
@@ -814,7 +854,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>38</b>
+        <b>40</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1470313161">next.calc: a modern calculator</a>
@@ -831,7 +871,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>39</b>
+        <b>41</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1483376887">Braincup</a>
@@ -848,7 +888,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>40</b>
+        <b>42</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1484426198">TimeMan</a>
@@ -865,7 +905,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>41</b>
+        <b>43</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1492738910">BigPlay - Smarter IPTV Player</a>
@@ -882,7 +922,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>42</b>
+        <b>44</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1508181543">websight</a>
@@ -899,7 +939,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>43</b>
+        <b>45</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1521562701">Realtime Filter</a>
@@ -916,7 +956,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>44</b>
+        <b>46</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1546459735">Speaking Loud Alert</a>
@@ -933,7 +973,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>45</b>
+        <b>47</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1558634102">分贝计 (声级计)</a>
@@ -950,7 +990,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>46</b>
+        <b>48</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1567658979">SkySafari 7 Pro</a>
@@ -967,7 +1007,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>47</b>
+        <b>49</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1592844577">Dark Night - mode for Safari</a>
@@ -984,7 +1024,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>48</b>
+        <b>50</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1596000727">Blur Video·</a>
@@ -1001,7 +1041,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>49</b>
+        <b>51</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1634761411">出行轨迹</a>
@@ -1018,7 +1058,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>50</b>
+        <b>52</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1658860667">Old Monterrey: Pixel Adventure</a>
@@ -1035,7 +1075,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>51</b>
+        <b>53</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id1663166940">Fineyo Money & Budget Manager</a>
@@ -1052,7 +1092,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>52</b>
+        <b>54</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id6504854196">下一站江湖Ⅱ</a>
@@ -1069,7 +1109,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>53</b>
+        <b>55</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id6749845582">NPD知识普及</a>
@@ -1086,7 +1126,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>54</b>
+        <b>56</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id6742311454">伏魔诀-阴阳秘术诡道修仙录</a>
@@ -1103,7 +1143,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>55</b>
+        <b>57</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id6755161971">Stardew Save Editor : 星露谷 修改器</a>
@@ -1120,7 +1160,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>56</b>
+        <b>58</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id6758551525">静念</a>
@@ -1137,24 +1177,7 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
     <tr>
       <td>
-        <b>57</b>
-      </td>
-      <td>
-        <a href="https://apps.apple.com/cn/app/id6756534409">病历夹：AI分析&拍照识别&指标跟踪</a>
-      </td>
-      <td>
-        <ul>
-          <li>
-            <span>总次数</span>：<b>1</b>
-          </li><li>
-            <span>价格</span>：<b>1</b>
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b>58</b>
+        <b>59</b>
       </td>
       <td>
         <a href="https://apps.apple.com/cn/app/id6758658840">PixPhoto-证件照,高清证件照制作</a>
@@ -1165,29 +1188,6 @@ feedId:157007849019630592+userId:73658201673997312
             <span>总次数</span>：<b>1</b>
           </li><li>
             <span>价格</span>：<b>1</b>
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b>59</b>
-      </td>
-      <td>
-        <a href="https://apps.apple.com/cn/app/id6755944603">吃药管家：闹铃提醒&智能库存&吃药打卡记录</a>
-      </td>
-      <td>
-        <ul>
-          <li>
-            <span>总次数</span>：<b>1</b>
-          </li><li>
-            <span>价格</span>：<b>0</b>
-          </li><li>
-            <span>App内购买</span><ol>
-              <li>
-                <i>永久会员</i>：<b>1</b>
-              </li>
-            </ol>
           </li>
         </ul>
       </td>
@@ -2347,6 +2347,187 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
   </tbody>
 </table>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[病历助手-拍照识别&用药闹铃提醒&健康档案&慢性病智能跟踪]]></title>
+        <id>病历助手-拍照识别&amp;用药闹铃提醒&amp;健康档案&amp;慢性病智能跟踪-cn-1772851227514</id>
+        <link href="https://apps.apple.com/cn/app/%E7%97%85%E5%8E%86%E5%8A%A9%E6%89%8B-%E6%8B%8D%E7%85%A7%E8%AF%86%E5%88%AB-%E7%94%A8%E8%8D%AF%E9%97%B9%E9%93%83%E6%8F%90%E9%86%92-%E5%81%A5%E5%BA%B7%E6%A1%A3%E6%A1%88-%E6%85%A2%E6%80%A7%E7%97%85%E6%99%BA%E8%83%BD%E8%B7%9F%E8%B8%AA/id6749500536?uo=4"/>
+        <updated>2026-03-07T10:40:27.514+08:00</updated>
+        <summary type="html"><![CDATA[价格: ¥3.00 → ¥1.00]]></summary>
+        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/%E7%97%85%E5%8E%86%E5%8A%A9%E6%89%8B-%E6%8B%8D%E7%85%A7%E8%AF%86%E5%88%AB-%E7%94%A8%E8%8D%AF%E9%97%B9%E9%93%83%E6%8F%90%E9%86%92-%E5%81%A5%E5%BA%B7%E6%A1%A3%E6%A1%88-%E6%85%A2%E6%80%A7%E7%97%85%E6%99%BA%E8%83%BD%E8%B7%9F%E8%B8%AA/id6749500536?uo=4">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/c3/a1/8bc3a163-1610-4def-ec34-502813f52d1a/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/60x60bb.jpg" />
+</a><p>
+  <small>来源：排行榜</small>
+</p><h2>
+  优惠信息（价格：<span>¥3.00</span> → <b>
+  <strong>¥1.00</strong>
+</b><span>[¥1.00 ~ ¥8.00]</span>）
+</h2><h2>全部价格信息</h2><p>
+  价格：<b>¥1.00</b>
+</p><h3>App内购买</h3><ul>
+  <li>
+    无限制数量使用图片AI识别和终生免费使用所有功能及后续新增功能：<b>¥78.00</b>
+  </li><li>
+    使用50次图片智能识别：<b>¥18.00</b>
+  </li><li>
+    使用3次图片智能识别：<b>¥1.00</b>
+  </li><li>
+    会员-连续包月：<b>¥8.00</b>
+  </li><li>
+    使用90次图片智能识别：<b>¥28.00</b>
+  </li><li>
+    使用9次图片智能识别：<b>¥3.00</b>
+  </li><li>
+    使用20次图片智能识别：<b>¥6.00</b>
+  </li><li>
+    使用30次图片智能识别：<b>¥8.00</b>
+  </li><li>
+    会员-连续包年：<b>¥68.00</b>
+  </li><li>
+    会员-连续包季：<b>¥18.00</b>
+  </li>
+</ul><h2>应用描述</h2><p>
+  app拥有如下核心功能：
+1.支持绝大多数国家医院和体检机构所有不同类型医疗图片识别。
+2.智能用药吃药提醒管理（支持处方单和药盒识别并自动加入药品管理）及闹钟闹铃通知多重提醒，药品库存管理，支持库存余量预警，到期提醒。
+3.吃药和待办支持桌面小组件，更方便吃药用药和待办提醒及打卡管理。
+4.支持iCloud同步，数据永久存储，永不丢失，更换手机也不用担心。
+5.支持批量上传识别图片，AI识别准确率高达 99.9%，特殊医学符号如↑↓Δ都能精准解读，印章、折痕、手写备注也不再是障碍。
+6.信息一目了然，关键信息，精准补抓识别，异常指标一键收藏，指标数据图表趋势一目了然。
+7.报告永久保存，原图高清留档。
+8.所有报告自动按时间线，按病人名称归档排列，波动曲线直观显示指标变化。
+9.支持报告内容全文搜索，查找比纸质快10倍。
+10.重要信息随时记录，一键导出整理治疗过程。
+11.自动归类整理，省时又省心。
+12.同一指标多次检查自动聚合对比（如血常规、肝功能等）。
+13.根据疾病类型智能归纳用药记录、检查报告、治疗节点。
+14.历史趋势查看每年看医生次数，按年份月份，按用户查询。
+15.血压，血糖，心率，体温，体重，身体不适，喂药，饮食，大小便，喂奶等各种记录&图表趋势可视化。
+16.批量上传数量无限制，分析时间更加快速。
+
+三步轻松构建你的家庭健康档案库：
+第一步：拍照上传医疗资料
+第二步：等待 AI 精准解析
+第三步：查看报告纵览，添加备注，分类整理健康资料
+从现在开始，告别翻箱倒柜找报告的焦虑吧！你攒下的每一张单子，都值得一个井然有序、随查随用的专属归处。
+
+使用app过程中发现bug或有需求请发送邮件到505991622@qq.com联系作者或加作者微信（13829216313）加入病历助手微信群。
+
+关于订阅信息
+• 订阅名称：会员
+• 订阅周期：按月/按季度 / 按年
+• 订阅价格：具体价格将在购买时显示
+• 付款将在确认购买时从您的 Apple ID 账户中扣除
+• 订阅为自动续订，除非在当前订阅周期结束前至少 24 小时关闭自动续订
+• 续订费用将在当前周期结束前 24 小时内从您的账户中扣除
+• 购买后，您可以随时在 Apple ID 账户设置中管理或取消订阅
+隐私政策：
+https://docs.qq.com/doc/DTkxOb3hZVVRyR01W
+使用条款（EULA）：
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+免责声明：本应用不提供医疗诊断，如身体不适，请及时就医或咨询专业医生。
+</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[吃药管家：闹铃提醒&智能库存&吃药打卡记录]]></title>
+        <id>吃药管家：闹铃提醒&amp;智能库存&amp;吃药打卡记录-cn-1772851227514</id>
+        <link href="https://apps.apple.com/cn/app/%E5%90%83%E8%8D%AF%E7%AE%A1%E5%AE%B6-%E9%97%B9%E9%93%83%E6%8F%90%E9%86%92-%E6%99%BA%E8%83%BD%E5%BA%93%E5%AD%98-%E5%90%83%E8%8D%AF%E6%89%93%E5%8D%A1%E8%AE%B0%E5%BD%95/id6755944603?uo=4"/>
+        <updated>2026-03-07T10:40:27.514+08:00</updated>
+        <summary type="html"><![CDATA[价格: ¥3.00 → ¥1.00]]></summary>
+        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/%E5%90%83%E8%8D%AF%E7%AE%A1%E5%AE%B6-%E9%97%B9%E9%93%83%E6%8F%90%E9%86%92-%E6%99%BA%E8%83%BD%E5%BA%93%E5%AD%98-%E5%90%83%E8%8D%AF%E6%89%93%E5%8D%A1%E8%AE%B0%E5%BD%95/id6755944603?uo=4">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1e/a9/d2/1ea9d2d5-969a-3dd1-6a5a-8c7789d075fc/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/60x60bb.jpg" />
+</a><p>
+  <small>来源：排行榜</small>
+</p><h2>
+  优惠信息（价格：<span>¥3.00</span> → <b>
+  <strong>¥1.00</strong>
+</b><span>[¥1.00 ~ ¥3.00]</span>）
+</h2><h2>全部价格信息</h2><p>
+  价格：<b>¥1.00</b>
+</p><h3>App内购买</h3><ul>
+  <li>
+    永久会员：<b>¥28.00</b>
+  </li><li>
+    使用3次图片智能识别：<b>¥1.00</b>
+  </li><li>
+    使用90次图片智能识别：<b>¥18.00</b>
+  </li><li>
+    使用9次图片智能识别：<b>¥3.00</b>
+  </li><li>
+    使用50次图片智能识别：<b>¥12.00</b>
+  </li><li>
+    用20次图片智能识别：<b>¥8.00</b>
+  </li><li>
+    用30次图片智能识别：<b>¥8.00</b>
+  </li>
+</ul><h2>应用描述</h2><p>
+  专业的用药提醒和库存管理app
+1.闹铃和通知双重提醒，再也不用担心错过准时吃药了。
+2.智能库存管理，智能算出剩余吃药天数，提前提醒去医院补充药品，药品过期提醒，库存余量预警。
+3.拍照识别处方单，药盒，医嘱，自动录入药品信息。
+4.日历视图，一目了然打卡吃药时间节点。
+5.多种身体指标记录，记录身体各个指标情况，趋势查看，一目了然。
+6.待办提醒，再也不会错过忘记重要事情。
+7.iCloud自动同步，再也不用担心更换手机，卸载app数据丢失问题。
+8.桌面组件吃药打卡和待办提醒，不打开app也能操作。
+更多智能贴心的功能等你来体验使用。
+
+使用app过程中发现bug或有需求请发送邮件到505991622@qq.com联系作者或加作者微信（13829216313）加入用药管家微信群。
+</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[病历夹：AI分析&拍照识别&指标跟踪]]></title>
+        <id>病历夹：AI分析&amp;拍照识别&amp;指标跟踪-cn-1772851227514</id>
+        <link href="https://apps.apple.com/cn/app/%E7%97%85%E5%8E%86%E5%A4%B9-ai%E5%88%86%E6%9E%90-%E6%8B%8D%E7%85%A7%E8%AF%86%E5%88%AB-%E6%8C%87%E6%A0%87%E8%B7%9F%E8%B8%AA/id6756534409?uo=4"/>
+        <updated>2026-03-07T10:40:27.514+08:00</updated>
+        <summary type="html"><![CDATA[价格: ¥3.00 → ¥1.00]]></summary>
+        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/%E7%97%85%E5%8E%86%E5%A4%B9-ai%E5%88%86%E6%9E%90-%E6%8B%8D%E7%85%A7%E8%AF%86%E5%88%AB-%E6%8C%87%E6%A0%87%E8%B7%9F%E8%B8%AA/id6756534409?uo=4">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/67/0c/4d670c58-c57b-f798-ebdb-5a61395ccda5/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/60x60bb.jpg" />
+</a><p>
+  <small>来源：排行榜</small>
+</p><h2>
+  优惠信息（价格：<span>¥3.00</span> → <b>
+  <strong>¥1.00</strong>
+</b><span>[¥1.00 ~ ¥8.00]</span>）
+</h2><h2>全部价格信息</h2><p>
+  价格：<b>¥1.00</b>
+</p><h3>App内购买</h3><ul>
+  <li>
+    会员-连续包月：<b>¥8.00</b>
+  </li><li>
+    会员-连续包年：<b>¥48.00</b>
+  </li><li>
+    会员-连续包季度：<b>¥18.00</b>
+  </li><li>
+    使用20次图片智能识别：<b>¥6.00</b>
+  </li><li>
+    使用9次图片智能识别：<b>¥3.00</b>
+  </li><li>
+    使用3次图片智能识别：<b>¥1.00</b>
+  </li><li>
+    使用50次图片智能识别：<b>¥18.00</b>
+  </li><li>
+    使用90次图片智能识别：<b>¥28.00</b>
+  </li><li>
+    使用30次图片智能识别：<b>¥8.00</b>
+  </li><li>
+    无限制数量使用图片AI识别和终生免费使用所有功能及后续新增功能：<b>¥68.00</b>
+  </li>
+</ul><h2>应用描述</h2><p>
+  专业的病历管理，趋势分析，指标跟踪管理工具
+1.支持绝大多数国家医院和体检机构所有不同类型医疗图片识别。
+2.支持iCloud同步，数据永久存储，永不丢失，更换手机也不用担心。
+3.支持批量上传识别图片，AI识别准确率高达 99.9%，特殊医学符号如↑↓Δ都能精准解读，印章、折痕、手写备注也不再是障碍。
+4.信息一目了然，关键信息，精准补抓识别，异常指标一键收藏，指标数据图表趋势一目了然。
+5.报告永久保存，原图高清留档。
+6.支持报告内容全文搜索，查找比纸质快10倍。
+7.同一指标多次检查自动聚合对比（如血常规、肝功能等）。
+8.历史趋势查看每年看医生次数，按年份月份，按用户查询。
+9.批量上传数量无限制，分析时间更加快速。
+
+使用app过程中发现bug或有需求请发送邮件到505991622@qq.com联系作者或加作者微信（13829216313）加入AI病历夹微信群。
+</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[离线翻译 SeekTrans - 旅游、考试神器]]></title>
