@@ -1116,6 +1116,30 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
       h += buildCardHTML(app, idx + 1);
     });
 
+    // CTA: 点赞、分享、在看
+    var bubbleBase = 'display:inline-block;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;position:relative;';
+    h += '<div style="margin:20px 16px 0;padding:24px 12px 20px;background:linear-gradient(180deg,#f6f8fb,#eef1f6);border-radius:16px;text-align:center;">';
+    h += '<p style="font-size:15px;color:#4b5563;margin:0 0 4px 0;font-weight:600;">你的每一次点击，都是我坚持更新的动力 💪</p>';
+    h += '<p style="font-size:12px;color:#9ca3af;margin:0 0 18px 0;">（听说点了「在看」的人，都薅到了最大的羊毛 🐑）</p>';
+    h += '<div style="display:flex;justify-content:space-around;align-items:flex-end;gap:8px;">';
+    // 分享
+    h += '<div style="flex:1;text-align:center;">';
+    h += '<div style="' + bubbleBase + 'background:#e0edff;color:#2563eb;">点点 "分享"</div>';
+    h += '<div style="font-size:28px;margin-top:6px;">👈</div>';
+    h += '</div>';
+    // 赞
+    h += '<div style="flex:1;text-align:center;">';
+    h += '<div style="' + bubbleBase + 'background:#fef3c7;color:#b45309;">点点 "赞" 👍</div>';
+    h += '<div style="font-size:28px;margin-top:6px;">👇</div>';
+    h += '</div>';
+    // 在看
+    h += '<div style="flex:1;text-align:center;">';
+    h += '<div style="' + bubbleBase + 'background:#dcfce7;color:#15803d;">"在看" 也点下</div>';
+    h += '<div style="font-size:28px;margin-top:6px;">👉</div>';
+    h += '</div>';
+    h += '</div>';
+    h += '</div>';
+
     // Footer
     h += '<div style="text-align:center;padding:20px 16px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb;margin-top:8px;">';
     h += '数据来源：App Store 官方';
