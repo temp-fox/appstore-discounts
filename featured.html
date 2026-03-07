@@ -1082,16 +1082,18 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
   function buildWeChatHTML(title, apps) {
     var containerStyle = 'max-width:600px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,\"Helvetica Neue\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif;color:#1c1c1e;';
 
-    var headerStyle = 'background:linear-gradient(135deg,#f59e0b 0%,#d97706 55%,#b45309 100%);color:#fff;padding:28px 20px;text-align:center;border-radius:16px 16px 0 0;';
-    var titleStyle = 'font-size:22px;font-weight:700;margin:0 0 8px 0;';
-    var introStyle = 'background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:14px 16px;margin:16px 16px 0;font-size:14px;color:#78350f;line-height:1.7;';
+    var headerStyle = 'background:linear-gradient(160deg,#ff9500 0%,#ff6b2b 40%,#e8453c 100%);color:#fff;padding:32px 24px 28px;text-align:center;border-radius:20px 20px 0 0;position:relative;overflow:hidden;';
+    var titleStyle = 'font-size:22px;font-weight:800;margin:0 0 8px 0;letter-spacing:0.5px;text-shadow:0 1px 3px rgba(0,0,0,0.15);';
+    var introStyle = 'background:linear-gradient(135deg,#fffbf0,#fff7e6);border:1px solid #ffe4b5;border-radius:14px;padding:16px 18px;margin:16px 16px 0;font-size:14px;color:#8b5e1a;line-height:1.8;';
 
     var h = '<div style="' + containerStyle + '">';
     // Header
     h += '<div style="' + headerStyle + '">';
-    h += '<p style="margin:0 0 6px 0;"><img src="https://s3.bmp.ovh/imgs/2024/07/20/491487aec936222a.png" style="width:42px;height:42px;border-radius:10px;" /></p>';
+    h += '<div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:rgba(255,255,255,0.08);border-radius:50%;"></div>';
+    h += '<div style="position:absolute;bottom:-30px;left:-10px;width:80px;height:80px;background:rgba(255,255,255,0.06);border-radius:50%;"></div>';
+    h += '<p style="margin:0 0 10px 0;"><img src="https://s3.bmp.ovh/imgs/2024/07/20/491487aec936222a.png" style="width:48px;height:48px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.20);" /></p>';
     h += '<h1 style="' + titleStyle + '">' + title + '</h1>';
-    h += '<p style="font-size:13px;opacity:0.85;margin:0;">应用随时可能恢复原价，建议尽快下载</p>';
+    h += '<p style="font-size:13px;opacity:0.9;margin:0;font-weight:500;letter-spacing:0.3px;">应用随时可能恢复原价，建议尽快下载</p>';
     h += '</div>';
 
     // Follow CTA
@@ -1129,7 +1131,7 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
     if (app.type === 'iap') { badgeBg = '#fef9c3'; badgeColor = '#92400e'; }
     else if (app.type === 'discount') { badgeBg = '#fee2e2'; badgeColor = '#b91c1c'; }
     h += '<div style="display:flex;gap:14px;align-items:center;">';
-    h += '<img src="' + app.iconHD + '" style="width:60px;height:60px;border-radius:14px;flex-shrink:0;" />';
+    h += '<img src="' + app.iconHD + '" style="width:60px;height:60px;border-radius:14px;box-shadow:0 3px 10px rgba(80,80,90,0.18);flex-shrink:0;" />';
     h += '<div style="flex:1;min-width:0;">';
     h += '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">';
     h += '<span style="font-size:16px;font-weight:700;line-height:1.4;">' + app.name + '</span>';
@@ -1206,7 +1208,7 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
       }
       // QR below screenshots
       h += '<div style="text-align:center;margin-top:12px;">';
-      h += '<img src="' + qrUrl + '" style="width:90px;height:90px;border-radius:8px;border:1px solid #d1d5db;box-shadow:0 6px 18px rgba(80,80,90,0.30),0 2px 6px rgba(0,0,0,0.12);" />';
+      h += '<img src="' + qrUrl + '" style="width:90px;height:90px;border-radius:8px;border:1px solid #d1d5db;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);" />';
       h += '<div style="font-size:13px;font-weight:600;color:#007aff;margin-top:6px;letter-spacing:0.5px;">📲 长按识别下载</div>';
       h += '</div>';
     } else {
@@ -1216,7 +1218,7 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
         h += '<img src="' + app.iconHD + '" style="width:80px;height:80px;border-radius:18px;box-shadow:0 8px 24px rgba(100,100,110,0.25),0 2px 8px rgba(0,0,0,0.08);flex-shrink:0;" />';
       }
       h += '<div style="text-align:center;flex-shrink:0;">';
-      h += '<img src="' + qrUrl + '" style="width:80px;height:80px;border-radius:8px;border:1px solid #d1d5db;box-shadow:0 6px 18px rgba(80,80,90,0.30),0 2px 6px rgba(0,0,0,0.12);" />';
+      h += '<img src="' + qrUrl + '" style="width:80px;height:80px;border-radius:8px;border:1px solid #d1d5db;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);" />';
       h += '<div style="font-size:13px;font-weight:600;color:#007aff;margin-top:6px;letter-spacing:0.5px;">📲 长按识别下载</div>';
       h += '</div>';
       h += '</div>';
