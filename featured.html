@@ -941,6 +941,7 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
       var artist = artistEl ? artistEl.textContent.trim() : '';
       var descEl = card.querySelector('.app-desc');
       var desc = descEl ? descEl.textContent.trim() : '';
+      desc = desc.replace(/#/g, '').replace(/s{2,}/g, ' ').trim();
       if (desc.length > 200) desc = desc.substring(0, 200) + '...';
 
       // 价格信息
@@ -1101,7 +1102,7 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
 
     // Intro
     h += '<div style="' + introStyle + '">';
-    h += '📌 以下应用正在<b>限时免费</b>或<b>限时降价</b>，App Store 随时可能恢复原价。看到心仪的应用，建议立即下载，免费入库后即使恢复付费也可永久使用。';
+    h += '📌 以下应用正在<b>限时免费</b>或<b>限时降价</b>，App Store 随时可能恢复原价。看到心仪的应用，建议立即下载，免费下载后即使恢复付费也可永久使用。';
     h += '</div>';
 
     // Cards
@@ -1128,7 +1129,7 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
     if (app.type === 'iap') { badgeBg = '#fef9c3'; badgeColor = '#92400e'; }
     else if (app.type === 'discount') { badgeBg = '#fee2e2'; badgeColor = '#b91c1c'; }
     h += '<div style="display:flex;gap:14px;align-items:center;">';
-    h += '<img src="' + app.iconHD + '" style="width:60px;height:60px;border-radius:14px;box-shadow:0 2px 8px rgba(0,0,0,0.12);flex-shrink:0;" />';
+    h += '<img src="' + app.iconHD + '" style="width:60px;height:60px;border-radius:14px;box-shadow:0 6px 16px rgba(100,100,110,0.22),0 2px 6px rgba(0,0,0,0.08);flex-shrink:0;" />';
     h += '<div style="flex:1;min-width:0;">';
     h += '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">';
     h += '<span style="font-size:16px;font-weight:700;line-height:1.4;">' + app.name + '</span>';
@@ -1191,13 +1192,13 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
     var qrUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(app.url);
     if (app.screenshots && app.screenshots.length > 0) {
       if (app.isMac) {
-        h += '<div style="margin-top:14px;border-radius:12px;overflow:hidden;border:1px solid #e5e7eb;box-shadow:0 4px 12px rgba(0,0,0,0.10);">';
+        h += '<div style="margin-top:14px;border-radius:12px;overflow:hidden;border:1px solid #d1d5db;box-shadow:0 8px 24px rgba(100,100,110,0.25),0 2px 8px rgba(0,0,0,0.08);">';
         h += '<img src="' + app.screenshots[0] + '" style="width:100%;display:block;aspect-ratio:16/10;object-fit:cover;" />';
         h += '</div>';
       } else {
         h += '<div style="display:flex;gap:8px;margin-top:14px;">';
         app.screenshots.forEach(function(src) {
-          h += '<div style="flex:1;min-width:0;border-radius:12px;overflow:hidden;border:1px solid #e5e7eb;background:#f9fafb;box-shadow:0 4px 12px rgba(0,0,0,0.10);">';
+          h += '<div style="flex:1;min-width:0;border-radius:12px;overflow:hidden;border:1px solid #d1d5db;background:#f9fafb;box-shadow:0 8px 24px rgba(100,100,110,0.25),0 2px 8px rgba(0,0,0,0.08);">';
           h += '<img src="' + src + '" style="width:100%;display:block;aspect-ratio:3/5;object-fit:cover;" />';
           h += '</div>';
         });
@@ -1205,17 +1206,17 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
       }
       // QR below screenshots
       h += '<div style="text-align:center;margin-top:12px;">';
-      h += '<img src="' + qrUrl + '" style="width:90px;height:90px;border-radius:8px;border:1px solid #e5e7eb;box-shadow:0 4px 12px rgba(0,0,0,0.10);" />';
+      h += '<img src="' + qrUrl + '" style="width:90px;height:90px;border-radius:8px;border:1px solid #d1d5db;box-shadow:0 8px 24px rgba(100,100,110,0.25),0 2px 8px rgba(0,0,0,0.08);" />';
       h += '<div style="font-size:13px;font-weight:600;color:#007aff;margin-top:6px;letter-spacing:0.5px;">📲 长按识别下载</div>';
       h += '</div>';
     } else {
       // No screenshot: icon + QR side by side
       h += '<div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-top:14px;padding:12px;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;">';
       if (app.iconHD) {
-        h += '<img src="' + app.iconHD + '" style="width:80px;height:80px;border-radius:18px;box-shadow:0 2px 8px rgba(0,0,0,0.10);flex-shrink:0;" />';
+        h += '<img src="' + app.iconHD + '" style="width:80px;height:80px;border-radius:18px;box-shadow:0 8px 24px rgba(100,100,110,0.25),0 2px 8px rgba(0,0,0,0.08);flex-shrink:0;" />';
       }
       h += '<div style="text-align:center;flex-shrink:0;">';
-      h += '<img src="' + qrUrl + '" style="width:80px;height:80px;border-radius:8px;border:1px solid #e5e7eb;box-shadow:0 4px 12px rgba(0,0,0,0.10);" />';
+      h += '<img src="' + qrUrl + '" style="width:80px;height:80px;border-radius:8px;border:1px solid #d1d5db;box-shadow:0 8px 24px rgba(100,100,110,0.25),0 2px 8px rgba(0,0,0,0.08);" />';
       h += '<div style="font-size:13px;font-weight:600;color:#007aff;margin-top:6px;letter-spacing:0.5px;">📲 长按识别下载</div>';
       h += '</div>';
       h += '</div>';
