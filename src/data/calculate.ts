@@ -7,10 +7,10 @@ const timeStorageAppInfoFields = ['price', 'formattedPrice', 'inAppPurchases']
 
 export function getPrice(priceStrProp: string, region: Region) {
   let priceStr = priceStrProp
-
-  // "免费"/"free" 是合法的 0 元价格，不应返回 -1
   const lower = priceStr.toLowerCase().trim()
-  if (lower === '免费' || lower === 'free') return 0
+
+  // "付费"/"paid" 表示"原本是付费应用"，不是具体价格，返回 -1（哨兵值）
+  if (lower === '付费' || lower === 'paid') return -1
 
   // eg: '1.234,56' = 1234.56
   if (['tr', 'pt'].includes(region)) {
@@ -22,9 +22,12 @@ export function getPrice(priceStrProp: string, region: Region) {
 
   priceStr = priceStr.replace(',', '')
   const regexp = /[^0-9]*([0-9]+(\.[0-9]+)?)[^0-9]*/
-  const [full, numberStr] = priceStr.match(regexp) || ['', '-1']
-  const price = parseFloat(numberStr)
-  return price
+  const [full, numberStr] = priceStr.match(regexp) || ['', '']
+  if (numberStr === '') {
+    // 不含数字且不是"付费"→ 各语言的"免费"（免费/free/Gratis/Ücretsiz...），视为 0
+    return 0
+  }
+  return parseFloat(numberStr)
 }
 
 function getPriceRange(

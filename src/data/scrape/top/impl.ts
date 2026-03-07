@@ -27,6 +27,7 @@ const chartConfigs: ChartConfig[] = [
     chart: 'topgrossingapplications',
     addSourceGenre: 'grossing-top',
     addSourceAll: 'grossing-top-all',
+    shouldBePaid: true,
     discountType: 'unknown',
     label: '畅销排行榜',
   },

@@ -85,10 +85,10 @@ export default function getLastKeepDaysRegionDiscountInfo(
           return currentApp.price <= getPrice(d.to, region as Region)
         }
         if (d.type === 'inAppPurchase') {
-          // 内购折扣：对应内购项目当前价格仍等于折后价
+          // 内购折扣：当前内购价格仍 ≤ 折扣记录中的折后价
           const currentIapPrice = currentApp.inAppPurchases[d.name]
           if (currentIapPrice === undefined) return true // 内购项目未找到，保守保留
-          return getPrice(currentIapPrice, region as Region) === getPrice(d.to, region as Region)
+          return getPrice(currentIapPrice, region as Region) <= getPrice(d.to, region as Region)
         }
         return true
       })
