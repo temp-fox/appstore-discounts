@@ -1129,7 +1129,7 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
     if (app.type === 'iap') { badgeBg = '#fef9c3'; badgeColor = '#92400e'; }
     else if (app.type === 'discount') { badgeBg = '#fee2e2'; badgeColor = '#b91c1c'; }
     h += '<div style="display:flex;gap:14px;align-items:center;">';
-    h += '<img src="' + app.iconHD + '" style="width:60px;height:60px;border-radius:14px;box-shadow:0 6px 16px rgba(100,100,110,0.22),0 2px 6px rgba(0,0,0,0.08);flex-shrink:0;" />';
+    h += '<img src="' + app.iconHD + '" style="width:60px;height:60px;border-radius:14px;box-shadow:0 12px 32px rgba(60,60,70,0.45),0 4px 12px rgba(0,0,0,0.18);flex-shrink:0;" />';
     h += '<div style="flex:1;min-width:0;">';
     h += '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">';
     h += '<span style="font-size:16px;font-weight:700;line-height:1.4;">' + app.name + '</span>';
@@ -1192,13 +1192,13 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
     var qrUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(app.url);
     if (app.screenshots && app.screenshots.length > 0) {
       if (app.isMac) {
-        h += '<div style="margin-top:14px;border-radius:12px;overflow:hidden;border:1px solid #d1d5db;box-shadow:0 8px 24px rgba(100,100,110,0.25),0 2px 8px rgba(0,0,0,0.08);">';
+        h += '<div style="margin-top:14px;border-radius:12px;overflow:hidden;border:1px solid #d1d5db;box-shadow:0 12px 32px rgba(60,60,70,0.45),0 4px 12px rgba(0,0,0,0.18);">';
         h += '<img src="' + app.screenshots[0] + '" style="width:100%;display:block;aspect-ratio:16/10;object-fit:cover;" />';
         h += '</div>';
       } else {
         h += '<div style="display:flex;gap:8px;margin-top:14px;">';
         app.screenshots.forEach(function(src) {
-          h += '<div style="flex:1;min-width:0;border-radius:12px;overflow:hidden;border:1px solid #d1d5db;background:#f9fafb;box-shadow:0 8px 24px rgba(100,100,110,0.25),0 2px 8px rgba(0,0,0,0.08);">';
+          h += '<div style="flex:1;min-width:0;border-radius:12px;overflow:hidden;border:1px solid #d1d5db;background:#f9fafb;box-shadow:0 12px 32px rgba(60,60,70,0.45),0 4px 12px rgba(0,0,0,0.18);">';
           h += '<img src="' + src + '" style="width:100%;display:block;aspect-ratio:3/5;object-fit:cover;" />';
           h += '</div>';
         });
