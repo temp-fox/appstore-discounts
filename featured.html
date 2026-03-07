@@ -1080,7 +1080,7 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
   }
 
   function buildWeChatHTML(title, apps) {
-    var containerStyle = 'max-width:600px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,\"Helvetica Neue\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif;color:#1c1c1e;';
+    var containerStyle = 'max-width:600px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,\"Helvetica Neue\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif;color:#1c1c1e;-webkit-font-smoothing:antialiased;';
 
     var headerStyle = 'background:linear-gradient(160deg,#ff9500 0%,#ff6b2b 40%,#e8453c 100%);color:#fff;padding:32px 24px 28px;text-align:center;border-radius:20px 20px 0 0;position:relative;overflow:hidden;';
     var titleStyle = 'font-size:22px;font-weight:800;margin:0 0 8px 0;letter-spacing:0.5px;text-shadow:0 1px 3px rgba(0,0,0,0.15);';
@@ -1131,7 +1131,7 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
     if (app.type === 'iap') { badgeBg = '#fef9c3'; badgeColor = '#92400e'; }
     else if (app.type === 'discount') { badgeBg = '#fee2e2'; badgeColor = '#b91c1c'; }
     h += '<div style="display:flex;gap:14px;align-items:center;">';
-    h += '<img src="' + app.iconHD + '" style="width:60px;height:60px;border-radius:14px;box-shadow:0 3px 10px rgba(80,80,90,0.18);flex-shrink:0;" />';
+    h += '<img src="' + app.iconHD + '" style="width:60px;height:60px;border-radius:14px;box-shadow:0 4px 14px rgba(60,60,70,0.25),0 1px 4px rgba(0,0,0,0.10);flex-shrink:0;" />';
     h += '<div style="flex:1;min-width:0;">';
     h += '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">';
     h += '<span style="font-size:16px;font-weight:700;line-height:1.4;">' + app.name + '</span>';
