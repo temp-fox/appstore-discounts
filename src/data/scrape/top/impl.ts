@@ -1,10 +1,36 @@
 import nodeFetch from 'node-fetch'
 
-// 原始配置：前10名
-// const limit = 10
-
 // 自定义配置：每个分类前200名（API 最大限制）
 const limit = 200
+
+type ChartType = 'toppaidapplications' | 'topgrossingapplications'
+
+interface ChartConfig {
+  chart: ChartType
+  addSourceGenre: string   // 分类榜 addSource
+  addSourceAll: string     // 总榜 addSource
+  shouldBePaid?: boolean   // 付费榜 true，畅销榜不设
+  discountType: 'app' | 'unknown'
+  label: string            // 日志中文名
+}
+
+const chartConfigs: ChartConfig[] = [
+  {
+    chart: 'toppaidapplications',
+    addSourceGenre: 'paid-top',
+    addSourceAll: 'paid-top-all',
+    shouldBePaid: true,
+    discountType: 'app',
+    label: '付费排行榜',
+  },
+  {
+    chart: 'topgrossingapplications',
+    addSourceGenre: 'grossing-top',
+    addSourceAll: 'grossing-top-all',
+    discountType: 'unknown',
+    label: '畅销排行榜',
+  },
+]
 
 // App Store 所有主要分类
 const genres = {
@@ -35,31 +61,38 @@ const genres = {
   shopping: 6024,        // 购物
 }
 
-function getUrl(region: Region, genreId?: number) {
+function getUrl(region: Region, chart: ChartType, genreId?: number) {
   if (genreId) {
-    return `https://itunes.apple.com/${region}/rss/toppaidapplications/limit=${limit}/genre=${genreId}/json`
+    return `https://itunes.apple.com/${region}/rss/${chart}/limit=${limit}/genre=${genreId}/json`
   }
-  return `https://itunes.apple.com/${region}/rss/toppaidapplications/limit=${limit}/json`
+  return `https://itunes.apple.com/${region}/rss/${chart}/limit=${limit}/json`
 }
 
-async function fetchGenreApps(region: Region, genreName: string, genreId: number): Promise<AppTopInfo[]> {
+async function fetchApps(
+  region: Region,
+  config: ChartConfig,
+  genreName?: string,
+  genreId?: number,
+): Promise<AppTopInfo[]> {
   const res: AppTopInfo[] = []
+  const displayName = genreName ?? `${config.label}总榜`
+  const addSource = genreName ? config.addSourceGenre : config.addSourceAll
 
   try {
-    const response = await nodeFetch(getUrl(region, genreId), {
+    const response = await nodeFetch(getUrl(region, config.chart, genreId), {
       method: 'GET',
       headers: {
         Accept: '*/*',
         'User-Agent': 'iTunes/12.0 (Macintosh; OS X 10.15) AppleWebKit/600.1.25',
       },
     })
-    
+
     // 检查响应状态
     if (!response.ok) {
-      console.error(`  ✗ ${genreName}: HTTP ${response.status} ${response.statusText}`)
+      console.error(`  ✗ ${displayName}: HTTP ${response.status} ${response.statusText}`)
       return res
     }
-    
+
     const tempRes = (await response.json()) as AppTopInfoResponse
 
     // 检查是否有 entry 数组
@@ -72,19 +105,19 @@ async function fetchGenreApps(region: Region, genreName: string, genreId: number
           res.push({
             id,
             name,
-            addSource: 'paid-top',    // 来源：付费排行榜
-            _shouldBePaid: true,      // 付费排行榜的 app 必然是付费应用
-            _discountType: 'app',     // 付费应用本体折扣
-            _externalSourceFirstSeen: Date.now(), // 首次加入追踪的时间戳（用于首见限免检测）
+            addSource,
+            _shouldBePaid: config.shouldBePaid,
+            _discountType: config.discountType,
+            _externalSourceFirstSeen: Date.now(),
           })
         }
       })
     } else {
-      // 该分类可能没有付费应用，静默处理
+      // 该分类可能没有应用，静默处理
     }
 
   } catch (error) {
-    console.error(`  ✗ ${genreName} 分类获取失败:`, error)
+    console.error(`  ✗ ${displayName} 获取失败:`, error)
   }
 
   return res
@@ -100,46 +133,83 @@ export async function getAppTopInfo(
   log: string,
 ): Promise<AppTopInfo[]> {
   console.log(log)
-  console.log(`获取 ${Object.keys(genres).length} 个分类的付费排行榜（每分类前 ${limit} 名，每批 3 个分类）`)
 
   const allApps: AppTopInfo[] = []
   const appIdSet = new Set<string>() // 用于去重
-  const failedGenres: string[] = []
 
-  // 分批处理，避免触发速率限制
-  const genreEntries = Object.entries(genres)
-  const batchSize = 3 // 每批处理 3 个分类
+  // 每种榜的统计
+  const stats: { label: string; total: number; newCount: number }[] = []
 
-  for (let i = 0; i < genreEntries.length; i += batchSize) {
-    const batch = genreEntries.slice(i, i + batchSize)
-
-    // 并发处理当前批次
-    const batchPromises = batch.map(([name, id]) =>
-      fetchGenreApps(region, name, id)
-    )
-
-    const batchResults = await Promise.all(batchPromises)
-
-    // 合并当前批次的结果
-    batchResults.forEach((apps, idx) => {
-      if (apps.length === 0) {
-        failedGenres.push(batch[idx][0])
+  for (const config of chartConfigs) {
+    // —— 总榜 ——
+    console.log(`获取${config.label}总榜（前 ${limit} 名）`)
+    const allChartApps = await fetchApps(region, config)
+    let allTotal = allChartApps.length
+    let allNew = 0
+    allChartApps.forEach((app) => {
+      if (!appIdSet.has(app.id)) {
+        appIdSet.add(app.id)
+        allApps.push(app)
+        allNew++
       }
-      apps.forEach((app) => {
-        if (!appIdSet.has(app.id)) {
-          appIdSet.add(app.id)
-          allApps.push(app)
-        }
-      })
     })
+    stats.push({ label: `${config.label}总榜`, total: allTotal, newCount: allNew })
 
-    // 如果不是最后一批，等待 2 秒
-    if (i + batchSize < genreEntries.length) {
-      await delay(2000)
+    await delay(2000)
+
+    // —— 分类榜 ——
+    const genreEntries = Object.entries(genres)
+    const batchSize = 3
+    console.log(`获取${config.label}分类榜（${genreEntries.length} 个分类，每分类前 ${limit} 名，每批 ${batchSize} 个）`)
+
+    let genreTotal = 0
+    let genreNew = 0
+    const failedGenres: string[] = []
+
+    for (let i = 0; i < genreEntries.length; i += batchSize) {
+      const batch = genreEntries.slice(i, i + batchSize)
+
+      const batchPromises = batch.map(([name, id]) =>
+        fetchApps(region, config, name, id)
+      )
+
+      const batchResults = await Promise.all(batchPromises)
+
+      batchResults.forEach((apps, idx) => {
+        if (apps.length === 0) {
+          failedGenres.push(batch[idx][0])
+        }
+        genreTotal += apps.length
+        apps.forEach((app) => {
+          if (!appIdSet.has(app.id)) {
+            appIdSet.add(app.id)
+            allApps.push(app)
+            genreNew++
+          }
+        })
+      })
+
+      // 如果不是最后一批，等待 2 秒
+      if (i + batchSize < genreEntries.length) {
+        await delay(2000)
+      }
     }
+
+    stats.push({ label: `${config.label}分类`, total: genreTotal, newCount: genreNew })
+
+    if (failedGenres.length > 0) {
+      console.log(`  ${config.label}失败分类: ${failedGenres.join(', ')}`)
+    }
+
+    // 榜单之间等待
+    await delay(2000)
   }
 
-  console.log(`排行榜完成: ${allApps.length} 个不重复应用（${Object.keys(genres).length} 个分类）${failedGenres.length > 0 ? ` | 失败: ${failedGenres.join(', ')}` : ''}`)
-  
+  // 输出汇总
+  console.log(`排行榜完成: ${allApps.length} 个不重复应用`)
+  stats.forEach((s) => {
+    console.log(`  ${s.label}: ${s.total} 个（新增 ${s.newCount}）`)
+  })
+
   return allApps
 }

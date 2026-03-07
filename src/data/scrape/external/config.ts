@@ -23,6 +23,13 @@ export const externalSources: ExternalSource[] = [
     enabled: true,
     description: 'OODATA - 每日限免应用 RSS（所有国家/地区，自动过滤 VPN、成人内容）'
   },
+  {
+    name: 'WarmDay',
+    url: 'https://api.bmobcloud.com',
+    parser: 'warmday',
+    enabled: true,
+    description: '极简限免 - 每日精选 iOS & macOS 限免 App'
+  },
   // 可选：MerGeek（需要额外开发）
   // {
   //   name: 'MerGeek',

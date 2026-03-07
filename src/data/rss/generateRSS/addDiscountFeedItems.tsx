@@ -47,7 +47,10 @@ function getSourceLabel(t: Translate, cfg?: AppConfig): string {
   // auto（排行榜类）：按 addSource 区分具体榜单
   const chartLabels: Record<string, string> = {
     'paid-top': '付费排行榜',
+    'paid-top-all': '付费总榜',
     'grossing': '畅销排行榜',
+    'grossing-top': '畅销排行榜',
+    'grossing-top-all': '畅销总榜',
     'new-release': '新上架',
   }
   const label = addSource && chartLabels[addSource] ? chartLabels[addSource] : t('排行榜')

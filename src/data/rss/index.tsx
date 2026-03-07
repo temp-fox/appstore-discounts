@@ -6,15 +6,16 @@ import { generateRegionFeed } from './generateRSS'
 export default function updateFeeds(props: {
   timestamp: number
   regionDiscountInfo: RegionDiscountInfo
+  regionAppInfo: RegionAppInfo
   appConfig: AppConfig[]
   regionStorageAppInfo: RegionStorageAppInfo
 }) {
   start('updateFeeds')
-  const { timestamp, regionDiscountInfo, appConfig, regionStorageAppInfo } =
+  const { timestamp, regionDiscountInfo, regionAppInfo, appConfig, regionStorageAppInfo } =
     props
 
   const fullRegionDiscountInfo =
-    getLastKeepDaysRegionDiscountInfo(regionDiscountInfo)
+    getLastKeepDaysRegionDiscountInfo(regionDiscountInfo, regionAppInfo)
 
   const regionMonthlyDiscountStats =
     getRegionMonthlyDiscountStats(regionDiscountInfo)

@@ -229,6 +229,7 @@ async function controller() {
   const { regionMonthlyDiscountStats } = updateFeeds({
     timestamp,
     regionDiscountInfo,
+    regionAppInfo,
     appConfig,
     regionStorageAppInfo,
   })

@@ -5,6 +5,7 @@
 import { getEnabledSources } from './config'
 import { GoFansParser } from './parsers/gofans'
 import { OODataParser } from './parsers/oodata'
+import { WarmDayParser } from './parsers/warmday'
 import type { IParser, ParseResult, ExternalAppInfo } from './types'
 import { writeFileSync, readFileSync, existsSync } from 'fs'
 import { join } from 'path'
@@ -19,6 +20,8 @@ async function getParser(parserType: string): Promise<IParser | null> {
       return new GoFansParser()
     case 'oodata':
       return new OODataParser()
+    case 'warmday':
+      return new WarmDayParser()
     default:
       return null
   }

@@ -129,6 +129,14 @@ export default function updateAppInfoConfig(
     console.log(`补充已有应用缺失标签：${externalCount} 个来自外部来源，${chartCount} 个来自排行榜`)
   }
 
+  // 统计新应用来源
+  const newAppIds = Object.keys(idNameMap)
+  if (newAppIds.length > 0) {
+    const chartCount = newAppIds.filter(id => idSourceMap[id]?.addType === 'auto').length
+    const externalCount = newAppIds.filter(id => idSourceMap[id]?.addType === 'external').length
+    console.log(`新应用进入追踪: ${newAppIds.length} 个（排行榜: ${chartCount} | 外部来源: ${externalCount}）`)
+  }
+
   if (isEmpty(idNameMap)) {
     if (hasExistingTagUpdates) {
       updateImpl(effectiveOldAppConfig)

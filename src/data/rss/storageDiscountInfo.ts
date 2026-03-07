@@ -1,6 +1,7 @@
 import { writeFileSync, readFileSync, existsSync } from 'fs'
 import { resolve } from 'path'
 import { regions } from 'appinfo.config'
+import { getPrice } from '../calculate'
 
 const rssFilePath = resolve(__dirname, '../storage/rss.json')
 
@@ -57,13 +58,48 @@ function saveRegionDiscountInfo(regionDiscountInfo: RegionDiscountInfo) {
 
 export default function getLastKeepDaysRegionDiscountInfo(
   newInfo: RegionDiscountInfo,
+  regionAppInfo: RegionAppInfo,
 ): RegionDiscountInfo {
   const existingInfo = readRegionDiscountInfo()
 
   const merged = Object.entries(newInfo).reduce((res, [region, discounts]) => {
-    res[region] = [...(existingInfo[region] || []), ...discounts].sort(
+    const allDiscounts = [...(existingInfo[region] || []), ...discounts].sort(
       (a, b) => b.timestamp - a.timestamp,
     )
+
+    // 用当前价格数据过滤已恢复原价的历史记录
+    const currentAppInfos = regionAppInfo[region as Region] || []
+    const appInfoMap = new Map<number, AppInfo>(
+      currentAppInfos.map((info) => [info.trackId, info]),
+    )
+
+    let removedCount = 0
+    res[region] = allDiscounts.filter((discountInfo) => {
+      const currentApp = appInfoMap.get(discountInfo.trackId)
+      // 当前轮次未查到的应用，保守保留
+      if (!currentApp) return true
+
+      const stillValid = discountInfo.discounts.some((d) => {
+        if (d.type === 'price') {
+          // 本体折扣：当前价格仍 ≤ 折扣记录中的价格
+          return currentApp.price <= getPrice(d.to, region as Region)
+        }
+        if (d.type === 'inAppPurchase') {
+          // 内购折扣：对应内购项目当前价格仍等于折后价
+          const currentIapPrice = currentApp.inAppPurchases[d.name]
+          if (currentIapPrice === undefined) return true // 内购项目未找到，保守保留
+          return getPrice(currentIapPrice, region as Region) === getPrice(d.to, region as Region)
+        }
+        return true
+      })
+
+      if (!stillValid) removedCount++
+      return stillValid
+    })
+
+    if (removedCount > 0) {
+      console.log(`[${region}] RSS 记录: 移除 ${removedCount} 条已恢复原价`)
+    }
 
     return res
   }, {} as RegionDiscountInfo)

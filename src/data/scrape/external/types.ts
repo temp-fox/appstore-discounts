@@ -11,7 +11,7 @@ export interface ExternalSource {
   /** 数据源 URL */
   url: string
   /** 解析器类型 */
-  parser: 'gofans' | 'oodata' | 'mergeek'
+  parser: 'gofans' | 'oodata' | 'mergeek' | 'warmday'
   /** 是否启用 */
   enabled: boolean
   /** 描述 */

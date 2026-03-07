@@ -4,3 +4,4 @@
 
 export { GoFansParser } from './gofans'
 export { OODataParser } from './oodata'
+export { WarmDayParser } from './warmday'
