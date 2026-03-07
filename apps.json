@@ -2,6 +2,245 @@
   "$schema": "apps.json-schema.json",
   "appConfig": [
     {
+      "id": 315654100,
+      "name": {
+        "cn": "Webcams worldwide"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772859368867,
+      "_discountType": "app"
+    },
+    {
+      "id": 378174507,
+      "name": {
+        "cn": "SimpleMind Pro - 思维导图"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772859371577,
+      "_discountType": "app"
+    },
+    {
+      "id": 380450781,
+      "name": {
+        "cn": "无线鼠标 PRO (Remote Mouse)"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772859366205,
+      "_discountType": "app"
+    },
+    {
+      "id": 401643317,
+      "name": {
+        "cn": "UPAD for iCloud"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772859371577,
+      "_discountType": "app"
+    },
+    {
+      "id": 1300592960,
+      "name": {
+        "cn": "走遍美国英语口语学习"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772859379717,
+      "_discountType": "app"
+    },
+    {
+      "id": 1366210432,
+      "name": {
+        "cn": "恐龙乐园AR - 我的恐龙世界"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772859379438,
+      "_discountType": "app"
+    },
+    {
+      "id": 1454142994,
+      "name": {
+        "cn": "客家话"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772859379717,
+      "_discountType": "app"
+    },
+    {
+      "id": 1505295992,
+      "name": {
+        "cn": "乌尔都语"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772859379717,
+      "_discountType": "app"
+    },
+    {
+      "id": 1519099937,
+      "name": {
+        "cn": "PDF Office Pro, Acrobat Expert"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772859393414,
+      "_discountType": "iap"
+    },
+    {
+      "id": 1567821287,
+      "name": {
+        "cn": "Kids Word Plus Pro"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772859393414,
+      "_discountType": "app"
+    },
+    {
+      "id": 1604886331,
+      "name": {
+        "cn": "QRoo"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772859393414,
+      "_discountType": "app"
+    },
+    {
+      "id": 1623580619,
+      "name": {
+        "cn": "7Days"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772859379438,
+      "_discountType": "app"
+    },
+    {
+      "id": 6447548662,
+      "name": {
+        "cn": "Push Ups 100 - Fitness Trainer"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772859376851,
+      "_discountType": "app"
+    },
+    {
+      "id": 6758197131,
+      "name": {
+        "cn": "霸刀传奇-全新文字挂机高爆福利版"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772859376772,
+      "_discountType": "app"
+    },
+    {
+      "id": 6759611784,
+      "name": {
+        "cn": "Speedometer：GPS速度计"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772859393414,
+      "_discountType": "iap"
+    },
+    {
+      "id": 6749693790,
+      "name": {
+        "cn": "Present Parent"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772859393414,
+      "_discountType": "iap"
+    },
+    {
+      "id": 6751636194,
+      "name": {
+        "cn": "书签和链接管理器"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772859393414,
+      "_discountType": "iap"
+    },
+    {
+      "id": 6755541795,
+      "name": {
+        "cn": "kokososo"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772859393414,
+      "_discountType": "app"
+    },
+    {
+      "id": 6739452291,
+      "name": {
+        "cn": "Budget Hive"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772859393414,
+      "_discountType": "app"
+    },
+    {
+      "id": 6468486508,
+      "name": {
+        "cn": "Stratega!"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772859393414,
+      "_discountType": "app"
+    },
+    {
+      "id": 6753191432,
+      "name": {
+        "cn": "PDFJoiner!"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772859393414,
+      "_discountType": "app"
+    },
+    {
       "id": 371178753,
       "name": {
         "cn": "PlaceTrack"
@@ -10671,7 +10910,9 @@
       "name": {
         "cn": "星际流浪手表版 - 专为watch设计的合成解压腕上小游戏"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6740203698,
@@ -21557,7 +21798,9 @@
       "name": {
         "cn": "往后余生"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1420356569,
@@ -24362,7 +24605,9 @@
       "name": {
         "cn": "Labo积木坦克(完整版):认知与创造军事车辆"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1633243177,
@@ -24419,7 +24664,9 @@
       "name": {
         "cn": "Zmongol2.0"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1637001930,
@@ -26178,7 +26425,9 @@
       "name": {
         "cn": "Oscidia"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6758303662,
@@ -27398,7 +27647,9 @@
       "name": {
         "cn": "消灭除星星-手表经典消消乐消除游戏"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6748705012,
@@ -27464,7 +27715,9 @@
       "name": {
         "cn": "水晶战争2：肉鸽策略防御王国保卫战斗割草塔防单机独立游戏TD"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6745094010,
