@@ -13,6 +13,7 @@ import pushDingTalkNotification from './dingtalk'
 import updateAppInfoConfig, { updateImpl } from './config'
 import updateLog from './log'
 import disableApps from './disableApps'
+import updateDailyStats from './dailyStats'
 
 async function controller() {
   start('controller')
@@ -92,19 +93,18 @@ async function controller() {
         shouldBePaid = true
         reason = 'RSS标记为本体限免'
       } else if (discountType === 'iap') {
-        // 内购限免：检查实际 IAP 价格
+        // 内购限免：本体不标记为付费，仅追踪
+        // IAP 折扣由后续运行的价格对比检测
+        shouldBePaid = false
         if (currentPrice === 0 && !appInfo.inAppPurchasesFailed) {
           const hasZeroIAP = Object.values(appInfo.inAppPurchases).some(
             fp => getPrice(fp, mainRegion) === 0
           )
-          shouldBePaid = hasZeroIAP
-          reason = hasZeroIAP ? '有内购项目当前免费' : '所有内购价格均大于0'
+          reason = hasZeroIAP ? '内购限免（追踪中）' : '所有内购价格均大于0'
         } else if (currentPrice > 0) {
-          shouldBePaid = false
-          reason = `本体价格 ${appInfo.formattedPrice} 大于0，写入追踪`
+          reason = `本体价格 ${appInfo.formattedPrice}，写入追踪`
         } else {
-          shouldBePaid = false
-          reason = '内购数据获取失败'
+          reason = '内购数据获取失败，写入追踪'
         }
       } else {
         // unknown：保留原有历史价格检查逻辑
@@ -243,6 +243,8 @@ async function controller() {
     )
 
   setStorageAppInfo(regions, regionStorageAppInfo)
+
+  updateDailyStats(regionDiscountInfo)
 
   const { regionMonthlyDiscountStats } = updateFeeds({
     timestamp,

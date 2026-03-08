@@ -5,7 +5,7 @@
 
 import { getStorageAppInfo } from '../storage'
 
-const CACHE_VALID_HOURS = 24 // 缓存有效期：24小时
+const CACHE_VALID_HOURS = 4 // 缓存有效期：4小时（CI 每2h运行，最多跨2个周期）
 
 export interface CachedAppInfo {
   timestamp: number
@@ -60,7 +60,7 @@ export function getCachedAppInfo(appId: number, region: string): CachedAppInfo |
       return null
     }
 
-    // 检查缓存是否过期（24小时）
+    // 检查缓存是否过期（4小时）
     const cacheAgeMs = Date.now() - latestRecord.timestamp
     const cacheAgeHours = cacheAgeMs / (1000 * 60 * 60)
 
