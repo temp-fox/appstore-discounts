@@ -1403,27 +1403,28 @@ Early Learning Flash Cards helps kids practice essential reading and math skills
     });
 
     // CTA: 点赞、分享、在看
-    var bubbleBase = 'display:inline-block;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;position:relative;';
+    var bubbleBase = 'display:inline-block;padding:6px 18px;border-radius:20px;font-size:13px;font-weight:600;';
     h += '<div style="margin:20px 16px 0;padding:24px 12px 20px;background:#ffffff;border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,0.10),0 1px 4px rgba(0,0,0,0.06);text-align:center;">';
-    h += '<p style="font-size:15px;color:#4b5563;margin:0 0 4px 0;font-weight:600;">你的每一次点击，都是我坚持更新的动力 💪</p>';
-    h += '<p style="font-size:13px;color:#6b7280;margin:0 0 18px 0;">（听说点了「在看」的人，都薅到了最大的羊毛 🐑）</p>';
-    h += '<div style="display:flex;justify-content:space-around;align-items:flex-end;gap:8px;">';
+    h += '<p style="font-size:15px;color:#4b5563;margin:0 0 4px 0;font-weight:600;">每次点击</p>';
+    h += '<p style="font-size:15px;color:#4b5563;margin:0 0 4px 0;font-weight:600;">都是我坚持更新的动力 💪</p>';
+    h += '<p style="font-size:12px;color:#9ca3af;margin:0 0 18px 0;">点「在看」的人，都薅到了最大的羊毛 🐑</p>';
+    h += '<table cellpadding="0" cellspacing="0" border="0" style="width:100%;"><tr>';
     // 分享
-    h += '<div style="flex:1;text-align:center;">';
-    h += '<div style="' + bubbleBase + 'background:#e0edff;color:#2563eb;">点点 "分享"</div>';
-    h += '<div style="font-size:28px;margin-top:6px;">👈</div>';
-    h += '</div>';
+    h += '<td style="width:33%;text-align:center;vertical-align:bottom;">';
+    h += '<div style="font-size:24px;margin-bottom:6px;">👈</div>';
+    h += '<div style="' + bubbleBase + 'background:#e0edff;color:#2563eb;">分享</div>';
+    h += '</td>';
     // 赞
-    h += '<div style="flex:1;text-align:center;">';
-    h += '<div style="' + bubbleBase + 'background:#fef3c7;color:#b45309;">点点 "赞" 👍</div>';
-    h += '<div style="font-size:28px;margin-top:6px;">👇</div>';
-    h += '</div>';
+    h += '<td style="width:34%;text-align:center;vertical-align:bottom;">';
+    h += '<div style="font-size:24px;margin-bottom:6px;">👇</div>';
+    h += '<div style="' + bubbleBase + 'background:#fef3c7;color:#b45309;">点赞</div>';
+    h += '</td>';
     // 在看
-    h += '<div style="flex:1;text-align:center;">';
-    h += '<div style="' + bubbleBase + 'background:#dcfce7;color:#15803d;">"在看" 也点下</div>';
-    h += '<div style="font-size:28px;margin-top:6px;">👉</div>';
-    h += '</div>';
-    h += '</div>';
+    h += '<td style="width:33%;text-align:center;vertical-align:bottom;">';
+    h += '<div style="font-size:24px;margin-bottom:6px;">👉</div>';
+    h += '<div style="' + bubbleBase + 'background:#dcfce7;color:#15803d;">在看</div>';
+    h += '</td>';
+    h += '</tr></table>';
     h += '</div>';
 
     // 评论区引导
@@ -1446,31 +1447,31 @@ Early Learning Flash Cards helps kids practice essential reading and math skills
 
     var h = '<div style="' + cardStyle + '">';
 
-    // Header: icon + name + badge
+    // Header: icon + name + badge (table layout for WeChat compatibility)
     var badgeBg = '#dcfce7'; var badgeColor = '#15803d';
     if (app.type === 'iap') { badgeBg = '#fef9c3'; badgeColor = '#92400e'; }
     else if (app.type === 'discount') { badgeBg = '#fee2e2'; badgeColor = '#b91c1c'; }
-    h += '<div style="display:flex;gap:14px;align-items:center;">';
-    h += '<img src="' + app.iconHD + '" style="width:60px;height:60px;border-radius:14px;box-shadow:0 4px 14px rgba(60,60,70,0.25),0 1px 4px rgba(0,0,0,0.10);flex-shrink:0;" />';
-    h += '<div style="flex:1;min-width:0;">';
-    h += '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">';
+    h += '<table cellpadding="0" cellspacing="0" border="0" style="width:100%;"><tr>';
+    h += '<td style="width:60px;vertical-align:middle;padding-right:14px;">';
+    h += '<img src="' + app.iconHD + '" style="width:60px;height:60px;border-radius:14px;box-shadow:0 4px 14px rgba(60,60,70,0.25),0 1px 4px rgba(0,0,0,0.10);" />';
+    h += '</td>';
+    h += '<td style="vertical-align:middle;">';
     h += '<span style="font-size:16px;font-weight:700;line-height:1.4;">' + app.name + '</span>';
-    h += '<span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:8px;white-space:nowrap;background:' + badgeBg + ';color:' + badgeColor + ';">' + app.badgeText + '</span>';
-    h += '</div>';
-    h += '</div>';
-    h += '</div>';
+    h += ' <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:8px;white-space:nowrap;background:' + badgeBg + ';color:' + badgeColor + ';">' + app.badgeText + '</span>';
+    h += '</td>';
+    h += '</tr></table>';
 
-    // Tags row: genre + devices
+    // Tags row: genre + devices (inline-block spans, no flex)
     var hasTags = app.genre || app.devices;
     if (hasTags) {
-      h += '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center;">';
+      h += '<div style="margin-top:10px;">';
       if (app.genre) {
-        h += '<span style="font-size:11px;padding:2px 8px;border-radius:8px;background:#f2f2f7;color:#6c6c70;border:1px solid #e5e5ea;">' + app.genre + '</span>';
+        h += '<span style="font-size:11px;padding:2px 8px;border-radius:8px;background:#f2f2f7;color:#6c6c70;border:1px solid #e5e5ea;display:inline-block;margin:0 6px 4px 0;">' + app.genre + '</span>';
       }
       if (app.devices) {
         var deviceList = app.devices.split(' · ');
         deviceList.forEach(function(d) {
-          h += '<span style="font-size:11px;padding:2px 8px;border-radius:8px;background:#f0f4ff;color:#4b5563;border:1px solid #e0e7ff;">' + d.trim() + '</span>';
+          h += '<span style="font-size:11px;padding:2px 8px;border-radius:8px;background:#f0f4ff;color:#4b5563;border:1px solid #e0e7ff;display:inline-block;margin:0 6px 4px 0;">' + d.trim() + '</span>';
         });
       }
       h += '</div>';
@@ -1481,10 +1482,10 @@ Early Learning Flash Cards helps kids practice essential reading and math skills
       h += '<div style="background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid #fde68a;border-radius:10px;padding:10px 14px;margin-top:12px;">';
       h += '<div style="font-size:13px;font-weight:600;color:#92400e;margin-bottom:6px;">内购优惠</div>';
       app.iapItems.forEach(function(iap) {
-        h += '<div style="display:flex;justify-content:space-between;align-items:center;padding:3px 0;font-size:13px;">';
-        h += '<span style="color:#78350f;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;padding-right:8px;">' + iap.name + '</span>';
-        h += '<span style="white-space:nowrap;"><s style="color:#d1d5db;">' + iap.from + '</s> <span style="color:#d97706;">→</span> <b style="color:#b45309;">' + iap.to + '</b></span>';
-        h += '</div>';
+        h += '<table cellpadding="0" cellspacing="0" border="0" style="width:100%;"><tr>';
+        h += '<td style="vertical-align:middle;padding:3px 8px 3px 0;font-size:13px;color:#78350f;">' + iap.name + '</td>';
+        h += '<td style="vertical-align:middle;padding:3px 0;font-size:13px;white-space:nowrap;text-align:right;"><s style="color:#d1d5db;">' + iap.from + '</s> <span style="color:#d97706;">→</span> <b style="color:#b45309;">' + iap.to + '</b></td>';
+        h += '</tr></table>';
       });
       h += '</div>';
     } else {
@@ -1498,9 +1499,9 @@ Early Learning Flash Cards helps kids practice essential reading and math skills
         priceBorder = '#fed7aa';
         priceColor = '#c2410c';
       }
-      h += '<div style="display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;margin-top:12px;background:' + priceBg + ';border:1px solid ' + priceBorder + ';">';
+      h += '<div style="padding:10px 14px;border-radius:10px;margin-top:12px;background:' + priceBg + ';border:1px solid ' + priceBorder + ';">';
       h += '<span style="color:#6c6c70;text-decoration:line-through;font-size:15px;">' + app.priceFrom + '</span>';
-      h += '<span style="color:#6c6c70;font-size:13px;">→</span>';
+      h += ' <span style="color:#6c6c70;font-size:13px;">→</span> ';
       h += '<span style="color:' + priceColor + ';font-weight:700;font-size:17px;">' + app.priceTo + '</span>';
       h += '</div>';
     }
@@ -1518,29 +1519,37 @@ Early Learning Flash Cards helps kids practice essential reading and math skills
         h += '<img src="' + app.screenshots[0] + '" style="width:100%;height:auto;display:block;" />';
         h += '</div>';
       } else {
-        h += '<div style="display:flex;gap:8px;margin-top:14px;">';
-        app.screenshots.forEach(function(src) {
-          h += '<div style="flex:1;min-width:0;border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);">';
+        // Screenshots side by side (table layout for WeChat)
+        var shotWidth = Math.floor(100 / app.screenshots.length) + '%';
+        h += '<table cellpadding="0" cellspacing="0" border="0" style="width:100%;margin-top:14px;"><tr>';
+        app.screenshots.forEach(function(src, idx) {
+          h += '<td style="width:' + shotWidth + ';vertical-align:top;' + (idx > 0 ? 'padding-left:8px;' : '') + '">';
+          h += '<div style="border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);">';
           h += '<img src="' + src + '" style="width:100%;height:auto;display:block;" />';
           h += '</div>';
+          h += '</td>';
         });
-        h += '</div>';
+        h += '</tr></table>';
       }
-      // QR below screenshots — 用分隔线隔开
+      // QR below screenshots
       h += '<div style="text-align:center;margin-top:16px;padding-top:14px;border-top:1px dashed #e5e7eb;">';
       h += '<img src="' + qrUrl + '" style="width:88px;height:88px;border-radius:12px;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);" />';
       h += '<div style="font-size:13px;font-weight:600;color:#007aff;margin-top:6px;letter-spacing:0.5px;">📲 长按识别下载</div>';
       h += '</div>';
     } else {
-      // No screenshot: icon + QR side by side，统一尺寸和圆角
-      h += '<div style="display:flex;align-items:center;justify-content:center;gap:20px;margin-top:14px;padding:16px 12px;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;">';
+      // No screenshot: icon + QR side by side (table layout for WeChat)
+      h += '<div style="margin-top:14px;padding:16px 12px;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;">';
+      h += '<table cellpadding="0" cellspacing="0" border="0" style="width:100%;"><tr>';
       if (app.iconHD) {
-        h += '<img src="' + app.iconHD + '" style="width:88px;height:88px;border-radius:20px;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);flex-shrink:0;" />';
+        h += '<td style="width:50%;text-align:center;vertical-align:middle;">';
+        h += '<img src="' + app.iconHD + '" style="width:88px;height:88px;border-radius:20px;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);" />';
+        h += '</td>';
       }
-      h += '<div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">';
+      h += '<td style="width:50%;text-align:center;vertical-align:middle;">';
       h += '<img src="' + qrUrl + '" style="width:88px;height:88px;border-radius:12px;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);" />';
       h += '<div style="font-size:12px;font-weight:600;color:#007aff;margin-top:6px;">📲 长按识别下载</div>';
-      h += '</div>';
+      h += '</td>';
+      h += '</tr></table>';
       h += '</div>';
     }
 
