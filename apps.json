@@ -2,6 +2,270 @@
   "$schema": "apps.json-schema.json",
   "appConfig": [
     {
+      "id": 391214234,
+      "name": {
+        "cn": "Book of Psalms For Worship"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958124023,
+      "_discountType": "app"
+    },
+    {
+      "id": 648343556,
+      "name": {
+        "cn": "小学館 ロベール 仏和大辞典"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958118687,
+      "_discountType": "app"
+    },
+    {
+      "id": 971374351,
+      "name": {
+        "cn": "Kiosk Pro Enterprise"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958113483,
+      "_discountType": "app"
+    },
+    {
+      "id": 1372476760,
+      "name": {
+        "cn": "重装机兵之红狼归来"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958113458,
+      "_discountType": "app"
+    },
+    {
+      "id": 1444392450,
+      "name": {
+        "cn": "黑白短信 - 过滤短信拦截防骚扰"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958113458,
+      "_discountType": "app"
+    },
+    {
+      "id": 1552648156,
+      "name": {
+        "cn": "Univerzoom 3D - Explore Scale"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958127066,
+      "_discountType": "app"
+    },
+    {
+      "id": 1566085207,
+      "name": {
+        "cn": "N'Back 10 Dual"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958127066,
+      "_discountType": "app"
+    },
+    {
+      "id": 1582930176,
+      "name": {
+        "cn": "证件水印 - 扫描身份证水印照片保障隐私安全"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958113458,
+      "_discountType": "app"
+    },
+    {
+      "id": 1617468354,
+      "name": {
+        "cn": "艾尔登-法环离线地图"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958113458,
+      "_discountType": "app"
+    },
+    {
+      "id": 6749840287,
+      "name": {
+        "cn": "Conduit: OpenWebUI 客户端"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958113458,
+      "_discountType": "app"
+    },
+    {
+      "id": 6740665256,
+      "name": {
+        "cn": "译林七下"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958113458,
+      "_discountType": "app"
+    },
+    {
+      "id": 6473154155,
+      "name": {
+        "cn": "五年级英语下册 - 外研三起点小学英语"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958113458,
+      "_discountType": "app"
+    },
+    {
+      "id": 6526472945,
+      "name": {
+        "cn": "悦色-色彩搭配专家"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958118665,
+      "_discountType": "app"
+    },
+    {
+      "id": 6754816805,
+      "name": {
+        "cn": "声动提醒"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958118665,
+      "_discountType": "app"
+    },
+    {
+      "id": 6747999919,
+      "name": {
+        "cn": "极品三国志-国潮炫彩放置幻想卡牌大作"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958123974,
+      "_discountType": "app"
+    },
+    {
+      "id": 6759729300,
+      "name": {
+        "cn": "餐饮成本管理"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958126913,
+      "_discountType": "app"
+    },
+    {
+      "id": 6759118107,
+      "name": {
+        "cn": "BorrowAR"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958126787,
+      "_discountType": "app"
+    },
+    {
+      "id": 6443737201,
+      "name": {
+        "cn": "AM3U Pro"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958126787,
+      "_discountType": "app"
+    },
+    {
+      "id": 6760020957,
+      "name": {
+        "cn": "小猫跑酷 For Watch — 可爱小猫冒险休闲小游戏"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958126787,
+      "_discountType": "app"
+    },
+    {
+      "id": 6477868000,
+      "name": {
+        "cn": "Hanzi Practicing"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958127066,
+      "_discountType": "app"
+    },
+    {
+      "id": 6743068303,
+      "name": {
+        "cn": "专注力训练-舒尔特方格"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958127066,
+      "_discountType": "app"
+    },
+    {
+      "id": 6758264170,
+      "name": {
+        "cn": "法学僧—法考法条助手"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958127066,
+      "_discountType": "app"
+    },
+    {
+      "id": 6749536179,
+      "name": {
+        "cn": "TangoWrist 腕上闪卡"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958127066,
+      "_discountType": "app"
+    },
+    {
+      "id": 6469784252,
+      "name": {
+        "cn": "English Poetry Pro"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772958129598,
+      "_discountType": "app"
+    },
+    {
       "id": 412341302,
       "name": {
         "cn": "WebDAV Nav+"
