@@ -2,6 +2,259 @@
   "$schema": "apps.json-schema.json",
   "appConfig": [
     {
+      "id": 478293637,
+      "name": {
+        "cn": "Anytune Pro+: Studio Tools "
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973035581,
+      "_discountType": "app"
+    },
+    {
+      "id": 887877435,
+      "name": {
+        "cn": "f8 镜头大师"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973032519,
+      "_discountType": "app"
+    },
+    {
+      "id": 981462169,
+      "name": {
+        "cn": "Beginner to Black Belt"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973029601,
+      "_discountType": "app"
+    },
+    {
+      "id": 1126517945,
+      "name": {
+        "cn": "太阳系， Tinybop出品"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973041116,
+      "_discountType": "app"
+    },
+    {
+      "id": 1193186787,
+      "name": {
+        "cn": "Pango 主题乐园建造者"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973041116,
+      "_discountType": "app"
+    },
+    {
+      "id": 1212118228,
+      "name": {
+        "cn": "OnPitch - Vocal Pitch Monitor"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973035581,
+      "_discountType": "app"
+    },
+    {
+      "id": 1321932608,
+      "name": {
+        "cn": "Pediatric Blood Pressure Guide"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973043662,
+      "_discountType": "app"
+    },
+    {
+      "id": 1578243186,
+      "name": {
+        "cn": "Little Bean - Cosmetic Checker"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973038404,
+      "_discountType": "app"
+    },
+    {
+      "id": 1590992377,
+      "name": {
+        "cn": "隐私访问记录 - 系统性分析应用隐私权限访问活动洞见隐私泄露"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973026916,
+      "_discountType": "app"
+    },
+    {
+      "id": 1599324535,
+      "name": {
+        "cn": "AI Reef Cam"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973032519,
+      "_discountType": "app"
+    },
+    {
+      "id": 1671475521,
+      "name": {
+        "cn": "DNA Transform!"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973040886,
+      "_discountType": "app"
+    },
+    {
+      "id": 6758322414,
+      "name": {
+        "cn": "解解压 - JJYa"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973026916,
+      "_discountType": "app"
+    },
+    {
+      "id": 6742965175,
+      "name": {
+        "cn": "码上取 - 快递取件小帮手"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973026916,
+      "_discountType": "app"
+    },
+    {
+      "id": 6744344659,
+      "name": {
+        "cn": "8小时记"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973032578,
+      "_discountType": "app"
+    },
+    {
+      "id": 6478773519,
+      "name": {
+        "cn": "充电提醒 - 充电到指定量可自动提醒&支持快捷指令&充电动画"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973032578,
+      "_discountType": "app"
+    },
+    {
+      "id": 6756616703,
+      "name": {
+        "cn": "网页编辑器"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973032578,
+      "_discountType": "app"
+    },
+    {
+      "id": 6459193429,
+      "name": {
+        "cn": "倒走时钟"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973032578,
+      "_discountType": "app"
+    },
+    {
+      "id": 6759358968,
+      "name": {
+        "cn": "PadLab - Live Pads"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973035581,
+      "_discountType": "app"
+    },
+    {
+      "id": 6749824828,
+      "name": {
+        "cn": "深圳公园停车"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973038141,
+      "_discountType": "app"
+    },
+    {
+      "id": 6482989598,
+      "name": {
+        "cn": "侠客风云传前传"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973038371,
+      "_discountType": "app"
+    },
+    {
+      "id": 6759726627,
+      "name": {
+        "cn": "五子棋Watch版-腕上经典AI单机对战"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973040886,
+      "_discountType": "app"
+    },
+    {
+      "id": 6759263235,
+      "name": {
+        "cn": "战争档案"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973041116,
+      "_discountType": "app"
+    },
+    {
+      "id": 6758266223,
+      "name": {
+        "cn": "烹迹"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772973046512,
+      "_discountType": "app"
+    },
+    {
       "id": 391214234,
       "name": {
         "cn": "Book of Psalms For Worship"
@@ -1898,8 +2151,8 @@
       "name": {
         "cn": "Budget Hive"
       },
-      "addType": "external",
-      "addSource": "OODATA",
+      "addType": "auto",
+      "addSource": "paid-top",
       "_shouldBePaid": true,
       "_externalSource": "OODATA",
       "_externalSourceFirstSeen": 1772859393414,

@@ -1,5 +1,331 @@
 [
   {
+    "timestamp": 1772973052614,
+    "regionAppInfo": {
+      "cn": [
+        {
+          "trackId": 6758589382,
+          "trackName": "Netutilus: Network Utility",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6754908867,
+          "trackName": "Owly: AI Study & Flashcards",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6751512104,
+          "trackName": "BrainFit Logic Puzzles & Focus",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 284947174,
+          "trackName": "iXpenseIt Pro: 管理财务",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 286574416,
+          "trackName": "iBartender Cocktail Recipes",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 293798497,
+          "trackName": "WalkieTalkie VOIP",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 294631159,
+          "trackName": "WeatherPro",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 294710480,
+          "trackName": "Packing (+TO DO!)",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 297404959,
+          "trackName": "Metro Paris Subway",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 298206806,
+          "trackName": "iReal Pro",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 694047660,
+          "trackName": "预算 - 个人理财、家庭预算",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 699671405,
+          "trackName": "VideoSound - Music to Video",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 701084505,
+          "trackName": "My Little Pony Party of One",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 716023568,
+          "trackName": "温湿度计 - 空气湿度",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 730712409,
+          "trackName": "ProCam - 专业相机",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 731781859,
+          "trackName": "Oz Weather Plus",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 741885934,
+          "trackName": "立体飞行棋 - 飞行棋3D ( Ludo 3D )",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 766214869,
+          "trackName": "The Great Photo App",
+          "inAppPurchasesTimes": 10
+        },
+        {
+          "trackId": 766395449,
+          "trackName": "终极减肥法 - 低碳水食物健康瘦身",
+          "inAppPurchasesTimes": 10
+        },
+        {
+          "trackId": 1383797480,
+          "trackName": "九宫格切图-极简操作",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1394068113,
+          "trackName": "优学猫数学体验版-源自哈佛",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1406794157,
+          "trackName": "我的私房菜-厨房 下厨 烹饪 料理 美食 家常菜 厨师 菜谱",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1419939043,
+          "trackName": "往后余生",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1437256011,
+          "trackName": "实况天气Pro-天气预报苹果版",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1439723850,
+          "trackName": "时间规划局 - 倒计时与提醒事项",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1440585326,
+          "trackName": "赛尔号星球大战",
+          "inAppPurchasesTimes": 10
+        },
+        {
+          "trackId": 1441926695,
+          "trackName": "语音笔记 PRO - 录音机 AI笔记",
+          "inAppPurchasesTimes": 10
+        },
+        {
+          "trackId": 1445813795,
+          "trackName": "Eclipse Guide - 2026年3月的月全食",
+          "inAppPurchasesTimes": 10
+        },
+        {
+          "trackId": 1447152404,
+          "trackName": "WhatsAgain for WhatsApp",
+          "inAppPurchasesTimes": 10
+        },
+        {
+          "trackId": 6749369705,
+          "trackName": "沙石镇时光",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6746777407,
+          "trackName": "魔法工艺",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6739762570,
+          "trackName": "生物原型2",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6742887304,
+          "trackName": "剧能说-听音频练习地道英语口语英语听力",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6753102218,
+          "trackName": "神器行者：奥罗瑞恩传奇",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6740115177,
+          "trackName": "破门而入：行动小队",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6743148949,
+          "trackName": "盛世天下：女王的游戏",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6743611124,
+          "trackName": "扫毒风暴",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1537782938,
+          "trackName": "墨墨记忆卡｜考研考公考证外语学习闪卡",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6504854196,
+          "trackName": "下一站江湖Ⅱ",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 769602146,
+          "trackName": "气压计 - 气压",
+          "inAppPurchasesTimes": 9
+        },
+        {
+          "trackId": 1522193357,
+          "trackName": "Kapp Kegels",
+          "inAppPurchasesTimes": 7
+        },
+        {
+          "trackId": 6471839445,
+          "trackName": "RYUKIN",
+          "inAppPurchasesTimes": 7
+        },
+        {
+          "trackId": 1642442037,
+          "trackName": "自考英语二学习助手",
+          "inAppPurchasesTimes": 7
+        },
+        {
+          "trackId": 296160763,
+          "trackName": "iPhemeris 占星图",
+          "inAppPurchasesTimes": 7
+        },
+        {
+          "trackId": 1118875124,
+          "trackName": "倒数日相机 · Days Matter Camera",
+          "inAppPurchasesTimes": 7
+        },
+        {
+          "trackId": 1557637265,
+          "trackName": "家园、异星与猎人",
+          "inAppPurchasesTimes": 3
+        },
+        {
+          "trackId": 298839433,
+          "trackName": "RTA",
+          "inAppPurchasesTimes": 2
+        },
+        {
+          "trackId": 301049600,
+          "trackName": "Dive Log",
+          "inAppPurchasesTimes": 2
+        },
+        {
+          "trackId": 301201602,
+          "trackName": "Self Help Classics .",
+          "inAppPurchasesTimes": 2
+        },
+        {
+          "trackId": 301270080,
+          "trackName": "Instant ECG - Mastery of EKG",
+          "inAppPurchasesTimes": 2
+        },
+        {
+          "trackId": 304731501,
+          "trackName": "Tempo - Metronome 节拍器",
+          "inAppPurchasesTimes": 2
+        },
+        {
+          "trackId": 777310222,
+          "trackName": "GoodReader PDF Editor & Viewer",
+          "inAppPurchasesTimes": 2
+        },
+        {
+          "trackId": 6745999173,
+          "trackName": "圆桌三国-三国休闲卡牌",
+          "inAppPurchasesTimes": 2
+        },
+        {
+          "trackId": 1476509317,
+          "trackName": "每日英语 听力学习版",
+          "inAppPurchasesTimes": 2
+        },
+        {
+          "trackId": 1448573670,
+          "trackName": "冒险与征服-暗黑单机RPG角色扮演挂机游戏",
+          "inAppPurchasesTimes": 2
+        },
+        {
+          "trackId": 755018884,
+          "trackName": "新概念英语专业版 - 英语美语全四册",
+          "inAppPurchasesTimes": 2
+        }
+      ]
+    },
+    "duration": "6m26.726s",
+    "regionAppCount": {
+      "cn": 3485
+    },
+    "limitCount": 5,
+    "inAppPurchasesScrapeType": "playwright"
+  },
+  {
     "timestamp": 1772965092207,
     "regionAppInfo": {
       "cn": [
