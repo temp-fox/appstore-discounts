@@ -2,6 +2,150 @@
   "$schema": "apps.json-schema.json",
   "appConfig": [
     {
+      "id": 1517332871,
+      "name": {
+        "cn": "Early Learning Flash Cards"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772942683477,
+      "_discountType": "app"
+    },
+    {
+      "id": 1533747123,
+      "name": {
+        "cn": "Numbers Flash Cards 1-25"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772942683477,
+      "_discountType": "app"
+    },
+    {
+      "id": 1541572641,
+      "name": {
+        "cn": "Sight Words Flash Cards"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772942683477,
+      "_discountType": "app"
+    },
+    {
+      "id": 1541767306,
+      "name": {
+        "cn": "Math Practice Flash Cards"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772942683477,
+      "_discountType": "app"
+    },
+    {
+      "id": 1617928500,
+      "name": {
+        "cn": "Color Flash Cards for Kids"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772942683477,
+      "_discountType": "app"
+    },
+    {
+      "id": 6757264135,
+      "name": {
+        "cn": "Fast & Bear It"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772942683477,
+      "_discountType": "iap"
+    },
+    {
+      "id": 6739027599,
+      "name": {
+        "cn": "Spiritual Awakening Spiriguide"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772942683477,
+      "_discountType": "iap"
+    },
+    {
+      "id": 6757115174,
+      "name": {
+        "cn": "Sticker Maker ®"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772942683477,
+      "_discountType": "app"
+    },
+    {
+      "id": 6759532334,
+      "name": {
+        "cn": "On Foot：步数与配速追踪"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772942683477,
+      "_discountType": "app"
+    },
+    {
+      "id": 6743349595,
+      "name": {
+        "cn": "Godseeker II Dark Fantasy ARPG"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772942683477,
+      "_discountType": "app"
+    },
+    {
+      "id": 6758899839,
+      "name": {
+        "cn": "Vorlor"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772942683477,
+      "_discountType": "app"
+    },
+    {
+      "id": 6757125806,
+      "name": {
+        "cn": "Quit Smoking Tracker"
+      },
+      "addType": "external",
+      "addSource": "OODATA",
+      "_shouldBePaid": true,
+      "_externalSource": "OODATA",
+      "_externalSourceFirstSeen": 1772942683477,
+      "_discountType": "app"
+    },
+    {
       "id": 317039933,
       "name": {
         "cn": "EBPocket Professional"
@@ -6765,21 +6909,24 @@
       "name": {
         "cn": "小说录入赚钱通"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6465524367,
       "name": {
         "cn": "My Text - 小组件"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6459478110,
       "name": {
         "cn": "AWTRIX 3"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6741730996,
@@ -6831,7 +6978,8 @@
       "name": {
         "cn": "秒记无限挑战 For Watch"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6742641938,
@@ -6928,7 +7076,8 @@
       "name": {
         "cn": "落格五笔-立青专属五笔定制版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1309398796,
@@ -6962,7 +7111,8 @@
       "name": {
         "cn": "PDF SNAP-手机压缩PDF/图片合成PDF&分割PDF"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6450874851,
@@ -7005,7 +7155,8 @@
       "name": {
         "cn": "酷爱AI记账"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6454793349,
@@ -7102,7 +7253,8 @@
       "name": {
         "cn": "Swing Tracer"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1470313161,
@@ -7265,7 +7417,8 @@
       "name": {
         "cn": "GENKI Vocab for 3rd Ed."
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6759513433,
@@ -7308,7 +7461,8 @@
       "name": {
         "cn": "Mirai Kana Chart - Hiragana & Katakana Writing Study Tool"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 603037910,
@@ -7324,14 +7478,16 @@
       "name": {
         "cn": "PhotoInfo -EXIF,GPS,remove GPS"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 954157490,
       "name": {
         "cn": "Calcvier - Keyboard Calculator"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1055636344,
@@ -7347,7 +7503,8 @@
       "name": {
         "cn": "VRPlayer Pro : 2D 3D 360°Video"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1082947661,
@@ -7390,7 +7547,8 @@
       "name": {
         "cn": "加密相册 - 保护重要私密照片/视频"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1524123760,
@@ -7415,14 +7573,16 @@
       "name": {
         "cn": "夜视摄像头：在黑暗模式下观看"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1547228500,
       "name": {
         "cn": "OBS Controller"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1572188489,
@@ -7447,7 +7607,8 @@
       "name": {
         "cn": "猫孕-快速简洁的猫孕记录工具"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6636476526,
@@ -7517,14 +7678,16 @@
       "name": {
         "cn": "葡萄牙语字典 Pro - 字典 Portuguese C1"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6736384928,
       "name": {
         "cn": "背句子背单词"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 410156931,
@@ -7540,14 +7703,16 @@
       "name": {
         "cn": "Noise Master"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 544697035,
       "name": {
         "cn": "Video Touch: 交通工具"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 555642577,
@@ -7599,7 +7764,8 @@
       "name": {
         "cn": "Real Selfie - A WYSIWYG Camera"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1226278564,
@@ -7624,7 +7790,8 @@
       "name": {
         "cn": "Bluetooth+ for Blackmagic"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1387344483,
@@ -7649,28 +7816,32 @@
       "name": {
         "cn": "一键水印大师-照片修复"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1471848710,
       "name": {
         "cn": "元素周期表 - 化学 2026"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1492864646,
       "name": {
         "cn": "FCE核心词-闯关速练疯狂刷题"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1546641851,
       "name": {
         "cn": "计算管家"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1556733767,
@@ -7695,28 +7866,32 @@
       "name": {
         "cn": "JLPT N3日语听力练习 - 最新题库 PRO"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1611760660,
       "name": {
         "cn": "VR180 Foto & Video"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1633420527,
       "name": {
         "cn": "野生动物–儿童教育游戏（完整版）"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6499540533,
       "name": {
         "cn": "过关 · 商法 - 公司法/法律/行政法规/司法解释"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6759151455,
@@ -7777,14 +7952,16 @@
       "name": {
         "cn": "Labo大理石滚球儿童应用完整版:物理逻辑与机械教育启蒙游戏"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 453389221,
       "name": {
         "cn": "Camcorder Video Converter"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6755688257,
@@ -7816,7 +7993,8 @@
       "name": {
         "cn": "PDF to Word Converter Expert"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 565847915,
@@ -7850,7 +8028,8 @@
       "name": {
         "cn": "Hairy Phonics 3"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 970389374,
@@ -7902,7 +8081,8 @@
       "name": {
         "cn": "法语布瓜"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1589419563,
@@ -7990,7 +8170,8 @@
       "name": {
         "cn": "My PlayHome School"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1020541183,
@@ -8006,21 +8187,24 @@
       "name": {
         "cn": "速读 IQ+"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1095280287,
       "name": {
         "cn": "My PlayHome Hospital"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1131483373,
       "name": {
         "cn": "TAPCA"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1260649184,
@@ -8045,28 +8229,32 @@
       "name": {
         "cn": "Ultimate Phonics Full Version"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1527841661,
       "name": {
         "cn": "沙盒星球"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1539426860,
       "name": {
         "cn": "Dental Nurse Revision Question"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1550435091,
       "name": {
         "cn": "什么找茬-大家来找茬找不同游戏"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1631986299,
@@ -8091,7 +8279,8 @@
       "name": {
         "cn": "批量识别文字"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6446077052,
@@ -8143,7 +8332,8 @@
       "name": {
         "cn": "纯杀手数独 - 单机无广告"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6744609578,
@@ -8168,7 +8358,8 @@
       "name": {
         "cn": "小鸡跳跳跳"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6742321646,
@@ -8220,7 +8411,8 @@
       "name": {
         "cn": "活字帖+"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 873095450,
@@ -8317,7 +8509,8 @@
       "name": {
         "cn": "百怪千奇野兽园 - Tinybop出品"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1344694994,
@@ -8387,7 +8580,8 @@
       "name": {
         "cn": "去字幕播放器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1626703406,
@@ -8412,14 +8606,16 @@
       "name": {
         "cn": "双色球幸运密码"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6749961251,
       "name": {
         "cn": "照片清理器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6757543277,
@@ -8435,7 +8631,8 @@
       "name": {
         "cn": "DukeNote"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6505045685,
@@ -8496,21 +8693,24 @@
       "name": {
         "cn": "No Share Camera"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1098669497,
       "name": {
         "cn": "Frequency Sound Generator 频率声波发生器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1564383045,
       "name": {
         "cn": "算法导论.助手"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1621024718,
@@ -8605,7 +8805,8 @@
       "name": {
         "cn": "倒数日相机 · Days Matter Camera"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1201211832,
@@ -8683,7 +8884,8 @@
       "name": {
         "cn": "movtrak - AI 运动相机"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6738273779,
@@ -8706,14 +8908,16 @@
       "name": {
         "cn": "Not Another Twin Calculator"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6755892933,
       "name": {
         "cn": "ThermoTimer"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6754228758,
@@ -8813,14 +9017,16 @@
       "name": {
         "cn": "识万物"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1576050441,
       "name": {
         "cn": "潮汕話"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6751851891,
@@ -8914,28 +9120,32 @@
       "name": {
         "cn": "GradíENT"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1403201500,
       "name": {
         "cn": "sSLOPE"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1479572902,
       "name": {
         "cn": "Neongraf - 氖灯格拉夫"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1501247823,
       "name": {
         "cn": "NDI Capture: Screen Sharing"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1556987055,
@@ -8969,7 +9179,8 @@
       "name": {
         "cn": "Tango todo - 不做也行"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6450112388,
@@ -8985,7 +9196,8 @@
       "name": {
         "cn": "辉光管"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6745743123,
@@ -9019,14 +9231,16 @@
       "name": {
         "cn": "SC El Prado Masterpieces"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 904995359,
       "name": {
         "cn": "中日交流标准日本语初级"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1028908108,
@@ -9042,7 +9256,8 @@
       "name": {
         "cn": "Movy 高清桌面锁屏墙纸"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1422605014,
@@ -9058,7 +9273,8 @@
       "name": {
         "cn": "微力同步"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1437386558,
@@ -9101,7 +9317,8 @@
       "name": {
         "cn": "DELE A2 Spanish"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1579853413,
@@ -9189,7 +9406,8 @@
       "name": {
         "cn": "Video Touch: 野生动物 2"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6467607046,
@@ -9223,7 +9441,8 @@
       "name": {
         "cn": "all-in Notes"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 414675226,
@@ -9266,7 +9485,8 @@
       "name": {
         "cn": "动物叫声音效专业版 - 认识大自然动物世界"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1275258743,
@@ -9282,7 +9502,8 @@
       "name": {
         "cn": "ARGun2018"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1464191720,
@@ -9316,7 +9537,8 @@
       "name": {
         "cn": "证件秘盒 - 为身份证的隐私安全保驾护航"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1524681383,
@@ -9332,7 +9554,8 @@
       "name": {
         "cn": "SLD | Electrical diagrams"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1550511401,
@@ -9375,7 +9598,8 @@
       "name": {
         "cn": "国产手机帝国-VIP"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1661537823,
@@ -9427,7 +9651,8 @@
       "name": {
         "cn": "文字图生成器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6446092951,
@@ -9488,7 +9713,8 @@
       "name": {
         "cn": "Watch闪卡"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6468249242,
@@ -9522,14 +9748,16 @@
       "name": {
         "cn": "淳化阁帖"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6479348364,
       "name": {
         "cn": "商务日语&英语同时记住EpisodeII"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 574233740,
@@ -9543,7 +9771,8 @@
       "name": {
         "cn": "My Splash Effects"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 698390611,
@@ -9585,7 +9814,8 @@
       "name": {
         "cn": "修图神器: 去水印,除瑕疵,修复照片"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1086922066,
@@ -9599,7 +9829,8 @@
       "name": {
         "cn": "Car Video Record"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1390326774,
@@ -9613,7 +9844,8 @@
       "name": {
         "cn": "Ex PDF 123-联动阅读器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1474243671,
@@ -9648,14 +9880,16 @@
       "name": {
         "cn": "re:view - events & tasks"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6745427976,
       "name": {
         "cn": "Zip Unzip - Unrar Tool PRO"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6739846480,
@@ -9669,14 +9903,16 @@
       "name": {
         "cn": "LogMaster Ham Radio"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6478385686,
       "name": {
         "cn": "色彩缤纷的动态泼墨贴纸"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6756833873,
@@ -9690,7 +9926,8 @@
       "name": {
         "cn": "White Noise for Everyone"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6753643471,
@@ -9725,14 +9962,16 @@
       "name": {
         "cn": "Todo List - Minimal Focus Memo"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6753138898,
       "name": {
         "cn": "SongDetect 音乐识别与播放"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6744344184,
@@ -9746,7 +9985,8 @@
       "name": {
         "cn": "MultiNotepad"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6739713465,
@@ -9774,7 +10014,8 @@
       "name": {
         "cn": "Kreator CV - CV po polsku"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6742799380,
@@ -9809,7 +10050,8 @@
       "name": {
         "cn": "Habit Tracker Widget"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6757657491,
@@ -9844,7 +10086,8 @@
       "name": {
         "cn": "NutritionTrak"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6759227688,
@@ -9879,28 +10122,32 @@
       "name": {
         "cn": "萌宠餐单"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6757518749,
       "name": {
         "cn": "ZenWalker-步履生花 - 治愈系步行伴侣"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6757903809,
       "name": {
         "cn": "相册清理大师 - 智能照片管理"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6757281793,
       "name": {
         "cn": "E-Feld Explorer"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6759197891,
@@ -9942,14 +10189,16 @@
       "name": {
         "cn": "H2O Reminder Pro"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6444528802,
       "name": {
         "cn": "食音-超解压的美食白噪音软件"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6738623337,
@@ -9991,7 +10240,8 @@
       "name": {
         "cn": "TaskMelt - AI Task Planner"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6444180018,
@@ -10026,7 +10276,8 @@
       "name": {
         "cn": "RustCalc - Raid Guide"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6475792214,
@@ -10061,7 +10312,8 @@
       "name": {
         "cn": "HereMark"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6757008307,
@@ -10114,7 +10366,8 @@
       "name": {
         "cn": "iSafe Pro"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 406146339,
@@ -10157,7 +10410,8 @@
       "name": {
         "cn": "My PaintBrush: 绘画和照片编辑器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 583922375,
@@ -10182,7 +10436,8 @@
       "name": {
         "cn": "歌曲音量调节器Audio Normalizer"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 679454835,
@@ -10198,21 +10453,24 @@
       "name": {
         "cn": "无损图片瘦身 - 优化，压缩JPG等相片尺寸大小"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 733743097,
       "name": {
         "cn": "图片批量处理Batch Photo Editor"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 796482010,
       "name": {
         "cn": "SyncCal"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 944118456,
@@ -10228,28 +10486,32 @@
       "name": {
         "cn": "图片降噪 Super Denoising - 超级去除照片噪点"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1016794110,
       "name": {
         "cn": "景深滤镜 After Focus - 图片背景模糊虚化,焦外成像,散焦"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1062358764,
       "name": {
         "cn": "Yam Air"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1204286072,
       "name": {
         "cn": "Solar Walk 2 - 天文学应用 用于教育目的"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1234214894,
@@ -10265,7 +10527,8 @@
       "name": {
         "cn": "学霸思政 - 思政做题"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1480714984,
@@ -10335,14 +10598,16 @@
       "name": {
         "cn": "澪空软件速递查询"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6757509261,
       "name": {
         "cn": "Spectra - 系统监控与硬件信息"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6448106860,
@@ -10376,7 +10641,8 @@
       "name": {
         "cn": "Bnafter"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6468518141,
@@ -10401,7 +10667,8 @@
       "name": {
         "cn": "外星英雄10: 手表变身模拟器-手表游戏"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6753102795,
@@ -10435,14 +10702,16 @@
       "name": {
         "cn": "DailyFeed"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 336901301,
       "name": {
         "cn": "学习 拉丁语 - EuroTalk"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 375612556,
@@ -10458,7 +10727,8 @@
       "name": {
         "cn": "最重要英语单词(发音版)for the TOEIC®TEST"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 686923970,
@@ -10501,7 +10771,8 @@
       "name": {
         "cn": "佛光教科書"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1131483169,
@@ -10535,14 +10806,16 @@
       "name": {
         "cn": "百妖卷之山海异动"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1351684330,
       "name": {
         "cn": "Image Converter - 图像格式转换器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1448966121,
@@ -10585,14 +10858,16 @@
       "name": {
         "cn": "大学英语四级真题大全"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1581068279,
       "name": {
         "cn": "进化星球 - 140亿年物语"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1600140660,
@@ -10617,7 +10892,8 @@
       "name": {
         "cn": "Vurbit：快速学意大利语"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6759597741,
@@ -10633,14 +10909,16 @@
       "name": {
         "cn": "Framo - 逐帧播放器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6748572775,
       "name": {
         "cn": "Timecode Stamper"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6755347098,
@@ -10692,7 +10970,8 @@
       "name": {
         "cn": "HSK3.0 Chinese Words"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6751425710,
@@ -10717,7 +10996,8 @@
       "name": {
         "cn": "问天阁观星"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6739007370,
@@ -10760,7 +11040,8 @@
       "name": {
         "cn": "GuitarNotes"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 493157418,
@@ -10794,7 +11075,8 @@
       "name": {
         "cn": "Green Screen by Do Ink"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 895583433,
@@ -10810,14 +11092,16 @@
       "name": {
         "cn": "Reciprocity Plus"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 928407252,
       "name": {
         "cn": "粤语字典专业版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 980774091,
@@ -10833,7 +11117,8 @@
       "name": {
         "cn": "Solar Walk 2 - 太空探索"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1225094050,
@@ -10849,7 +11134,8 @@
       "name": {
         "cn": "Little Police Station"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1475068996,
@@ -10874,7 +11160,8 @@
       "name": {
         "cn": "古典佛子日历"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1566668267,
@@ -10899,21 +11186,24 @@
       "name": {
         "cn": "竖式计算器 - 轻松生成解题过程"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1637596005,
       "name": {
         "cn": "新英语900句-生活篇"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1639676140,
       "name": {
         "cn": "Company Portal - On the go"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6745967929,
@@ -10938,7 +11228,8 @@
       "name": {
         "cn": "不跑 – 模拟跑步路线，0 步也能打卡晒图"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6478474572,
@@ -10972,7 +11263,8 @@
       "name": {
         "cn": "滚动截屏Pro"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6444112203,
@@ -10988,7 +11280,8 @@
       "name": {
         "cn": "Phone Diagnostics Expert"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6751786308,
@@ -11031,7 +11324,8 @@
       "name": {
         "cn": "OneThing - Focus One 专注一件事"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6759667618,
@@ -11056,14 +11350,16 @@
       "name": {
         "cn": "Video Transcoder"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6752693470,
       "name": {
         "cn": "iFocus Stacking"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6502626114,
@@ -11115,7 +11411,8 @@
       "name": {
         "cn": "西行乱斗"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6744875859,
@@ -11158,7 +11455,8 @@
       "name": {
         "cn": "小鸟飞回家 — 手表游戏冒险飞行、飞翔的小鸟挑战益智小游戏"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6744676632,
@@ -11192,7 +11490,8 @@
       "name": {
         "cn": "IELTS雅思英语阅读理解"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 922850571,
@@ -11217,28 +11516,32 @@
       "name": {
         "cn": "FILCA - SLR Film Camera"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1468733422,
       "name": {
         "cn": "嘟嘟启蒙-宝宝双语识字点读卡"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1471076180,
       "name": {
         "cn": "SYS BOX"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1476276270,
       "name": {
         "cn": "推送助手 - 极简待办"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1514964461,
@@ -11254,7 +11557,8 @@
       "name": {
         "cn": "Nippon Cam - 复古日系滤镜"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1564062030,
@@ -11270,7 +11574,8 @@
       "name": {
         "cn": "Dark Night - mode for Safari"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6755161971,
@@ -11286,14 +11591,16 @@
       "name": {
         "cn": "职场英语轻松学"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6738615485,
       "name": {
         "cn": "硕果 · 知产 - 法律法规/司法解释/部门规章"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6747423506,
@@ -11345,7 +11652,8 @@
       "name": {
         "cn": "London Map & Walks (F)"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 395816966,
@@ -11397,28 +11705,32 @@
       "name": {
         "cn": "1Writer - Markdown Text Editor"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 720611127,
       "name": {
         "cn": "Soft Focus Pro 〜beauty selfie"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 722262021,
       "name": {
         "cn": "Wallax - Wallpaper Editor"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 842511758,
       "name": {
         "cn": "National Gallery Audio"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 881159868,
@@ -11443,7 +11755,8 @@
       "name": {
         "cn": "斯京交通"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 990668324,
@@ -11477,7 +11790,8 @@
       "name": {
         "cn": "西班牙语字母 - 学习西语字母发音和书写基础入门教程"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1081245302,
@@ -11583,7 +11897,8 @@
       "name": {
         "cn": "EMDR Classic for TV"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1607694041,
@@ -11597,7 +11912,8 @@
       "name": {
         "cn": "Vegan Notes - Veggie Heaven"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6752991065,
@@ -11613,7 +11929,8 @@
       "name": {
         "cn": "动猫相机"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6748339961,
@@ -11685,7 +12002,8 @@
       "name": {
         "cn": "Random data file generator"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 463295925,
@@ -11701,7 +12019,8 @@
       "name": {
         "cn": "Network Analyzer Pro"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 646308208,
@@ -11717,7 +12036,8 @@
       "name": {
         "cn": "TimeShutter 每天拍照 穿梭时光  轻松对齐"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 909088636,
@@ -11751,7 +12071,8 @@
       "name": {
         "cn": "货币兑换计算器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1243328998,
@@ -11812,7 +12133,8 @@
       "name": {
         "cn": "皇极经世历法"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6758877281,
@@ -11837,7 +12159,8 @@
       "name": {
         "cn": "VideoMatting"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6759558191,
@@ -11889,14 +12212,16 @@
       "name": {
         "cn": "飞机大战-手表游戏"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6446756014,
       "name": {
         "cn": "元气背单词-简单可爱的艾宾浩斯记忆法背英语单词"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6502825751,
@@ -11991,7 +12316,8 @@
       "name": {
         "cn": "iDays Pro - 紀念日"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1193474997,
@@ -12007,35 +12333,40 @@
       "name": {
         "cn": "Car Kit"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1250601531,
       "name": {
         "cn": "RAW Power"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1254981556,
       "name": {
         "cn": "Reverse Audio"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1436832183,
       "name": {
         "cn": "羽毛笔 - 今日待办"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1440376048,
       "name": {
         "cn": "English etymology and origins"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1458706066,
@@ -12060,21 +12391,24 @@
       "name": {
         "cn": "Ensemble Friends"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1493379610,
       "name": {
         "cn": "时光进度 - 进度管理&待办计划"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1499730123,
       "name": {
         "cn": "Paris Invaders Map"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1501496048,
@@ -12090,7 +12424,8 @@
       "name": {
         "cn": "翻页时钟(FlipTimee)"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1525846227,
@@ -12133,7 +12468,8 @@
       "name": {
         "cn": "图片转压-照片压缩软件"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6504041194,
@@ -12194,14 +12530,16 @@
       "name": {
         "cn": "禅道解压-腕上解忧店Watch App"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6758726503,
       "name": {
         "cn": "五代十国模拟器：愿天下太平"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6743445326,
@@ -12217,7 +12555,8 @@
       "name": {
         "cn": "宝宝学唐诗 - 幼儿唐诗三百首儿童唐诗启蒙"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 300132735,
@@ -12242,21 +12581,24 @@
       "name": {
         "cn": "Handy Art Reference Tool"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 490078884,
       "name": {
         "cn": "Spectrum Analyzer RTA"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 534801462,
       "name": {
         "cn": "PowerPoint 模板"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 581911397,
@@ -12335,7 +12677,8 @@
       "name": {
         "cn": "世界各家 - Tinybop出品"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 967043604,
@@ -12360,7 +12703,8 @@
       "name": {
         "cn": "摩天大楼 - Tinybop出品"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1178655111,
@@ -12394,21 +12738,24 @@
       "name": {
         "cn": "春天 - Season Camera"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1268339394,
       "name": {
         "cn": "秋天 - Season Camera"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1268339401,
       "name": {
         "cn": "冬天 - Season Camera"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1330314351,
@@ -12424,7 +12771,8 @@
       "name": {
         "cn": "GR Lover - GR World"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1440119443,
@@ -12449,7 +12797,8 @@
       "name": {
         "cn": "GAB対策 言語"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1519978331,
@@ -12483,7 +12832,8 @@
       "name": {
         "cn": "JAMMATES"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1583550659,
@@ -12544,7 +12894,8 @@
       "name": {
         "cn": "横竖同拍相机"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6744938753,
@@ -12560,7 +12911,8 @@
       "name": {
         "cn": "哮喘日记"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6755597581,
@@ -12612,7 +12964,8 @@
       "name": {
         "cn": "掌上抓娃娃 - 手表游戏"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6749151402,
@@ -12725,7 +13078,8 @@
       "name": {
         "cn": "活动监视器 -iDevice Monitor"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 951324809,
@@ -12788,7 +13142,8 @@
       "name": {
         "cn": "VidVid - Split Video"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6759347583,
@@ -12809,14 +13164,16 @@
       "name": {
         "cn": "Peep - Screen Time"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6759226326,
       "name": {
         "cn": "Sound Meter for Everyone Pro"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6758712099,
@@ -13110,7 +13467,8 @@
       "name": {
         "cn": "RTA"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 298883838,
@@ -13414,7 +13772,8 @@
       "name": {
         "cn": "YBM 올인올 영한영 플러스 사전 - EKE DIC"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 312266675,
@@ -13511,7 +13870,8 @@
       "name": {
         "cn": "多语种《圣经》诗句专业版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 319295332,
@@ -13752,7 +14112,8 @@
       "name": {
         "cn": "秘密 每日教学 (The Secret Teachings)"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 334989259,
@@ -13984,7 +14345,8 @@
       "name": {
         "cn": "iHikeGPS : Classic Topo Maps"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 352615816,
@@ -14090,7 +14452,8 @@
       "name": {
         "cn": "FAR/AIM"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 362470364,
@@ -14115,7 +14478,8 @@
       "name": {
         "cn": "英汉.汉英船舶词汇：52528"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 363556704,
@@ -14221,7 +14585,8 @@
       "name": {
         "cn": "角川類語新辞典"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 366765248,
@@ -14381,7 +14746,8 @@
       "name": {
         "cn": "Osho Zen Tarot"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 378120971,
@@ -14397,7 +14763,8 @@
       "name": {
         "cn": "Salsa Rhythm"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 379869627,
@@ -14512,14 +14879,16 @@
       "name": {
         "cn": "ACARS"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 387692731,
       "name": {
         "cn": "Mensa Brain Test"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 387910013,
@@ -14913,7 +15282,8 @@
       "name": {
         "cn": "Remotix VNC, RDP & NEAR"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 407945101,
@@ -15224,7 +15594,8 @@
       "name": {
         "cn": "Warm Me Up!"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 427480051,
@@ -15330,7 +15701,8 @@
       "name": {
         "cn": "生理节律Ω"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 433571551,
@@ -15418,7 +15790,8 @@
       "name": {
         "cn": "Basic 歌词大全版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 441079429,
@@ -15882,7 +16255,8 @@
       "name": {
         "cn": "玄空擇日"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 486578707,
@@ -15907,7 +16281,8 @@
       "name": {
         "cn": "节拍器：PolyNome 终极节拍器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 488674899,
@@ -15968,14 +16343,16 @@
       "name": {
         "cn": "Whistle Blow"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 492076105,
       "name": {
         "cn": "iCalendar"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 492193124,
@@ -16027,7 +16404,8 @@
       "name": {
         "cn": "Boat Beacon"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 495489408,
@@ -16421,7 +16799,8 @@
       "name": {
         "cn": "三国杀问题答疑"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 527844985,
@@ -16608,7 +16987,8 @@
       "name": {
         "cn": "Texifier : LaTeX editor"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 550827263,
@@ -16741,7 +17121,8 @@
       "name": {
         "cn": "Octave RTA"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 571166781,
@@ -16946,14 +17327,16 @@
       "name": {
         "cn": "日本道の駅"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 596026805,
       "name": {
         "cn": "PhotoPills"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 596684220,
@@ -17140,7 +17523,8 @@
       "name": {
         "cn": "Calzy"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 624152311,
@@ -17165,7 +17549,8 @@
       "name": {
         "cn": "Novena"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 632064672,
@@ -17181,7 +17566,8 @@
       "name": {
         "cn": "大都会艺术博物馆HD"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 635644097,
@@ -17296,7 +17682,8 @@
       "name": {
         "cn": "Drumtune PRO | Drum Tuner"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 656166446,
@@ -17348,14 +17735,16 @@
       "name": {
         "cn": "VoiceClock - Talking"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 662949598,
       "name": {
         "cn": "PDF打印机"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 663537858,
@@ -17578,7 +17967,8 @@
       "name": {
         "cn": "FTP On The Go PRO"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 708971114,
@@ -17639,7 +18029,8 @@
       "name": {
         "cn": "Business Templates for Pages"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 719162125,
@@ -17754,7 +18145,8 @@
       "name": {
         "cn": "立体飞行棋 - 飞行棋3D ( Ludo 3D )"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 744347890,
@@ -17842,7 +18234,8 @@
       "name": {
         "cn": "Tinnitus Therapy Pro"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 775737172,
@@ -18218,7 +18611,8 @@
       "name": {
         "cn": "Collins Bird Guide"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 869642260,
@@ -18234,7 +18628,8 @@
       "name": {
         "cn": "古典音乐大师作品精选合集"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 872516929,
@@ -18313,7 +18708,8 @@
       "name": {
         "cn": "三省堂国語辞典 第七版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 885347877,
@@ -18356,7 +18752,8 @@
       "name": {
         "cn": "MOV Converter Pro - 转MP4 / AVI"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 891362701,
@@ -18534,7 +18931,8 @@
       "name": {
         "cn": "PDF Unlocker Expert"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 898723944,
@@ -18586,14 +18984,16 @@
       "name": {
         "cn": "DjembeTime"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 905746421,
       "name": {
         "cn": "Evermusic Pro: 离线音乐播放器和均衡器云流媒体"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 907170169,
@@ -18618,7 +19018,8 @@
       "name": {
         "cn": "iPhemeris  占星"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 909977383,
@@ -18760,7 +19161,8 @@
       "name": {
         "cn": "Collins English Dictionary"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 925904165,
@@ -18830,7 +19232,8 @@
       "name": {
         "cn": "晚安 马戏团"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 932687167,
@@ -18900,7 +19303,8 @@
       "name": {
         "cn": "Real Alcázar de Sevilla"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 939656123,
@@ -19078,7 +19482,8 @@
       "name": {
         "cn": "Quick Record Audio Recorder"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 957190641,
@@ -19175,7 +19580,8 @@
       "name": {
         "cn": "Calm Harm – manage self-harm"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 961648076,
@@ -19299,7 +19705,8 @@
       "name": {
         "cn": "Cosmic-Watch"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 971610636,
@@ -19441,7 +19848,8 @@
       "name": {
         "cn": "治疗密码"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 987998708,
@@ -19898,7 +20306,8 @@
       "name": {
         "cn": "安规题库"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1038175626,
@@ -20049,7 +20458,8 @@
       "name": {
         "cn": "太空 - SPACE"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1053736323,
@@ -20092,7 +20502,8 @@
       "name": {
         "cn": "Relight - 让照片更完美"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1058266292,
@@ -20196,7 +20607,8 @@
       "name": {
         "cn": "My Luv - 夫妇应用"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1065623382,
@@ -20239,14 +20651,16 @@
       "name": {
         "cn": "新概念英语·1 - 英语初阶"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1071268788,
       "name": {
         "cn": "新概念英语·2 - 实践进步"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1071536119,
@@ -20370,14 +20784,16 @@
       "name": {
         "cn": "览色"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1080191188,
       "name": {
         "cn": "MediSOS - Medical Alert Siren"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1081737097,
@@ -20402,7 +20818,8 @@
       "name": {
         "cn": "Finder for Fitbit"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1083801827,
@@ -20481,14 +20898,16 @@
       "name": {
         "cn": "书法碑帖大全VIP版-练字必备"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1088280252,
       "name": {
         "cn": "The Yoga Sutras"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1088732517,
@@ -20540,7 +20959,8 @@
       "name": {
         "cn": "Velogram for Strava Cycling"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1094189571,
@@ -20655,7 +21075,8 @@
       "name": {
         "cn": "中医诊所系统"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1108482394,
@@ -20707,7 +21128,8 @@
       "name": {
         "cn": "电脑入门自学教程"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1115047756,
@@ -20723,7 +21145,8 @@
       "name": {
         "cn": "扫码大师 - 二维码扫描器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1116481358,
@@ -20757,7 +21180,8 @@
       "name": {
         "cn": "CDRViewer Pro"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1117998129,
@@ -20962,7 +21386,8 @@
       "name": {
         "cn": "TV Cast Pro for Chromecast"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1136082237,
@@ -21165,7 +21590,8 @@
       "name": {
         "cn": "HighStereo : MP3 音乐 播放器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1164523253,
@@ -21226,7 +21652,8 @@
       "name": {
         "cn": "精選版 日本国語大辞典"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1178530616,
@@ -21359,7 +21786,8 @@
       "name": {
         "cn": "PXL - mosaic art"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1191690597,
@@ -21393,7 +21821,8 @@
       "name": {
         "cn": "WebBLE"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1193944163,
@@ -21454,7 +21883,8 @@
       "name": {
         "cn": "高中语文必修下册人教部编版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1198057728,
@@ -21758,7 +22188,8 @@
       "name": {
         "cn": "排班 - 上班时间，一目了然"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1221399711,
@@ -21810,7 +22241,8 @@
       "name": {
         "cn": "新概念英语1~4册大全"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1226489119,
@@ -21943,14 +22375,16 @@
       "name": {
         "cn": "WikiArt"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1236531023,
       "name": {
         "cn": "私人海域 PrivateSea - 探索与人生游戏"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1237692856,
@@ -22056,14 +22490,16 @@
       "name": {
         "cn": "上海话 - 学上海话沪语教程"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1247443750,
       "name": {
         "cn": "EasyMap2"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1248010735,
@@ -22178,7 +22614,8 @@
       "name": {
         "cn": "夏天 - Season Camera"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1268701944,
@@ -22491,7 +22928,8 @@
       "name": {
         "cn": "房地产巨头"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1318648370,
@@ -22561,7 +22999,8 @@
       "name": {
         "cn": "My Skin Anatomy"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1330055286,
@@ -22586,7 +23025,8 @@
       "name": {
         "cn": "安全浏览器-手机高速上网的必备浏览器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1339005752,
@@ -22782,7 +23222,8 @@
       "name": {
         "cn": "塞尔达食谱"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1370748482,
@@ -22807,7 +23248,8 @@
       "name": {
         "cn": "练视唱"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1372697063,
@@ -22877,7 +23319,8 @@
       "name": {
         "cn": "X Air Controller"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1383797480,
@@ -22947,7 +23390,8 @@
       "name": {
         "cn": "最美签名设计-一键生成手写艺术签名"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1388175990,
@@ -23062,7 +23506,8 @@
       "name": {
         "cn": "Workout Export"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1413711604,
@@ -23132,7 +23577,8 @@
       "name": {
         "cn": "公安基础知识题库"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1433579710,
@@ -23256,7 +23702,8 @@
       "name": {
         "cn": "FM Panel D-15 Test"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1439723850,
@@ -23317,7 +23764,8 @@
       "name": {
         "cn": "1Contact Pro: Clean & Backup"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1441926695,
@@ -23682,7 +24130,8 @@
       "name": {
         "cn": "Super Simple Phonics 英文自然拼读"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1469234338,
@@ -23707,7 +24156,8 @@
       "name": {
         "cn": "KeepColors - 色卡配色 色彩搭配"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1471336096,
@@ -23741,7 +24191,8 @@
       "name": {
         "cn": "视觉钢琴"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1473078157,
@@ -24018,7 +24469,8 @@
       "name": {
         "cn": "蒙特祖玛3"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1486730498,
@@ -24097,7 +24549,8 @@
       "name": {
         "cn": "L License VIC"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1490810998,
@@ -24203,7 +24656,8 @@
       "name": {
         "cn": "我的对联-逢年过节帮您实现写对联的心愿"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1497484861,
@@ -24291,7 +24745,8 @@
       "name": {
         "cn": "一起学蒙古语"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1499830036,
@@ -24361,7 +24816,8 @@
       "name": {
         "cn": "LiebesKlee - Synastry"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1505065609,
@@ -24377,7 +24833,8 @@
       "name": {
         "cn": "GAB対策 非言語"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1505277541,
@@ -24402,21 +24859,24 @@
       "name": {
         "cn": "Clean Camera for Stream Feed"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1509011708,
       "name": {
         "cn": "字库: 安装英文字体"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1509037022,
       "name": {
         "cn": "我的目标 - iTarget"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1509161616,
@@ -24450,7 +24910,8 @@
       "name": {
         "cn": "German Etymology Dictionary"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1512922968,
@@ -24484,7 +24945,8 @@
       "name": {
         "cn": "计算器键盘 - 快人一步"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1515088605,
@@ -24536,7 +24998,8 @@
       "name": {
         "cn": "SpeedLight Viewer"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1520331171,
@@ -24561,7 +25024,8 @@
       "name": {
         "cn": "Fyodor Dostoevsky's works"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1524255622,
@@ -24595,7 +25059,8 @@
       "name": {
         "cn": "每日艺术-博物馆线上展览"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1527544620,
@@ -24620,14 +25085,16 @@
       "name": {
         "cn": "OSHO Bardo"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1529092958,
       "name": {
         "cn": "Awesomatix Toolbox"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1529806305,
@@ -24643,7 +25110,8 @@
       "name": {
         "cn": "Romanian Word Origins"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1530464858,
@@ -24758,7 +25226,8 @@
       "name": {
         "cn": "CryptoWatch - Complication"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1535629395,
@@ -24792,7 +25261,8 @@
       "name": {
         "cn": "Tables - Grid Planner"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1538268059,
@@ -24889,7 +25359,8 @@
       "name": {
         "cn": "靠谱人脉"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1546585308,
@@ -24905,14 +25376,16 @@
       "name": {
         "cn": "广告拦截器 - 防骚扰大师"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1547400422,
       "name": {
         "cn": "新版柏林广场1 -欧标A1德语教材"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1547733249,
@@ -24928,7 +25401,8 @@
       "name": {
         "cn": "哈特健康 Watcher : 心率、血氧、健康全监测"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1549532874,
@@ -24944,7 +25418,8 @@
       "name": {
         "cn": "公共英语考试大全"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1549630756,
@@ -24978,7 +25453,8 @@
       "name": {
         "cn": "露西她所期望的一切"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1550431162,
@@ -25030,7 +25506,8 @@
       "name": {
         "cn": "数回 专业版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1553055273,
@@ -25082,7 +25559,8 @@
       "name": {
         "cn": "悬浮时钟 - 秒杀工具"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1558052531,
@@ -25125,7 +25603,8 @@
       "name": {
         "cn": "邓斯坦宝贝"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1561481612,
@@ -25204,14 +25683,16 @@
       "name": {
         "cn": "阿拉伯语大全"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1567658979,
       "name": {
         "cn": "SkySafari 7 Pro"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1569022863,
@@ -25371,7 +25852,8 @@
       "name": {
         "cn": "萌兔文字 - 特殊字体符号和创意文案"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1578843767,
@@ -25387,7 +25869,8 @@
       "name": {
         "cn": "跨境电商教程"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1579211407,
@@ -25448,7 +25931,8 @@
       "name": {
         "cn": "FlipClock +"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1583600520,
@@ -25563,7 +26047,8 @@
       "name": {
         "cn": "c语言编译器-c语言学习宝典"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1598531252,
@@ -25624,7 +26109,8 @@
       "name": {
         "cn": "ZmongolCag"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1606583317,
@@ -25649,7 +26135,8 @@
       "name": {
         "cn": "SideNotes Mobile"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1608038451,
@@ -25710,7 +26197,8 @@
       "name": {
         "cn": "IntervalCoach"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1612613509,
@@ -25744,7 +26232,8 @@
       "name": {
         "cn": "AeroPads - Pads & Soundscapes"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1613327007,
@@ -25760,7 +26249,8 @@
       "name": {
         "cn": "Conga Chops - Vol 1"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1615288664,
@@ -25839,7 +26329,8 @@
       "name": {
         "cn": "Quartet 1"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1624313373,
@@ -25988,7 +26479,8 @@
       "name": {
         "cn": "Brain Fog"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1641084877,
@@ -26157,7 +26649,8 @@
       "name": {
         "cn": "Handy Guitar Lab for B2 FOUR"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1671184333,
@@ -26209,21 +26702,24 @@
       "name": {
         "cn": "Macro365 - 全球经济数据与GDP追踪"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6756067768,
       "name": {
         "cn": "海关税则大全"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6444353154,
       "name": {
         "cn": "世界各国数据速查"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6757995651,
@@ -26401,7 +26897,8 @@
       "name": {
         "cn": "野鹤六爻"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6743402324,
@@ -26426,7 +26923,8 @@
       "name": {
         "cn": "爱存钱 - 365存钱打卡，攒钱实现财务自由"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6745100559,
@@ -26469,7 +26967,8 @@
       "name": {
         "cn": "章法 · 很刑 - 刑法/法律法规/司法解释/案例"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6443677513,
@@ -26564,21 +27063,24 @@
       "name": {
         "cn": "油迹Pro"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6633427538,
       "name": {
         "cn": "布丁五笔助手: 学五笔反查跟打练习"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6743630559,
       "name": {
         "cn": "汉堡日记"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6449352095,
@@ -26684,14 +27186,16 @@
       "name": {
         "cn": "Parco Archeologico di Ercolano"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6751341335,
       "name": {
         "cn": "Experience Pai"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6739755879,
@@ -26770,14 +27274,16 @@
       "name": {
         "cn": "Figure Skating Score"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6474135199,
       "name": {
         "cn": "Critical Swim Speed"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6756098058,
@@ -26919,14 +27425,16 @@
       "name": {
         "cn": "Shiuli: Alt Text Generator"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6470394620,
       "name": {
         "cn": "Goguma IRC"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6744040372,
@@ -27068,14 +27576,16 @@
       "name": {
         "cn": "历史大事记"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6738239220,
       "name": {
         "cn": "电工证考试题库-2024最新电工考试题库"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6755085305,
@@ -27109,7 +27619,8 @@
       "name": {
         "cn": "JurisNova: Legal Dictionary"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6503428826,
@@ -27260,7 +27771,8 @@
       "name": {
         "cn": "Tenday"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6450186592,
@@ -27294,7 +27806,8 @@
       "name": {
         "cn": "极简桌面 - 极简风格主屏幕小组件启动器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6475241728,
@@ -27373,7 +27886,8 @@
       "name": {
         "cn": "午睡宝"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6741228360,
@@ -27389,7 +27903,8 @@
       "name": {
         "cn": "像素风番茄钟计时器 Focus Cafe"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6742791270,
@@ -27405,7 +27920,8 @@
       "name": {
         "cn": "iA Presenter"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6751861389,
@@ -27448,21 +27964,24 @@
       "name": {
         "cn": "COPHOTO"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6752544524,
       "name": {
         "cn": "AI Photo Fake Detector Pro"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6746768565,
       "name": {
         "cn": "PhotoMark照片水印"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6746672642,
@@ -27505,7 +28024,8 @@
       "name": {
         "cn": "色调同步大师"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6743737587,
@@ -27557,7 +28077,8 @@
       "name": {
         "cn": "尾号限行 PRO-机动车单双号限行查询专业版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6739258414,
@@ -27663,14 +28184,16 @@
       "name": {
         "cn": "Raw Tuner"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6738853540,
       "name": {
         "cn": "音狐音乐"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6740429002,
@@ -27695,28 +28218,32 @@
       "name": {
         "cn": "Handy Guitar Lab for MS-70CDR+"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6751897870,
       "name": {
         "cn": "Ova Ambient Synthesizer"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6468485427,
       "name": {
         "cn": "Al-Qur'an FULL iDris Abkar mp3"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6758870947,
       "name": {
         "cn": "MetronomeX"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6444745115,
@@ -27750,42 +28277,48 @@
       "name": {
         "cn": "手表大钢琴"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6478479304,
       "name": {
         "cn": "空音迷你唢呐"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6467825289,
       "name": {
         "cn": "King of Digital D1: Epic Synth"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6742791915,
       "name": {
         "cn": "DualTune - Dual Audio Player"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6745568405,
       "name": {
         "cn": "古兰经第十二章 MP3 离线版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6756800933,
       "name": {
         "cn": "Super J8 Synth + AUv3"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6744552136,
@@ -27882,14 +28415,16 @@
       "name": {
         "cn": "Chakra Meditation Infinity ∞"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6450123719,
       "name": {
         "cn": "Healing Meditation Frequencies"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6758400896,
@@ -27905,7 +28440,8 @@
       "name": {
         "cn": "T了么"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6745263746,
@@ -27948,21 +28484,24 @@
       "name": {
         "cn": "暖蕊"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6759585012,
       "name": {
         "cn": "日行 · 每日一行"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6758505788,
       "name": {
         "cn": "么么哒～"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6748930348,
@@ -28059,28 +28598,32 @@
       "name": {
         "cn": "凝神"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6745717736,
       "name": {
         "cn": "Odysseus"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6742807563,
       "name": {
         "cn": "手工皂计算 - 专业皂化值INS计算工具"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6758902614,
       "name": {
         "cn": "Wedding  AI"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6758746304,
@@ -28094,7 +28637,8 @@
       "name": {
         "cn": "Alarrrm-日期指定闹钟：不漏接重要未来行程"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6738070448,
@@ -28263,7 +28807,8 @@
       "name": {
         "cn": "Windy Pro ~ Cozy White Noise"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6756511760,
@@ -28295,14 +28840,16 @@
       "name": {
         "cn": "4-7-8 Breathing: Relax & Sleep"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6758880731,
       "name": {
         "cn": "肛需 - 提肛训练助手"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6751800458,
@@ -28327,28 +28874,32 @@
       "name": {
         "cn": "家庭血糖记录"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6754429570,
       "name": {
         "cn": "独居勇者"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6740824731,
       "name": {
         "cn": "Simple Weight Logger"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6480586585,
       "name": {
         "cn": "瞪羚跳绳"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6502399166,
@@ -28364,14 +28915,16 @@
       "name": {
         "cn": "动作仓库"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6738230980,
       "name": {
         "cn": "小肯"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6757863993,
@@ -28387,7 +28940,8 @@
       "name": {
         "cn": "MyGoal - 足球运动记录"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6747153960,
@@ -28520,7 +29074,8 @@
       "name": {
         "cn": "饥饿派画家2：迷失"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6467395759,
@@ -28912,7 +29467,8 @@
       "name": {
         "cn": "手表经典迷宫游戏"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6757006632,
@@ -28928,7 +29484,8 @@
       "name": {
         "cn": "群英传LCG"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6463562198,
@@ -28944,7 +29501,8 @@
       "name": {
         "cn": "2048星球版 for watch：手表专属轻松解压小游戏"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6753944210,
@@ -29014,7 +29572,8 @@
       "name": {
         "cn": "Boshit: Office Stress Relief"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6753999814,
@@ -29039,7 +29598,8 @@
       "name": {
         "cn": "合成水果大西瓜-手表水果合成解压休闲小游戏For Watch"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6483687891,
@@ -29127,28 +29687,32 @@
       "name": {
         "cn": "dinosAR 教室版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6474092056,
       "name": {
         "cn": "国学经典之黄帝内经"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6756852871,
       "name": {
         "cn": "Celestial Simulation"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6478107218,
       "name": {
         "cn": "Labo积木工程车儿童应用完整版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6743933119,
@@ -29164,14 +29728,16 @@
       "name": {
         "cn": "Slang Master"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6462841384,
       "name": {
         "cn": "香港基本法和國安法筆試"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6654908932,
@@ -29196,7 +29762,8 @@
       "name": {
         "cn": "中医模拟器"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6461723578,
@@ -29284,7 +29851,8 @@
       "name": {
         "cn": "阅读器-轻量版"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6756572896,
@@ -29390,28 +29958,32 @@
       "name": {
         "cn": "倪师经典药方-专业中医药方查询助手"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6746965494,
       "name": {
         "cn": "本草中医离线版-人体穴位图针灸中药方剂药膳食疗健康食谱大全"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6752787719,
       "name": {
         "cn": "停止焦虑，感觉更好"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6463661733,
       "name": {
         "cn": "3D Osteology"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6451397295,
@@ -29632,7 +30204,8 @@
       "name": {
         "cn": "Enable Everything"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6744356917,
@@ -29808,7 +30381,8 @@
       "name": {
         "cn": "调律诗篇"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6740115177,
@@ -29860,7 +30434,8 @@
       "name": {
         "cn": "共鸣之心"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1537782938,
@@ -29901,7 +30476,8 @@
       "name": {
         "cn": "圆桌三国-三国休闲卡牌"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6612011484,
@@ -29935,7 +30511,8 @@
       "name": {
         "cn": "无声冲突"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6744998205,
@@ -29949,7 +30526,8 @@
       "name": {
         "cn": "逐鹿 - 历史沙盘战棋"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1476509317,
@@ -30046,7 +30624,8 @@
       "name": {
         "cn": "魔王终局"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6740014272,
@@ -30069,7 +30648,8 @@
       "name": {
         "cn": "挺进地牢"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 1530149693,
@@ -30656,7 +31236,8 @@
       "name": {
         "cn": "魔卡棋旅"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6738767315,
@@ -30699,7 +31280,8 @@
       "name": {
         "cn": "生物原型"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6738767322,
@@ -30744,7 +31326,8 @@
     },
     {
       "id": 1481853033,
-      "name": "Strongbox Pro"
+      "name": "Strongbox Pro",
+      "_shouldBePaid": true
     },
     {
       "id": 1438243180,
@@ -30776,7 +31359,8 @@
     },
     {
       "id": 6499559693,
-      "name": "iStat Menus 7"
+      "name": "iStat Menus 7",
+      "_shouldBePaid": true
     },
     {
       "id": 6475002485,
@@ -30789,7 +31373,8 @@
     },
     {
       "id": 904280696,
-      "name": "Things 3"
+      "name": "Things 3",
+      "_shouldBePaid": true
     },
     {
       "id": 1055511498,
@@ -30822,11 +31407,13 @@
     },
     {
       "id": 884153085,
-      "name": "Remote, Mouse & Keyboard Pro"
+      "name": "Remote, Mouse & Keyboard Pro",
+      "_shouldBePaid": true
     },
     {
       "id": 1065802380,
-      "name": "Stream Music Player"
+      "name": "Stream Music Player",
+      "_shouldBePaid": true
     },
     {
       "id": 1449020025,
@@ -30834,7 +31421,8 @@
     },
     {
       "id": 355460798,
-      "name": "Inspire Pro"
+      "name": "Inspire Pro",
+      "_shouldBePaid": true
     },
     {
       "id": 1665759338,
@@ -30846,7 +31434,8 @@
     },
     {
       "id": 953426154,
-      "name": "Be Focused Pro - Focus Timer"
+      "name": "Be Focused Pro - Focus Timer",
+      "_shouldBePaid": true
     },
     {
       "id": 1238778050,
@@ -30858,7 +31447,8 @@
     },
     {
       "id": 1400652313,
-      "name": "冰钓大师"
+      "name": "冰钓大师",
+      "_shouldBePaid": true
     },
     {
       "id": 1551596643,
@@ -30948,7 +31538,8 @@
     },
     {
       "id": 1543163106,
-      "name": "末剑二"
+      "name": "末剑二",
+      "_shouldBePaid": true
     },
     {
       "id": 6443812780,
@@ -31112,7 +31703,8 @@
     },
     {
       "id": 1633865171,
-      "name": "獬豸 · 民法典"
+      "name": "獬豸 · 民法典",
+      "_shouldBePaid": true
     },
     {
       "id": 1492395549,
@@ -31249,7 +31841,8 @@
     },
     {
       "id": 6450877530,
-      "name": "花园之间"
+      "name": "花园之间",
+      "_shouldBePaid": true
     },
     {
       "id": 1601446687,
@@ -31289,7 +31882,8 @@
     },
     {
       "id": 1669723530,
-      "name": "原界之罪"
+      "name": "原界之罪",
+      "_shouldBePaid": true
     },
     {
       "id": 481629890,
