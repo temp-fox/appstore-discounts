@@ -1515,14 +1515,14 @@ Early Learning Flash Cards helps kids practice essential reading and math skills
     var qrUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(app.url);
     if (app.screenshots && app.screenshots.length > 0) {
       if (app.isMac) {
-        h += '<div style="margin-top:14px;border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);">';
-        h += '<img src="' + app.screenshots[0] + '" style="width:100%;height:auto;display:block;" />';
+        h += '<div style="margin-top:14px;border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);font-size:0;line-height:0;">';
+        h += '<img src="' + app.screenshots[0] + '" style="width:100%;height:auto;display:block;vertical-align:bottom;" />';
         h += '</div>';
       } else {
         h += '<div style="display:flex;gap:8px;margin-top:14px;">';
         app.screenshots.forEach(function(src) {
-          h += '<div style="flex:1;min-width:0;border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);">';
-          h += '<img src="' + src + '" style="width:100%;height:auto;display:block;" />';
+          h += '<div style="flex:1;min-width:0;border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);font-size:0;line-height:0;">';
+          h += '<img src="' + src + '" style="width:100%;height:auto;display:block;vertical-align:bottom;" />';
           h += '</div>';
         });
         h += '</div>';
