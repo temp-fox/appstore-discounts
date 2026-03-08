@@ -1,5 +1,39 @@
 [
   {
+    "timestamp": 1772987286692,
+    "cn": {
+      "total": 4,
+      "price": 4,
+      "iap": 0,
+      "apps": [
+        {
+          "id": 6504854196,
+          "name": "下一站江湖Ⅱ",
+          "type": "price",
+          "detail": "¥24.00 → ¥18.00"
+        },
+        {
+          "id": 797275229,
+          "name": "AudioTunes - FLAC, APE, WMA Converter",
+          "type": "price",
+          "detail": "付费 → 免费"
+        },
+        {
+          "id": 676028900,
+          "name": "我的画笔 MyBrushes",
+          "type": "price",
+          "detail": "付费 → 免费"
+        },
+        {
+          "id": 573801721,
+          "name": "Intelligent Scissors - Remove Unwanted Object from Photo and Resize Image",
+          "type": "price",
+          "detail": "付费 → 免费"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": 1772979843722,
     "cn": {
       "total": 3,

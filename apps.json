@@ -2,6 +2,42 @@
   "$schema": "apps.json-schema.json",
   "appConfig": [
     {
+      "id": 573801721,
+      "name": {
+        "cn": "Intelligent Scissors - Remove Unwanted Object from Photo and Resize Image"
+      },
+      "addType": "external",
+      "addSource": "GoFans",
+      "_shouldBePaid": true,
+      "_externalSource": "GoFans",
+      "_externalSourceFirstSeen": 1772986786652,
+      "_discountType": "app"
+    },
+    {
+      "id": 676028900,
+      "name": {
+        "cn": "我的画笔 MyBrushes"
+      },
+      "addType": "external",
+      "addSource": "GoFans",
+      "_shouldBePaid": true,
+      "_externalSource": "GoFans",
+      "_externalSourceFirstSeen": 1772986786652,
+      "_discountType": "app"
+    },
+    {
+      "id": 797275229,
+      "name": {
+        "cn": "AudioTunes - FLAC, APE, WMA Converter"
+      },
+      "addType": "external",
+      "addSource": "GoFans",
+      "_shouldBePaid": true,
+      "_externalSource": "GoFans",
+      "_externalSourceFirstSeen": 1772986786652,
+      "_discountType": "app"
+    },
+    {
       "id": 640564761,
       "name": {
         "cn": "Stop Motion Studio Pro"
