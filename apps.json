@@ -2,6 +2,160 @@
   "$schema": "apps.json-schema.json",
   "appConfig": [
     {
+      "id": 317039933,
+      "name": {
+        "cn": "EBPocket Professional"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933755643,
+      "_discountType": "app"
+    },
+    {
+      "id": 320946370,
+      "name": {
+        "cn": "Exit Strategy NYC Subway Map"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933758978,
+      "_discountType": "app"
+    },
+    {
+      "id": 423994446,
+      "name": {
+        "cn": "繳款小秘書"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933764944,
+      "_discountType": "app"
+    },
+    {
+      "id": 926086533,
+      "name": {
+        "cn": "指南针 Pro - 航空"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933758978,
+      "_discountType": "app"
+    },
+    {
+      "id": 1012274888,
+      "name": {
+        "cn": "Zen Brush 2"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933764438,
+      "_discountType": "app"
+    },
+    {
+      "id": 1077591582,
+      "name": {
+        "cn": "初级药师题库 2024最新"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933755643,
+      "_discountType": "app"
+    },
+    {
+      "id": 1181802132,
+      "name": {
+        "cn": "掌上竹笛"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933759144,
+      "_discountType": "app"
+    },
+    {
+      "id": 1332273123,
+      "name": {
+        "cn": "ChoreoRoom"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933756181,
+      "_discountType": "app"
+    },
+    {
+      "id": 1437867700,
+      "name": {
+        "cn": "成语助手 - 成语消消闯关接龙的离线查询工具"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933755643,
+      "_discountType": "app"
+    },
+    {
+      "id": 1477446992,
+      "name": {
+        "cn": "108 Bows Counter"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933761980,
+      "_discountType": "app"
+    },
+    {
+      "id": 1605939890,
+      "name": {
+        "cn": "耳穴"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933767871,
+      "_discountType": "app"
+    },
+    {
+      "id": 1613648611,
+      "name": {
+        "cn": "记账本-摩登记账简单无广告的存钱记账软件"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933764944,
+      "_discountType": "app"
+    },
+    {
+      "id": 6448054981,
+      "name": {
+        "cn": "TXT Zipym - 听书浏览器阅读器扩展"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933756181,
+      "_discountType": "app"
+    },
+    {
+      "id": 6755148381,
+      "name": {
+        "cn": "Dose Cost：补剂比价"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772933761980,
+      "_discountType": "app"
+    },
+    {
       "id": 389784247,
       "name": {
         "cn": "Vernier Video Physics"
@@ -12497,7 +12651,9 @@
       "name": {
         "cn": "语宙单词 - 四六级考研英语词汇学习"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6757675837,
@@ -15199,7 +15355,9 @@
       "name": {
         "cn": "Easy Spending Budget"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 438090426,
@@ -15765,7 +15923,9 @@
       "name": {
         "cn": "Barefoot World Atlas"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 489506212,
@@ -19522,7 +19682,9 @@
       "name": {
         "cn": "说话技巧 - 销售技巧，口才训练必备"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1016450821,
@@ -22275,7 +22437,9 @@
       "name": {
         "cn": "我的记帐本 - MyAsset理财版 V2"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1308118507,
@@ -25754,7 +25918,9 @@
       "name": {
         "cn": "神都不良探-全视频古装探案"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 1634374928,
@@ -26353,7 +26519,9 @@
       "name": {
         "cn": "六爻起卦"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true,
+      "_discountType": "app"
     },
     {
       "id": 6469669654,
