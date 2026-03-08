@@ -10,7 +10,7 @@ import {
   GetInAppPurchasesProps,
   playWrightBrowserManager,
 } from './getInAppPurchases'
-import { initAmpApiToken, getScreenshotsByAmpApi } from './getScreenshots'
+import { initAmpApiToken, getScreenshotsByAmpApi, getAppMetadataByAmpApi, AppMetadataResult } from './getScreenshots'
 
 const scrapeTypeImplMap: Record<
   InAppPurchasesScrapeType,
@@ -63,8 +63,28 @@ export default async function getRegionAppInfo(
       }
 
       if (appInfos.length > 0) {
+        // 第二步：通过 amp-api 批量获取元数据（截图 + hasInAppPurchases）
+        const appMetadataMap = new Map<number, AppMetadataResult>()
+        const tokenOk = await initAmpApiToken(region)
+        if (tokenOk) {
+          const metadataBatchSize = 50
+          const allTrackIds = appInfos.map((app) => app.trackId)
+          for (let b = 0; b < allTrackIds.length; b += metadataBatchSize) {
+            const batchIds = allTrackIds.slice(b, b + metadataBatchSize)
+            const batchResult = await getAppMetadataByAmpApi(batchIds, region)
+            for (const [id, metadata] of batchResult) {
+              appMetadataMap.set(id, metadata)
+            }
+          }
+          console.log(`${label} amp-api 元数据: 获取 ${appMetadataMap.size}/${allTrackIds.length} 个应用`)
+        } else {
+          console.warn(`${label} amp-api 元数据: 跳过（token 获取失败），所有应用走原有爬取路径`)
+        }
+
+        // 第三步：获取内购数据（缓存优先 > amp-api 跳过无内购 > HTML 爬取）
         let cacheHitCount = 0
         let cacheMissCount = 0
+        let skipCount = 0
 
         const inAppPurchasesArr: GetInAppPurchasesResult[] = await Promise.all(
           appInfos.map((appInfo, j) => {
@@ -80,6 +100,17 @@ export default async function getRegionAppInfo(
               return Promise.resolve({
                 inAppPurchases: cachedData.inAppPurchases,
                 times: cachedData.inAppPurchasesTimes,
+                failed: false,
+              })
+            }
+
+            // 检查 amp-api 元数据：严格匹配 false 才跳过
+            const metadata = appMetadataMap.get(appInfo.trackId)
+            if (metadata?.hasInAppPurchases === false) {
+              skipCount++
+              return Promise.resolve({
+                inAppPurchases: {},
+                times: 0,
                 failed: false,
               })
             }
@@ -100,7 +131,7 @@ export default async function getRegionAppInfo(
 
         // 统计内购获取结果
         const iapFailedCount = inAppPurchasesArr.filter(r => r.failed).length
-        console.log(`${label} 应用信息: ${appInfos.length} 个 | 缓存命中: ${cacheHitCount} | 新获取: ${cacheMissCount}${iapFailedCount > 0 ? ` | 内购失败: ${iapFailedCount}` : ''}`)
+        console.log(`${label} 应用信息: ${appInfos.length} 个 | 缓存命中: ${cacheHitCount} | 无内购跳过: ${skipCount} | 新获取: ${cacheMissCount}${iapFailedCount > 0 ? ` | 内购失败: ${iapFailedCount}` : ''}`)
 
         res[region] = appInfos.reduce((res, appInfo, j) => {
           const { inAppPurchases, times, failed } = inAppPurchasesArr[j]
@@ -113,20 +144,45 @@ export default async function getRegionAppInfo(
           return res
         }, [] as AppInfo[])
 
-        // 第三步：为缺失截图的应用通过 amp-api 批量补充截图
-        const appsNeedScreenshots = res[region].filter(
-          (app) =>
-            (!app.screenshotUrls || app.screenshotUrls.length === 0) &&
-            (!app.ipadScreenshotUrls || app.ipadScreenshotUrls.length === 0),
-        )
+        // 第四步：用 appMetadataMap 补充缺失截图
+        if (appMetadataMap.size > 0) {
+          let screenshotSuccessCount = 0
+          const appsNeedScreenshots = res[region].filter(
+            (app) =>
+              (!app.screenshotUrls || app.screenshotUrls.length === 0) &&
+              (!app.ipadScreenshotUrls || app.ipadScreenshotUrls.length === 0),
+          )
 
-        if (appsNeedScreenshots.length > 0) {
-          const tokenOk = await initAmpApiToken(region)
-          if (tokenOk) {
+          for (const app of appsNeedScreenshots) {
+            const metadata = appMetadataMap.get(app.trackId)
+            if (metadata) {
+              if (metadata.screenshotUrls.length > 0) {
+                app.screenshotUrls = metadata.screenshotUrls
+              }
+              if (metadata.ipadScreenshotUrls.length > 0) {
+                app.ipadScreenshotUrls = metadata.ipadScreenshotUrls
+              }
+              if (metadata.screenshotUrls.length > 0 || metadata.ipadScreenshotUrls.length > 0) {
+                screenshotSuccessCount++
+              }
+            }
+          }
+
+          if (appsNeedScreenshots.length > 0) {
+            console.log(`${label} 截图补充: ${appsNeedScreenshots.length} 个缺失 | 成功: ${screenshotSuccessCount}`)
+          }
+        } else {
+          // amp-api 完全失败时降级到原有截图获取逻辑
+          const appsNeedScreenshots = res[region].filter(
+            (app) =>
+              (!app.screenshotUrls || app.screenshotUrls.length === 0) &&
+              (!app.ipadScreenshotUrls || app.ipadScreenshotUrls.length === 0),
+          )
+
+          if (appsNeedScreenshots.length > 0 && tokenOk) {
             let screenshotSuccessCount = 0
             let screenshotFailCount = 0
 
-            // 分批请求，每批最多 50 个
             const batchSize = 50
             for (let b = 0; b < appsNeedScreenshots.length; b += batchSize) {
               const batch = appsNeedScreenshots.slice(b, b + batchSize)
@@ -149,9 +205,7 @@ export default async function getRegionAppInfo(
               }
             }
 
-            console.log(`${label} 截图补充: ${appsNeedScreenshots.length} 个缺失 | 成功: ${screenshotSuccessCount} | 失败: ${screenshotFailCount}`)
-          } else {
-            console.warn(`${label} 截图补充: 跳过（amp-api token 获取失败）`)
+            console.log(`${label} 截图补充(降级): ${appsNeedScreenshots.length} 个缺失 | 成功: ${screenshotSuccessCount} | 失败: ${screenshotFailCount}`)
           }
         }
       }

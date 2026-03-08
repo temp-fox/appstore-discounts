@@ -5,6 +5,12 @@ export interface ScreenshotResult {
   ipadScreenshotUrls: string[]
 }
 
+export interface AppMetadataResult {
+  screenshotUrls: string[]
+  ipadScreenshotUrls: string[]
+  hasInAppPurchases: boolean | undefined
+}
+
 const EMPTY_RESULT: ScreenshotResult = {
   screenshotUrls: [],
   ipadScreenshotUrls: [],
@@ -189,6 +195,87 @@ export async function getScreenshotsByAmpApi(
         continue
       }
       console.warn('amp-api: 请求最终失败:', error)
+      return result
+    }
+  }
+
+  return result
+}
+
+/**
+ * Batch-fetch app metadata (screenshots + hasInAppPurchases) via amp-api.
+ * Returns a Map from trackId to AppMetadataResult.
+ */
+export async function getAppMetadataByAmpApi(
+  appIds: Array<string | number>,
+  region: Region,
+  maxRetries = 2,
+): Promise<Map<number, AppMetadataResult>> {
+  const result = new Map<number, AppMetadataResult>()
+
+  if (!cachedToken) {
+    console.warn('amp-api: token 未初始化，跳过元数据获取')
+    return result
+  }
+
+  const idsParam = appIds.join(',')
+  const url = `https://amp-api-edge.apps.apple.com/v1/catalog/${region}/apps?ids=${idsParam}&platform=web&additionalPlatforms=iphone,ipad&extend=screenshotsByType`
+
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await nodeFetch(url, {
+        headers: {
+          Authorization: `Bearer ${cachedToken}`,
+          Origin: 'https://apps.apple.com',
+          Accept: 'application/json',
+          'User-Agent': 'Mozilla/5.0',
+        },
+      })
+
+      if (!response.ok) {
+        const text = await response.text()
+        if (text.includes('API capacity exceeded') && attempt < maxRetries) {
+          console.warn(
+            `amp-api: API 容量超限，${3}s 后重试 (${attempt + 1}/${maxRetries})`,
+          )
+          await new Promise((resolve) => setTimeout(resolve, 3000))
+          continue
+        }
+        console.warn(`amp-api: HTTP ${response.status} - ${text.slice(0, 200)}`)
+        return result
+      }
+
+      const json = (await response.json()) as any
+      const data = json?.data
+      if (!Array.isArray(data)) return result
+
+      for (const item of data) {
+        const id = parseInt(item.id, 10)
+        if (isNaN(id)) continue
+
+        const attributes = item.attributes
+        const ios = attributes?.platformAttributes?.ios
+        const screenshots = extractScreenshotsFromAttributes(attributes)
+        const hasInAppPurchases: boolean | undefined = ios?.hasInAppPurchases
+
+        result.set(id, {
+          screenshotUrls: screenshots.screenshotUrls,
+          ipadScreenshotUrls: screenshots.ipadScreenshotUrls,
+          hasInAppPurchases,
+        })
+      }
+
+      return result
+    } catch (error) {
+      if (attempt < maxRetries) {
+        console.warn(
+          `amp-api: 请求失败，${3}s 后重试 (${attempt + 1}/${maxRetries}):`,
+          error,
+        )
+        await new Promise((resolve) => setTimeout(resolve, 3000))
+        continue
+      }
+      console.warn('amp-api: 元数据请求最终失败:', error)
       return result
     }
   }

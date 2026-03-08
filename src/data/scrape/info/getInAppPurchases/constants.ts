@@ -1,1 +1,1 @@
-export const IN_APP_PURCHASE_MAX_TIMES = 50
+export const IN_APP_PURCHASE_MAX_TIMES = 10
