@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>限免统计 · 近10天</title>
+  <meta name="description" content="App Store 限免统计，记录近10天每次运行发现的限免数据">
+  <link rel="icon" href="https://s3.bmp.ovh/imgs/2024/07/20/491487aec936222a.png">
+  <style>
+    
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #007aff;
+      --bg: #f2f2f7;
+      --card: #ffffff;
+      --text: #1c1c1e;
+      --sub: #6c6c70;
+      --border: #e5e5ea;
+      --shadow: 0 2px 8px rgba(0,0,0,.06), 0 8px 28px rgba(0,0,0,.08);
+      --shadow-h: 0 8px 24px rgba(0,0,0,.12), 0 20px 48px rgba(0,0,0,.14);
+      --r: 18px;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+      background: var(--bg); color: var(--text); min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .header {
+      color: #fff; padding: 44px 20px 60px; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .header::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 30% 50%, rgba(255,255,255,.08) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 20%, rgba(255,255,255,.06) 0%, transparent 50%);
+    }
+    .hc { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; }
+    .h-icon { font-size: 52px; margin-bottom: 10px; }
+    .h-date {
+      display: inline-block; background: rgba(255,255,255,.18); border-radius: 20px;
+      padding: 3px 14px; font-size: 13px; margin-bottom: 12px; border: 1px solid rgba(255,255,255,.25);
+    }
+    .h-title { font-size: clamp(22px, 5vw, 38px); font-weight: 700; letter-spacing: -.5px; margin-bottom: 6px; word-break: break-word; overflow-wrap: break-word; }
+    .h-sub { font-size: 14px; opacity: .82; margin-bottom: 22px; }
+    .h-stats {
+      display: inline-flex; gap: 0; background: rgba(255,255,255,.14);
+      backdrop-filter: blur(12px); border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.2); overflow: hidden;
+    }
+    .stat { text-align: center; padding: 12px 20px; border-right: 1px solid rgba(255,255,255,.15); }
+    .stat:last-child { border-right: none; }
+    .stat-num { font-size: 26px; font-weight: 700; display: block; line-height: 1; }
+    .stat-label { font-size: 11px; opacity: .8; margin-top: 3px; display: block; }
+
+    /* ── Content ── */
+    .content { max-width: 1300px; margin: -20px auto 0; padding: 0 14px 48px; position: relative; z-index: 2; }
+
+    /* ── Filter bar ── */
+    .filter-bar {
+      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;
+      background: var(--card); border-radius: 14px; padding: 10px 14px;
+      box-shadow: var(--shadow); align-items: center;
+    }
+    .fl { font-size: 14px; color: var(--sub); flex-shrink: 0; }
+    .fb {
+      border: 1px solid var(--border); background: var(--card); border-radius: 20px;
+      padding: 6px 14px; font-size: 14px; cursor: pointer; color: var(--text);
+      transition: all .18s; white-space: nowrap;
+    }
+    .fb.active, .fb:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .fb-featured {
+      border: 1px solid #f59e0b; background: linear-gradient(135deg,#fffbeb,#fef3c7);
+      border-radius: 20px; padding: 6px 14px; font-size: 14px; cursor: pointer;
+      color: #92400e; transition: all .18s; white-space: nowrap; font-weight: 600;
+      margin-left: auto;
+    }
+    .fb-featured:hover { background: linear-gradient(135deg,#f59e0b,#d97706); color: #fff; border-color: #d97706; }
+    .fb-copy {
+      border: 1px solid #8b5cf6; background: linear-gradient(135deg,#f5f3ff,#ede9fe);
+      border-radius: 20px; padding: 6px 14px; font-size: 14px; cursor: pointer;
+      color: #6d28d9; transition: all .18s; white-space: nowrap; font-weight: 600;
+      margin-left: auto;
+    }
+    .fb-copy:hover { background: linear-gradient(135deg,#8b5cf6,#7c3aed); color: #fff; border-color: #7c3aed; }
+
+    /* ── Grid ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 340px));
+      gap: 16px;
+      justify-content: center;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--card); border-radius: var(--r);
+      box-shadow: var(--shadow); padding: 16px;
+      transition: transform .22s cubic-bezier(.34,1.56,.64,1), box-shadow .22s;
+      cursor: pointer; display: flex; flex-direction: column; gap: 12px;
+      position: relative; overflow: hidden; min-width: 0;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-h); }
+
+    /* 精选排名角标 */
+    .rank-badge {
+      position: absolute; top: -6px; left: -6px;
+      width: 28px; height: 28px; border-radius: 50%;
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: #fff; font-size: 13px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 6px rgba(217,119,6,.4); z-index: 1;
+    }
+
+    /* card header */
+    .card-header { display: flex; gap: 12px; align-items: flex-start; }
+    .icon-link { flex-shrink: 0; }
+    .app-icon {
+      width: 60px; height: 60px; border-radius: 13px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.14); object-fit: cover; display: block;
+      transition: transform .18s;
+    }
+    .icon-link:hover .app-icon { transform: scale(1.07); }
+    .app-info { flex: 1; min-width: 0; }
+    .app-name-row { display: flex; align-items: flex-start; gap: 6px; margin-bottom: 6px; }
+    .app-name {
+      font-size: 15px; font-weight: 600; line-height: 1.3;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+      flex: 1;
+    }
+    .badge {
+      flex-shrink: 0; font-size: 11px; font-weight: 600; padding: 2px 8px;
+      border-radius: 8px; white-space: nowrap; margin-top: 2px;
+    }
+    .badge-free { background: #dcfce7; color: #15803d; }
+    .badge-iap  { background: #fef9c3; color: #92400e; }
+    .badge-discount { background: #fee2e2; color: #b91c1c; }
+    .app-meta { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 4px; }
+    .genre-tag {
+      font-size: 12px; padding: 2px 8px; border-radius: 8px;
+      background: #f2f2f7; color: var(--sub); border: 1px solid var(--border);
+    }
+    .source-tag { font-size: 12px; padding: 2px 8px; border-radius: 8px; font-weight: 500; }
+    .devices { font-size: 12px; color: var(--sub); line-height: 1.4; margin-top: 2px; }
+
+    /* price */
+    .price-section { border-radius: 10px; overflow: hidden; }
+    .price-display { display: flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 10px; }
+    .price-display.is-free { background: linear-gradient(135deg, #f0fdf4, #dcfce7); border: 1px solid #bbf7d0; }
+    .price-display.is-discount { background: linear-gradient(135deg, #fff7ed, #ffedd5); border: 1px solid #fed7aa; }
+    .price-from { color: var(--sub); text-decoration: line-through; font-size: 15px; }
+    .price-arrow { color: var(--sub); font-size: 13px; }
+    .price-display.is-free .price-to { color: #15803d; font-weight: 700; font-size: 17px; }
+    .price-display.is-discount .price-to { color: #c2410c; font-weight: 700; font-size: 17px; }
+    .price-section.iap-mode {
+      background: linear-gradient(135deg, #fffbeb, #fef3c7);
+      border: 1px solid #fde68a; padding: 9px 12px; border-radius: 10px;
+    }
+    .iap-header { font-size: 13px; font-weight: 600; color: #92400e; margin-bottom: 5px; }
+    .iap-item { display: flex; justify-content: space-between; align-items: center; padding: 3px 0; border-top: 1px solid #fde68a40; }
+    .iap-item:first-of-type { border-top: none; }
+    .iap-name { font-size: 13px; color: #78350f; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-right: 8px; }
+    .iap-price { font-size: 13px; white-space: nowrap; display: flex; align-items: center; gap: 4px; }
+    .iap-price s { color: #d1d5db; }
+    .iap-price .arrow { font-size: 11px; color: #d97706; }
+    .iap-price b { color: #b45309; }
+
+    /* desc：显示4行，更多内容 */
+    .app-desc {
+      font-size: 13px; color: var(--sub); line-height: 1.65;
+      display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+    }
+
+    /* ── 截图 ── */
+    .screenshots { display: flex; gap: 8px; }
+    .screenshot {
+      flex: 1; min-width: 0;
+      aspect-ratio: 3/5; max-height: 260px;
+      object-fit: cover; border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    /* Mac screenshot landscape ratio */
+    .screenshots-mac .screenshot { aspect-ratio: 16/10; max-height: none; }
+
+    /* No-screenshot fallback: centered large icon */
+    .screenshots-icon-fallback { justify-content: center; }
+    .shot-icon {
+      flex: none !important; width: 100px !important; height: 100px !important;
+      aspect-ratio: 1 !important; max-height: none !important;
+      border-radius: 22px !important; object-fit: cover;
+    }
+
+    /* ── 移动端二维码（截图下方） ── */
+    .qr-below { display: none; text-align: center; }
+    .qr-below .qr-canvas {
+      width: 120px; height: 120px; margin: 0 auto;
+      border-radius: 12px; overflow: hidden;
+      border: 1px solid var(--border); background: #fff;
+    }
+    .qr-below .qr-canvas canvas, .qr-below .qr-canvas img {
+      display: block !important; width: 120px !important; height: 120px !important;
+    }
+    .qr-below-tip { font-size: 11px; color: var(--sub); margin-top: 6px; }
+
+    /* ── 二维码缩略图（footer 内） ── */
+    .qr-thumb {
+      width: 40px; height: 40px; border-radius: 8px; overflow: hidden;
+      cursor: pointer; flex-shrink: 0; position: relative;
+      border: 1px solid var(--border); background: #fff;
+    }
+    .qr-thumb:hover { border-color: var(--primary); box-shadow: 0 0 0 2px rgba(0,122,255,.15); }
+    .qr-thumb .qr-canvas {
+      width: 160px; height: 160px;
+      transform: scale(0.25); transform-origin: top left;
+    }
+    .qr-thumb .qr-canvas canvas, .qr-thumb .qr-canvas img {
+      display: block !important; width: 160px !important; height: 160px !important;
+    }
+
+    /* ── 二维码弹出蒙层 ── */
+    .qr-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,.5);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 1000; animation: fadeIn .15s;
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .qr-overlay-content {
+      background: #fff; border-radius: 16px; padding: 20px;
+      text-align: center; position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,.3);
+    }
+    .qr-overlay-content .qr-canvas {
+      width: 160px; height: 160px; border-radius: 12px; overflow: hidden;
+      border: 1px solid var(--border); margin: 0 auto;
+    }
+    .qr-overlay-content .qr-canvas canvas,
+    .qr-overlay-content .qr-canvas img {
+      display: block !important; width: 160px !important; height: 160px !important;
+    }
+    .qr-overlay-icon {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%); margin-top: -10px;
+      width: 36px; height: 36px; border-radius: 9px;
+      border: 3px solid #fff; background: #fff;
+      box-shadow: 0 1px 5px rgba(0,0,0,.22);
+      object-fit: cover; pointer-events: none;
+    }
+    .qr-overlay-tip { font-size: 12px; color: var(--sub); margin-top: 10px; }
+
+    /* footer */
+    .card-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 10px; border-top: 1px solid var(--border);
+    }
+    .footer-actions { display: flex; align-items: center; gap: 10px; }
+    .update-time { font-size: 12px; color: var(--sub); }
+    .store-link { font-size: 13px; color: var(--primary); text-decoration: none; font-weight: 500; }
+    .store-link:hover { text-decoration: underline; }
+
+    /* price-range & iap-hint */
+    .price-range {
+      font-size: 12px; color: var(--sub); padding: 2px 12px 4px;
+      opacity: .75;
+    }
+    .iap-hint {
+      font-size: 12px; color: #b45309; padding: 3px 12px 4px;
+      background: rgba(254,243,199,.6); border-top: 1px dashed #fde68a;
+    }
+    .iap-range { font-size: 11px; color: #d97706; margin-left: 4px; opacity: .8; }
+
+    /* developer name */
+    .artist-name { font-size: 12px; color: var(--sub); margin-top: 2px; }
+
+    /* back-to-top */
+    .back-top {
+      position: fixed; bottom: 24px; right: 20px;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--primary); color: #fff;
+      border: none; font-size: 20px; line-height: 1; cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,122,255,.35);
+      display: none; align-items: center; justify-content: center;
+      transition: opacity .2s, transform .2s; z-index: 100;
+    }
+    .back-top.visible { display: flex; }
+    .back-top:hover { transform: translateY(-2px); }
+
+    /* empty */
+    .empty { text-align: center; padding: 80px 20px; grid-column: 1/-1; }
+    .empty-icon { font-size: 56px; margin-bottom: 12px; }
+    .empty p { color: var(--sub); font-size: 16px; }
+
+    /* page footer */
+    .page-footer {
+      text-align: center; padding: 24px 16px; color: var(--sub);
+      font-size: 12px; border-top: 1px solid var(--border);
+    }
+    .page-footer a { color: var(--primary); text-decoration: none; }
+
+    /* back bar */
+    .back-bar {
+      background: var(--card); border-radius: 14px; padding: 10px 14px;
+      box-shadow: var(--shadow); margin-bottom: 20px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .back-btn { font-size: 14px; color: var(--primary); text-decoration: none; font-weight: 500; }
+    .back-btn:hover { text-decoration: underline; }
+    .back-bar-tip { font-size: 13px; color: var(--sub); }
+
+    /* responsive */
+    @media (max-width: 768px) {
+      .grid { grid-template-columns: 1fr; gap: 12px; }
+      .header { padding: 32px 16px 48px; }
+      .h-stats { flex-wrap: wrap; justify-content: center; }
+      .stat { padding: 8px 12px; }
+      .stat-num { font-size: 22px; }
+      .stat-label { font-size: 10px; }
+      .filter-bar { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .filter-bar::-webkit-scrollbar { display: none; }
+      .card { padding: 12px; }
+      .screenshots { overflow: hidden; }
+      .screenshot { min-width: 0; }
+      .qr-below { display: block; }
+      .qr-thumb { display: none; }
+    }
+    @media (max-width: 500px) {
+      .header { padding: 28px 12px 40px; }
+      .h-title { font-size: 20px; }
+      .h-sub { font-size: 12px; }
+      .stat { padding: 6px 10px; }
+      .stat-num { font-size: 20px; }
+      .content { padding: 0 8px 36px; margin-top: -12px; }
+      .screenshot { max-height: 200px; }
+      .app-icon { width: 48px; height: 48px; }
+    }
+    .header { background: linear-gradient(135deg, #10b981 0%, #059669 55%, #047857 100%); }
+
+    /* ── Stats specific ── */
+    .stats-day { background: var(--card); border-radius: var(--r); box-shadow: var(--shadow); margin-bottom: 16px; overflow: hidden; }
+    .stats-day-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 18px; background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+      border-bottom: 1px solid #bbf7d0;
+    }
+    .stats-day-label { font-size: 16px; font-weight: 700; color: #166534; }
+    .stats-day-summary { font-size: 13px; color: #15803d; }
+
+    .stats-run { padding: 14px 18px; border-bottom: 1px solid var(--border); }
+    .stats-run:last-child { border-bottom: none; }
+    .stats-run-header { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+    .stats-run-time { font-size: 15px; font-weight: 600; color: var(--text); }
+    .stats-run-tag {
+      font-size: 12px; padding: 2px 10px; border-radius: 10px;
+      background: #f2f2f7; color: var(--sub); border: 1px solid var(--border);
+    }
+    .stats-run-tag.tag-price { background: #dcfce7; color: #15803d; border-color: #bbf7d0; }
+    .stats-run-tag.tag-iap { background: #fef9c3; color: #92400e; border-color: #fde68a; }
+
+    .stats-apps { display: flex; flex-direction: column; gap: 6px; }
+    .stats-app {
+      display: flex; align-items: center; gap: 8px;
+      padding: 6px 10px; border-radius: 8px; background: #f9fafb;
+    }
+    .app-tag {
+      font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 6px;
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .app-tag-price { background: #dcfce7; color: #15803d; }
+    .app-tag-iap { background: #fef9c3; color: #92400e; }
+    .stats-app .app-name {
+      font-size: 13px; font-weight: 500; color: var(--text);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 1; min-width: 0;
+    }
+    .stats-app .app-detail { font-size: 12px; color: var(--sub); white-space: nowrap; flex-shrink: 0; }
+
+    @media (max-width: 768px) {
+      .stats-day-header { flex-direction: column; align-items: flex-start; gap: 4px; }
+      .stats-app { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="hc">
+    <div class="h-icon">📊</div>
+    <h1 class="h-title">限免统计 · 近10天</h1>
+    <p class="h-sub">记录每次 Action 运行发现的限免数据</p>
+    <div class="h-stats">
+      <div class="stat"><span class="stat-num">0</span><span class="stat-label">天</span></div>
+      <div class="stat"><span class="stat-num">0</span><span class="stat-label">次运行</span></div>
+      <div class="stat"><span class="stat-num">0</span><span class="stat-label">个限免</span></div>
+    </div>
+  </div>
+</header>
+<div class="content">
+  <div class="back-bar">
+    <a href="index.html" class="back-btn">← 返回主页</a>
+  </div>
+  <div class="empty"><div class="empty-icon">📭</div><p>暂无统计数据</p></div>
+</div>
+<footer class="page-footer">
+  数据来源：App Store 官方 · 每 2 小时自动更新
+</footer>
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="返回顶部">↑</button>
+<script>
+  (function() {
+    var btn = document.getElementById('backTop');
+    if (!btn) return;
+    window.addEventListener('scroll', function() {
+      btn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+  })();
+</script>
+</body>
+</html>
