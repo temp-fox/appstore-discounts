@@ -10,7 +10,7 @@ import { start, end, summarize } from './timer'
 import pushTelegramNotification from './telegram'
 // import updateIpCounter from './ip'
 import pushDingTalkNotification from './dingtalk'
-import updateAppInfoConfig from './config'
+import updateAppInfoConfig, { updateImpl } from './config'
 import updateLog from './log'
 import disableApps from './disableApps'
 
@@ -213,6 +213,24 @@ async function controller() {
       }
     })
   })
+
+  // 补充 _shouldBePaid 标签：利用本次已查询的价格，price > 0 且缺少标签的应用自动补充
+  {
+    let shouldBePaidUpdated = 0
+    const mainRegionAppInfos = regionAppInfo[mainRegion] || []
+    mainRegionAppInfos.forEach((appInfo) => {
+      const cfg = appConfigMap.get(appInfo.trackId)
+      if (cfg && !cfg._shouldBePaid && appInfo.price > 0) {
+        cfg._shouldBePaid = true
+        appInfo._shouldBePaid = true
+        shouldBePaidUpdated++
+      }
+    })
+    if (shouldBePaidUpdated > 0) {
+      console.log(`补充 _shouldBePaid 标签: ${shouldBePaidUpdated} 个应用（当前价格 > 0）`)
+      updateImpl(appConfig)
+    }
+  }
 
   const regionStorageAppInfo = getStorageAppInfo(regions)
 

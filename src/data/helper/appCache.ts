@@ -98,3 +98,32 @@ export function shouldUseCache(appId: number): boolean {
   }
 }
 
+export interface CachedScreenshots {
+  screenshotUrls: string[]
+  ipadScreenshotUrls: string[]
+}
+
+/**
+ * 获取存储中缓存的截图（无过期限制，截图不随时间变化）
+ */
+export function getCachedScreenshots(appId: number, region: string): CachedScreenshots | null {
+  try {
+    const storageAppInfo = getStorageCached(region)
+    const appData = storageAppInfo[String(appId)]
+    if (!appData) return null
+
+    const screenshotUrls = appData.screenshotUrls
+    const ipadScreenshotUrls = appData.ipadScreenshotUrls
+
+    if (screenshotUrls?.length > 0 || ipadScreenshotUrls?.length > 0) {
+      return {
+        screenshotUrls: screenshotUrls || [],
+        ipadScreenshotUrls: ipadScreenshotUrls || [],
+      }
+    }
+    return null
+  } catch (error) {
+    return null
+  }
+}
+

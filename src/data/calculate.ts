@@ -320,6 +320,9 @@ export default function calculateLatestRegionStorageAppInfoAndRegionDiscountsInf
           maxPriceInfo: maxPriceInfo as PriceInfo,
           minPriceInfo: minPriceInfo as PriceInfo,
           history: dateStorageAppInfo,
+          // 持久化截图（避免每次 amp-api 重复补充）
+          ...(appInfo.screenshotUrls?.length > 0 && { screenshotUrls: appInfo.screenshotUrls }),
+          ...(appInfo.ipadScreenshotUrls?.length > 0 && { ipadScreenshotUrls: appInfo.ipadScreenshotUrls }),
           // 保存外部来源标记
           ...(externalSource && { _externalSource: externalSource }),
           ...(externalSourceFirstSeen && { _externalSourceFirstSeen: externalSourceFirstSeen })

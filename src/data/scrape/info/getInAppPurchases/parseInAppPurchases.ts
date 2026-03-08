@@ -1,8 +1,6 @@
 import { regionInAppPurchasesTextMap } from 'appinfo.config'
 import { load } from 'cheerio'
 import { isEmpty, pick } from 'lodash'
-import chalk from 'chalk'
-import { IN_APP_PURCHASE_MAX_TIMES } from './constants'
 
 export type ParseInAppPurchasesProps = {
   appInfo: RequestAppInfo
@@ -30,8 +28,6 @@ export default function parseInAppPurchases(
   let informationLoadError = false
   let inAppPurchasesError = false
 
-  const timesLog = chalk.red(`【x${times}】`)
-
   const getReturn = () => {
     const res = {
       inAppPurchases,
@@ -50,9 +46,6 @@ export default function parseInAppPurchases(
 
   if (!informationElement?.html()) {
     informationLoadError = true
-    if (times === 1 || times === 5 || times >= IN_APP_PURCHASE_MAX_TIMES) {
-      console.error(`${log}${timesLog}can't load \`information\` element`)
-    }
     return getReturn()
   }
 
@@ -83,11 +76,6 @@ export default function parseInAppPurchases(
 
   if (inAppPurchasesElement?.html() && isEmpty(inAppPurchases)) {
     inAppPurchasesError = true
-    if (times === 1 || times === 5 || times >= IN_APP_PURCHASE_MAX_TIMES) {
-      console.error(
-        `${log}${timesLog}is In-App purchase，but can't get relate info`,
-      )
-    }
   }
 
   return getReturn()

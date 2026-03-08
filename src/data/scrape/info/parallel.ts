@@ -2,7 +2,7 @@ import { chunk } from 'lodash'
 import pLimit from 'p-limit'
 import { start, end } from '../../timer'
 import getAppInfo from './getAppInfo'
-import { getCachedAppInfo, shouldUseCache } from '../../helper/appCache'
+import { getCachedAppInfo, getCachedScreenshots, shouldUseCache } from '../../helper/appCache'
 import {
   getByFetch,
   getByPlayWright,
@@ -144,7 +144,24 @@ export default async function getRegionAppInfo(
           return res
         }, [] as AppInfo[])
 
-        // 第四步：用 appMetadataMap 补充缺失截图
+        // 第四步：从存储恢复缓存截图 + amp-api 补充剩余缺失截图
+        // 4a. 先从本地存储恢复（上次 amp-api 已获取过的截图）
+        let cacheRestoredCount = 0
+        res[region].forEach((app) => {
+          if (
+            (!app.screenshotUrls || app.screenshotUrls.length === 0) &&
+            (!app.ipadScreenshotUrls || app.ipadScreenshotUrls.length === 0)
+          ) {
+            const cached = getCachedScreenshots(app.trackId, region)
+            if (cached) {
+              if (cached.screenshotUrls.length > 0) app.screenshotUrls = cached.screenshotUrls
+              if (cached.ipadScreenshotUrls.length > 0) app.ipadScreenshotUrls = cached.ipadScreenshotUrls
+              cacheRestoredCount++
+            }
+          }
+        })
+
+        // 4b. 再用 amp-api 补充仍然缺失的截图
         if (appMetadataMap.size > 0) {
           let screenshotSuccessCount = 0
           const appsNeedScreenshots = res[region].filter(
@@ -168,8 +185,8 @@ export default async function getRegionAppInfo(
             }
           }
 
-          if (appsNeedScreenshots.length > 0) {
-            console.log(`${label} 截图补充: ${appsNeedScreenshots.length} 个缺失 | 成功: ${screenshotSuccessCount}`)
+          if (cacheRestoredCount > 0 || appsNeedScreenshots.length > 0) {
+            console.log(`${label} 截图补充: 缓存恢复: ${cacheRestoredCount} | amp-api 新补充: ${screenshotSuccessCount}/${appsNeedScreenshots.length}`)
           }
         } else {
           // amp-api 完全失败时降级到原有截图获取逻辑
@@ -205,7 +222,7 @@ export default async function getRegionAppInfo(
               }
             }
 
-            console.log(`${label} 截图补充(降级): ${appsNeedScreenshots.length} 个缺失 | 成功: ${screenshotSuccessCount} | 失败: ${screenshotFailCount}`)
+            console.log(`${label} 截图补充(降级): 缓存恢复: ${cacheRestoredCount} | amp-api: ${screenshotSuccessCount}/${appsNeedScreenshots.length}`)
           }
         }
       }
