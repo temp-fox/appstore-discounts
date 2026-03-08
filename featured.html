@@ -1564,13 +1564,13 @@ Spiriguide is your spiritual co">Rated 4.7/5 by 130+ users
     if (app.screenshots && app.screenshots.length > 0) {
       if (app.isMac) {
         h += '<div style="margin-top:14px;border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);">';
-        h += '<img src="' + app.screenshots[0] + '" style="width:100%;height:auto;display:block;vertical-align:bottom;" />';
+        h += '<img src="' + app.screenshots[0] + '" style="width:100%;height:auto;display:block;vertical-align:bottom;margin-bottom:-4px;" />';
         h += '</div>';
       } else {
         h += '<div style="display:flex;gap:8px;margin-top:14px;">';
         app.screenshots.forEach(function(src) {
           h += '<div style="flex:1;min-width:0;border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);">';
-          h += '<img src="' + src + '" style="width:100%;height:auto;display:block;vertical-align:bottom;" />';
+          h += '<img src="' + src + '" style="width:100%;height:auto;display:block;vertical-align:bottom;margin-bottom:-4px;" />';
           h += '</div>';
         });
         h += '</div>';
@@ -1581,8 +1581,8 @@ Spiriguide is your spiritual co">Rated 4.7/5 by 130+ users
       h += '<div style="font-size:13px;font-weight:600;color:#007aff;margin-top:6px;letter-spacing:0.5px;">📲 长按识别下载</div>';
       h += '</div>';
     } else {
-      // No screenshot: icon + QR side by side, icon height matches QR+text
-      h += '<div style="display:flex;align-items:flex-start;justify-content:center;gap:20px;margin-top:14px;padding:16px 12px;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;">';
+      // No screenshot: icon + QR side by side
+      h += '<div style="display:flex;align-items:flex-start;justify-content:center;gap:20px;margin-top:14px;padding:16px 0;">';
       if (app.iconHD) {
         h += '<img src="' + app.iconHD + '" style="width:88px;height:88px;border-radius:20px;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);flex-shrink:0;" />';
       }
