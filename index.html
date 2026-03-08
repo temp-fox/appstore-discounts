@@ -3068,6 +3068,9 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
 
     if (toTranslate.length === 0) return;
 
+    var successCount = 0;
+    var failCount = 0;
+
     // 每批最多 4 个并发，避免限流
     for (var i = 0; i < toTranslate.length; i += 4) {
       var batch = toTranslate.slice(i, i + 4);
@@ -3076,14 +3079,26 @@ LaxtTime会记录你每件事情的上次发生距今时间，精确到分钟。
         var cacheKey = 'tr_' + btoa(encodeURIComponent(raw.substring(0, 120)));
         try {
           var cached = sessionStorage.getItem(cacheKey);
-          if (cached) { el.textContent = cached; return; }
+          if (cached) { el.textContent = cached; successCount++; return; }
         } catch(e) {}
         var translated = await translateText(raw);
         if (translated) {
           el.textContent = translated;
+          successCount++;
           try { sessionStorage.setItem(cacheKey, translated); } catch(e) {}
+        } else {
+          failCount++;
         }
       }));
+    }
+
+    // 在页面底部显示翻译统计
+    var footer = document.querySelector('.page-footer');
+    if (footer && toTranslate.length > 0) {
+      var stat = document.createElement('div');
+      stat.style.cssText = 'font-size:12px;color:#9ca3af;margin-top:4px;';
+      stat.textContent = '翻译统计：需翻译 ' + toTranslate.length + ' 条，成功 ' + successCount + ' 条，失败 ' + failCount + ' 条';
+      footer.appendChild(stat);
     }
   }
 
