@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/appstore-discounts/appstore-discounts/rss/cn.xml</id>
     <title>App Store Discounts（CN）</title>
-    <updated>2026-03-08T12:11:39.827+08:00</updated>
+    <updated>2026-03-08T14:38:12.257+08:00</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Eyelly wu</name>
@@ -21,7 +21,7 @@ feedId:157007849019630592+userId:73658201673997312
         <title type="html"><![CDATA[🎉 欢迎订阅 App Store Discounts]]></title>
         <id>welcomecn</id>
         <link href="https://github.com/appstore-discounts/appstore-discounts"/>
-        <updated>2026-03-08T12:11:39.828+08:00</updated>
+        <updated>2026-03-08T14:38:12.258+08:00</updated>
         <summary type="html"><![CDATA[感谢您订阅我们的 RSS 源，我们是一个致力于为全球用户带来 App Store 最新折扣信息的社区驱动项目。我们的目标是让每一位用户都能第一时间掌握心爱应用的优惠动态，无论是应用本身的价格下调，还是内购项目的限时促销，我们都将为您一网打尽！]]></summary>
         <content type="html"><![CDATA[<p>感谢您订阅我们的 RSS 源，我们是一个致力于为全球用户带来 App Store 最新折扣信息的社区驱动项目。我们的目标是让每一位用户都能第一时间掌握心爱应用的优惠动态，无论是应用本身的价格下调，还是内购项目的限时促销，我们都将为您一网打尽！</p><h1>关于我们的 RSS 源</h1><ul>
   <li>专注于推送 App Store 应用的优惠信息</li><li>只要应用价格降低或内购项降价，我们就会及时推送</li><li>每个应用的优惠信息以单独的 feed 形式呈现</li><li>RSS 源完全开源，您可以随时查看、贡献和添加您关注的应用</li>
@@ -29,9 +29,9 @@ feedId:157007849019630592+userId:73658201673997312
     </entry>
     <entry>
         <title type="html"><![CDATA[统计数据报告]]></title>
-        <id>rankingcnSun, 08 Mar 2026 04:11:39 GMT</id>
+        <id>rankingcnSun, 08 Mar 2026 06:38:12 GMT</id>
         <link href="https://github.com/appstore-discounts/appstore-discounts"/>
-        <updated>2026-03-08T12:11:39.829+08:00</updated>
+        <updated>2026-03-08T14:38:12.259+08:00</updated>
         <summary type="html"><![CDATA[最新统计数据报告]]></summary>
         <content type="html"><![CDATA[<h2>追踪的国家或地区</h2><ol>
   <li>
@@ -52,13 +52,13 @@ feedId:157007849019630592+userId:73658201673997312
     <tr>
       <td>所有</td>
       <td>
-        <b>3531</b>
+        <b>3535</b>
       </td>
       <td>
         <b>75</b>
       </td>
       <td>
-        <b>3366</b>
+        <b>3370</b>
       </td>
       <td>
         <b>90</b>
@@ -72,13 +72,13 @@ feedId:157007849019630592+userId:73658201673997312
         <b>CN</b>
       </td>
       <td>
-        <b>3490</b>
+        <b>3494</b>
       </td>
       <td>
         <b>39</b>
       </td>
       <td>
-        <b>3361</b>
+        <b>3365</b>
       </td>
       <td>
         <b>90</b>
@@ -3522,6 +3522,23 @@ feedId:157007849019630592+userId:73658201673997312
         </ul>
       </td>
     </tr>
+    <tr>
+      <td>
+        <b>194</b>
+      </td>
+      <td>
+        <a href="https://apps.apple.com/cn/app/id6758020377">菜书</a>
+      </td>
+      <td>
+        <ul>
+          <li>
+            <span>总次数</span>：<b>1</b>
+          </li><li>
+            <span>价格</span>：<b>1</b>
+          </li>
+        </ul>
+      </td>
+    </tr>
   </tbody>
 </table><h2>禁用推送应用列表</h2><table>
   <thead>
@@ -3660,6 +3677,41 @@ feedId:157007849019630592+userId:73658201673997312
     </tr>
   </tbody>
 </table>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[菜书]]></title>
+        <id>菜书-cn-1772951608000</id>
+        <link href="https://apps.apple.com/cn/app/%E8%8F%9C%E4%B9%A6/id6758020377?uo=4"/>
+        <updated>2026-03-08T14:33:28.000+08:00</updated>
+        <summary type="html"><![CDATA[价格: ¥3.00 → 免费]]></summary>
+        <content type="html"><![CDATA[<a href="https://apps.apple.com/cn/app/%E8%8F%9C%E4%B9%A6/id6758020377?uo=4">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2c/b5/d3/2cb5d307-5432-35e7-4cef-5d88f8662542/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/60x60bb.jpg" />
+</a><p>
+  <small>来源：付费排行榜</small>
+</p><h2>
+  优惠信息（价格：<span>¥3.00</span> → <b>
+  <strong>免费</strong>
+</b><span>[免费 ~ ¥3.00]</span>）
+</h2><h2>全部价格信息</h2><p>
+  价格：<b>免费</b>
+</p><h2>应用描述</h2><p>
+  菜书（Caishu）：“吃了吗您？”
+
+Caishu AI家庭营养师的垂类APP，为中国家庭设计。
+
+用户输入自己的健康信息，就会由AI Caishu为你统一统筹一周菜谱！还可调节预算！
+6元买断无任何额外付费服务！还可接入自己的Ai API，雇佣一个专属于自己的私人营养师！
+同时，AI还会：教你做菜、整理食材清单、以及我们一起发布健康菜谱。
+当然，还有定制的生活化建议，比如摄入肠胃养护指南，等等.....
+
+总的来说，它不仅适合你的家人，爸妈，孩子。
+同时，还有许多配套的功能在其中，以及永久免费的承诺！
+菜书（Caishu）为您的父母或者孩子，请一个专业的中式AI营养师吧！服务好我们的每一个用户，助力中国现代化。
+这个APP是通过Vibe Coding设计的。没有编写一行代码。没有团队。
+
+免责声明： 本 App 提供的所有内容仅供参考，不作为医疗诊断或治疗建议。在使用本 App 以及做出任何医疗决定之前，请务必咨询专业医生的意见。
+Medical Disclaimer: All content provided in this app is for informational purposes only and does not constitute medical advice or diagnosis. Always seek the advice of a professional physician in addition to using this app and before making any medical decisions.
+</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Gooood Bank棒棒宝]]></title>

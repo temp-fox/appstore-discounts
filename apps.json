@@ -2,6 +2,50 @@
   "$schema": "apps.json-schema.json",
   "appConfig": [
     {
+      "id": 412341302,
+      "name": {
+        "cn": "WebDAV Nav+"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772951584575,
+      "_discountType": "app"
+    },
+    {
+      "id": 1163179839,
+      "name": {
+        "cn": "成人高考专升本考试题库2023最新"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772951598043,
+      "_discountType": "app"
+    },
+    {
+      "id": 1257651611,
+      "name": {
+        "cn": "Decibel X PRO - 专业噪声计和声压级"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772951584575,
+      "_discountType": "app"
+    },
+    {
+      "id": 1522881942,
+      "name": {
+        "cn": "Steve and Maggie Animal App"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772951598043,
+      "_discountType": "app"
+    },
+    {
       "id": 1517332871,
       "name": {
         "cn": "Early Learning Flash Cards"
@@ -10168,7 +10212,8 @@
       "name": {
         "cn": "Mandelbrot Metal"
       },
-      "addType": "auto"
+      "addType": "auto",
+      "_shouldBePaid": true
     },
     {
       "id": 6470333020,
