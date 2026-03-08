@@ -1514,13 +1514,13 @@ Early Learning Flash Cards helps kids practice essential reading and math skills
     var qrUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(app.url);
     if (app.screenshots && app.screenshots.length > 0) {
       if (app.isMac) {
-        h += '<div style="margin-top:14px;border-radius:12px;overflow:hidden;border:1px solid #d1d5db;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);">';
+        h += '<div style="margin-top:14px;border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);">';
         h += '<img src="' + app.screenshots[0] + '" style="width:100%;display:block;aspect-ratio:16/10;object-fit:cover;" />';
         h += '</div>';
       } else {
         h += '<div style="display:flex;gap:8px;margin-top:14px;">';
         app.screenshots.forEach(function(src) {
-          h += '<div style="flex:1;min-width:0;border-radius:12px;overflow:hidden;border:1px solid #d1d5db;background:#f9fafb;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);">';
+          h += '<div style="flex:1;min-width:0;border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);">';
           h += '<img src="' + src + '" style="width:100%;display:block;aspect-ratio:3/5;object-fit:cover;" />';
           h += '</div>';
         });
@@ -1535,7 +1535,7 @@ Early Learning Flash Cards helps kids practice essential reading and math skills
       // No screenshot: icon + QR side by side
       h += '<div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-top:14px;padding:12px;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;">';
       if (app.iconHD) {
-        h += '<img src="' + app.iconHD + '" style="width:80px;height:80px;border-radius:18px;box-shadow:0 8px 24px rgba(100,100,110,0.25),0 2px 8px rgba(0,0,0,0.08);flex-shrink:0;" />';
+        h += '<img src="' + app.iconHD + '" style="width:80px;height:80px;border-radius:18px;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);flex-shrink:0;" />';
       }
       h += '<div style="text-align:center;flex-shrink:0;">';
       h += '<img src="' + qrUrl + '" style="width:80px;height:80px;border-radius:8px;border:1px solid #d1d5db;box-shadow:0 16px 40px rgba(40,40,50,0.55),0 6px 16px rgba(0,0,0,0.25);" />';
