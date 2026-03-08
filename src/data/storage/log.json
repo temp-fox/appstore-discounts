@@ -1,5 +1,347 @@
 [
   {
+    "timestamp": 1772965092207,
+    "regionAppInfo": {
+      "cn": [
+        {
+          "trackId": 6670703485,
+          "trackName": "OneThing - Focus One 专注一件事",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6751025023,
+          "trackName": "LingoCap  AI拍照学单词",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 922850571,
+          "trackName": "英語從頭學（全系列）",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1436429074,
+          "trackName": "FILCA - SLR Film Camera",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 650415564,
+          "trackName": "Mextures",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 680469088,
+          "trackName": "1Writer - Markdown Text Editor",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 969839385,
+          "trackName": "KnockOut高清版: 专业智能抠图软件",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1034774337,
+          "trackName": "OVLA",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1182856129,
+          "trackName": "Blink - 快速备忘录 + 小组件",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1317265106,
+          "trackName": "Die With Me",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1375240620,
+          "trackName": "卡拉希尔战记",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1529075749,
+          "trackName": "重建家园",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 481679745,
+          "trackName": "Pocket Earth PRO",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 488165644,
+          "trackName": "节拍器：PolyNome 终极节拍器",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 492076105,
+          "trackName": "iCalendar",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 493845493,
+          "trackName": "iComics",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 494877039,
+          "trackName": "Boat Beacon",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 500630565,
+          "trackName": "Spentable",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 510911823,
+          "trackName": "音频发生器 Pro",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 516879039,
+          "trackName": "Flyskyhy",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 520376062,
+          "trackName": "Emoji 3 PRO - Color Messages - New Emojis Emojis Sticker for SMS, Facebook, Twitter",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 523419125,
+          "trackName": "DjVu Reader Pro - Viewer for djvu and pdf formats",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 525956148,
+          "trackName": "航班追踪器专业版 - 航班 管家, 实时 航班, 飞行 雷达",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 527031134,
+          "trackName": "Catador Cupping",
+          "inAppPurchasesTimes": 10
+        },
+        {
+          "trackId": 1194938970,
+          "trackName": "Miracle行车记录仪-开车视频拍摄与导航的智能安全助手",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1198057728,
+          "trackName": "Smart Closet 掌上衣橱 - 我的时尚风格",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1202650514,
+          "trackName": "HealthFit",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1218171533,
+          "trackName": "Marklist 妙记 - 稍后阅读、笔记、待办、搜索和收藏",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1224548795,
+          "trackName": "SunPath",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1227288468,
+          "trackName": "万能输入法",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1227309920,
+          "trackName": "Planet Explorer",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1229021451,
+          "trackName": "Toot! for Mastodon",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1232505615,
+          "trackName": "ZAD - 塞尔达攻略",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1235995167,
+          "trackName": "WikiArt",
+          "inAppPurchasesTimes": 10
+        },
+        {
+          "trackId": 1237692856,
+          "trackName": "Gudak Cam",
+          "inAppPurchasesTimes": 10
+        },
+        {
+          "trackId": 1238253310,
+          "trackName": "宝宝辅食大全",
+          "inAppPurchasesTimes": 10
+        },
+        {
+          "trackId": 6741228360,
+          "trackName": "InkSpace",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6746672642,
+          "trackName": "LiveExtractor",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6458733069,
+          "trackName": "养生钟 - 中医时辰手表软件",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6758746304,
+          "trackName": "MondPlan: Bio Mondkalender",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6758154426,
+          "trackName": "Alarrrm-日期指定闹钟：不漏接重要未来行程",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6738070448,
+          "trackName": "StressBook: 实时压力监测Watch心脏心率健康",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6749500536,
+          "trackName": "病历助手-拍照识别&用药闹铃提醒&健康档案&慢性病智能跟踪",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6755944603,
+          "trackName": "吃药管家：闹铃提醒&智能库存&吃药打卡记录",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6756534409,
+          "trackName": "病历夹：AI分析&拍照识别&指标跟踪",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6752631667,
+          "trackName": "召唤三国:锦绣江山",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6755715433,
+          "trackName": "三国英雄传奇-全民主公Q萌觉醒！",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 6756951467,
+          "trackName": "百炼仙途-凡人修仙，逆天破境",
+          "inAppPurchasesTimes": 10,
+          "inAppPurchasesFailed": true
+        },
+        {
+          "trackId": 1566582099,
+          "trackName": "EMDR Classic for TV",
+          "inAppPurchasesTimes": 5
+        },
+        {
+          "trackId": 6748339961,
+          "trackName": "Lut相机 for FTP",
+          "inAppPurchasesTimes": 4
+        },
+        {
+          "trackId": 6756836150,
+          "trackName": "应用集",
+          "inAppPurchasesTimes": 4
+        },
+        {
+          "trackId": 527844985,
+          "trackName": "高吉起名HD起名大师专业版",
+          "inAppPurchasesTimes": 3
+        },
+        {
+          "trackId": 530088968,
+          "trackName": "Prehistoric Times Magazine",
+          "inAppPurchasesTimes": 3
+        },
+        {
+          "trackId": 6758034339,
+          "trackName": "召唤三国:梦起江山",
+          "inAppPurchasesTimes": 3
+        },
+        {
+          "trackId": 6751832229,
+          "trackName": "屠龙烈火-经典三职业再现",
+          "inAppPurchasesTimes": 3
+        },
+        {
+          "trackId": 485251405,
+          "trackName": "豪华钓鱼-最佳的钓鱼时间和钓鱼日历",
+          "inAppPurchasesTimes": 2
+        },
+        {
+          "trackId": 6746182611,
+          "trackName": "御妖伏魔录-开坛斗法书写你的捉鬼传奇",
+          "inAppPurchasesTimes": 2
+        }
+      ]
+    },
+    "duration": "6m1.304s",
+    "regionAppCount": {
+      "cn": 3462
+    },
+    "limitCount": 3,
+    "inAppPurchasesScrapeType": "fetch"
+  },
+  {
     "timestamp": 1772958138434,
     "regionAppInfo": {
       "cn": [
