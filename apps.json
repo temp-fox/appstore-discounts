@@ -2,6 +2,127 @@
   "$schema": "apps.json-schema.json",
   "appConfig": [
     {
+      "id": 640564761,
+      "name": {
+        "cn": "Stop Motion Studio Pro"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772979511814,
+      "_discountType": "app"
+    },
+    {
+      "id": 979464349,
+      "name": {
+        "cn": "Law Lexicon"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772979511742,
+      "_discountType": "app"
+    },
+    {
+      "id": 1102928608,
+      "name": {
+        "cn": "英寸/釐米轉換器"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772979511822,
+      "_discountType": "app"
+    },
+    {
+      "id": 1441905750,
+      "name": {
+        "cn": "Distressed FX : Plus"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772979511814,
+      "_discountType": "app"
+    },
+    {
+      "id": 1556461717,
+      "name": {
+        "cn": "Nebosh NGC 2 Flashcards"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772979520218,
+      "_discountType": "app"
+    },
+    {
+      "id": 1579980377,
+      "name": {
+        "cn": "剑桥少儿英语1大全"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772979511822,
+      "_discountType": "app"
+    },
+    {
+      "id": 1626300903,
+      "name": {
+        "cn": "游戏开发者"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772979517014,
+      "_discountType": "app"
+    },
+    {
+      "id": 1640026854,
+      "name": {
+        "cn": "Rofile Experience for Roblox"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772979520139,
+      "_discountType": "app"
+    },
+    {
+      "id": 6479678608,
+      "name": {
+        "cn": "悬浮窗 - 网速显示&流量统计&实时时间"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772979505814,
+      "_discountType": "app"
+    },
+    {
+      "id": 6740538328,
+      "name": {
+        "cn": "戶型圖立極尺"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772979517666,
+      "_discountType": "app"
+    },
+    {
+      "id": 6737248261,
+      "name": {
+        "cn": "破解数织Pro"
+      },
+      "addType": "auto",
+      "addSource": "paid-top",
+      "_shouldBePaid": true,
+      "_externalSourceFirstSeen": 1772979520218,
+      "_discountType": "app"
+    },
+    {
       "id": 478293637,
       "name": {
         "cn": "Anytune Pro+: Studio Tools "
@@ -13487,7 +13608,8 @@
         "cn": "高清计算器"
       },
       "addType": "auto",
-      "addSource": "paid-top"
+      "addSource": "paid-top",
+      "_shouldBePaid": true
     },
     {
       "id": 599226481,
@@ -31929,7 +32051,8 @@
         "cn": "静念"
       },
       "addType": "auto",
-      "addSource": "paid-top"
+      "addSource": "paid-top",
+      "_shouldBePaid": true
     },
     {
       "id": 6755047511,

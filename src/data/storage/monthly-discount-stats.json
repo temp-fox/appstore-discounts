@@ -245,6 +245,13 @@
       "price": 1,
       "inAppPurchase": {}
     },
+    "1133083101": {
+      "all": 1,
+      "price": 0,
+      "inAppPurchase": {
+        "专业天气VIP套餐": 1
+      }
+    },
     "1169525771": {
       "all": 1,
       "price": 0,
@@ -492,6 +499,11 @@
       "inAppPurchase": {}
     },
     "1567821287": {
+      "all": 1,
+      "price": 1,
+      "inAppPurchase": {}
+    },
+    "1581068279": {
       "all": 1,
       "price": 1,
       "inAppPurchase": {}
@@ -1077,6 +1089,13 @@
       "all": 1,
       "price": 1,
       "inAppPurchase": {}
+    },
+    "6448225070": {
+      "all": 1,
+      "price": 0,
+      "inAppPurchase": {
+        "终身会员": 1
+      }
     }
   },
   "hk": {},
