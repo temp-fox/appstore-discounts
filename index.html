@@ -59,9 +59,15 @@
 
     /* ── Filter bar ── */
     .filter-bar {
-      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;
+      display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;
       background: var(--card); border-radius: 14px; padding: 10px 14px;
-      box-shadow: var(--shadow); align-items: center;
+      box-shadow: var(--shadow);
+    }
+    .filter-row {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+    }
+    .action-row {
+      display: flex; gap: 8px; align-items: center;
     }
     .fl { font-size: 14px; color: var(--sub); flex-shrink: 0; }
     .fb {
@@ -74,7 +80,6 @@
       border: 1px solid #f59e0b; background: linear-gradient(135deg,#fffbeb,#fef3c7);
       border-radius: 20px; padding: 6px 14px; font-size: 14px; cursor: pointer;
       color: #92400e; transition: all .18s; white-space: nowrap; font-weight: 600;
-      margin-left: auto;
     }
     .fb-featured:hover { background: linear-gradient(135deg,#f59e0b,#d97706); color: #fff; border-color: #d97706; }
     .fb-copy {
@@ -316,8 +321,6 @@
       .stat { padding: 8px 12px; }
       .stat-num { font-size: 22px; }
       .stat-label { font-size: 10px; }
-      .filter-bar { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-      .filter-bar::-webkit-scrollbar { display: none; }
       .card { padding: 12px; }
       .screenshots { overflow: hidden; }
       .screenshot { min-width: 0; }
@@ -354,13 +357,17 @@
 </header>
 <div class="content">
   <div class="filter-bar">
-    <span class="fl">筛选：</span>
-    <button class="fb active" onclick="filter('all',this)">全部 (33)</button>
-    <button class="fb" onclick="filter('free',this)">完全免费 (14)</button>
-    <button class="fb" onclick="filter('iap',this)">内购优惠 (7)</button>
-    <button class="fb" onclick="filter('discount',this)">限时降价 (12)</button>
-    <button class="fb-featured" onclick="window.open('featured.html','_blank','noopener')">⭐ 今日精选</button>
-    <button class="fb-featured" style="background:linear-gradient(135deg,#10b981,#059669);color:#fff;border-color:#059669" onclick="window.open('stats.html','_blank','noopener')">📊 历史统计</button>
+    <div class="filter-row">
+      <span class="fl">筛选：</span>
+      <button class="fb active" onclick="filter('all',this)">全部 (33)</button>
+      <button class="fb" onclick="filter('free',this)">完全免费 (14)</button>
+      <button class="fb" onclick="filter('iap',this)">内购优惠 (7)</button>
+      <button class="fb" onclick="filter('discount',this)">限时降价 (12)</button>
+    </div>
+    <div class="action-row">
+      <button class="fb-featured" onclick="window.open('featured.html','_blank','noopener')">⭐ 今日精选</button>
+      <button class="fb-featured" style="background:linear-gradient(135deg,#10b981,#059669);color:#fff;border-color:#059669" onclick="window.open('stats.html','_blank','noopener')">📊 历史统计</button>
+    </div>
   </div>
   <div class="grid" id="grid">
     
